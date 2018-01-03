@@ -57,7 +57,7 @@
 				</h2>
 			<p class="descricao my-5">A Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de conforto e qualidade para você e seu veículo, no momento em que precisar!</p>
 
-			<a href="#" class="mb-3 mt-5 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
+			<a href="#" class="mb-3 mt-3 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
 			</div>
 		</div>
 	  </div>
