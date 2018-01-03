@@ -77,39 +77,39 @@
 	</div>
 		<div class="container py-3">
 		<div class="row ">
-			<div class="item col-lg-3 col-md-3 col-sm-6">
+			<div class="item col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 28 anos no mercado">
 				<p class="descricao">Tradição de mais de 28 anos <br>no mercado</p>
 			</div>
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/perfil.png" alt="Rigoroso processo de seleção e recrutamento">
 				<p class="descricao">Rigoroso processo de seleção <br> e recrutamento</p>
 			</div>
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/colaboradores.png" alt="Colaboradores treinados e capacitados">
 				<p class="descricao">Colaboradores treinados e capacitados</p>
 			</div>
 			
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/atendimento.png" alt="Atendimento ao consumidor">
 				<p class="descricao">Atendimento ao consumidor</p>
 			</div>
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/profissionais.png" alt="Profissionais identificados e uniformizados">
 				<p class="descricao">Profissionais identificados <br> e uniformizados</p>
 			</div>
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/segurança.png" alt="Segurança em primeiro lugar">
 				<p class="descricao">Segurança em primeiro lugar</p>
 			</div>
 			
 			
-			<div class="item descricao col-lg-3 col-md-3 col-sm-6">
+			<div class="item descricao col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/cobertura.png" alt="Cobertura de acidentes através da Tokio Marine Seguros">
 				<div class="descricao">Cobertura de acidentes através <br> da Tokio Marine Seguros</div>
 			</div>
