@@ -31,9 +31,7 @@ class bloco_text_sobre1{
     ?>  
 
         <!-- Tipos de Campos-->
-        <textarea name="<?php echo __CLASS__ ?>[bloco1_sobre]" style="background-color: #fff; font-size: 1.7em; height: 4em; line-height: 100%; margin: 0; outline: 0; padding: 3px 8px; width: 100%;">
-        	<?php echo $content; ?>
-        </textarea>
+        <textarea name="<?php echo __CLASS__ ?>[bloco1_sobre]" style="background-color: #fff; font-size: 1.7em; height: 4em; line-height: 100%; margin: 0; outline: 0; padding: 3px 8px; width: 100%;"><?php echo $content; ?></textarea>
 
 
 

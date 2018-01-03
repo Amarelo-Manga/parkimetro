@@ -18,7 +18,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 
 
 /** Meta boxes **/
-require_once( __DIR__ . '/inc/sobre_nos.php');
+require_once __DIR__ . '/inc/metabox/sobre_nos.php';
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
