@@ -20,14 +20,14 @@
     <header class="container-fluid sobrepor fixar-botao cor-fundo-mobile slider">
    <div class="container">
     <div class="row amarelo ml-auto mr-3 d-flex justify-content-end w-50 pt-2">
-    <button type="button" class="btn btn-outline-warning icones arredondar mr-4 col-lg-4 col-md-5 col-11 sobrepor">&#xf007; Acesso Restrito</button>
-    <button type="button" class="btn fundo-amarelo icones arredondar espacamento-botao col-lg-4 col-md-5 col-11 sobrepor">&#xf095; Fale Conosco</button>
+    <button type="button" class="btn btn-outline-warning icones arredondar mr-4 col-lg-4 col-md-5 col-sm-5 sobrepor">&#xf007; Acesso Restrito</button>
+    <button type="button" class="btn fundo-amarelo icones arredondar espacamento-botao col-lg-4 col-md-5 col-sm-5 sobrepor">&#xf095; Fale Conosco</button>
     </div>
 	<div class="row">
     <nav class="navbar navbar-expand-lg navbar-light sobrepor espacamento-mobile">
   <a class="navbar-brand ml-5 pb-5 col-lg-2" href="index.php"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkimetro"></a>
-  <div class="col-lg-9 col-md-9 ml-5">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="col-lg-9">
+  <button class="navbar-toggler btn-collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
