@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
    <!--SLIDE  -->
-   <section class="container-fluid fixar-top slider">
+   <section class="container-fluid fixar-top slider, slider-mobile">
  <?php echo do_shortcode('[smartslider3 slider=2]');?>
 </section>
  <!--Fim Slide -->
