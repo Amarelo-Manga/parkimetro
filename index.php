@@ -133,7 +133,7 @@
    		<h2 class="text-white ml-3 margin-mobile">Estacionamentos</h2>
    	
    	</div>
-   	<p class="descricao text-white" style="margin-left: 16%;">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>   
+   	<p class="descricao text-white margem">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>   
 	 <div class="container">
 		<div class="row"> 
 	   <? 
