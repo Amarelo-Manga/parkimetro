@@ -2,7 +2,7 @@
 
    <!--SLIDE  -->
    <section class="container-fluid fixar-top slider, slider-mobile">
- <?php echo do_shortcode('[smartslider3 slider=2]');?>
+<?php layerslider(1) ?>
 </section>
  <!--Fim Slide -->
    
