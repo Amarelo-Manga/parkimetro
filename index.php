@@ -76,7 +76,7 @@
 		<p class="descricao mb-5 text-dark">Detalhes que fazem toda a diferença, entenda por que cuidamos melhor do seu veículo.</p>
 	</div>
 		<div class="container py-3">
-		<div class="row ">
+		<div class="row ml-3 mr-3">
 			<div class="item col-lg-3 col-md-4 col-sm-6">
 				<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 28 anos no mercado">
 				<p class="descricao">Tradição de mais de 28 anos <br>no mercado</p>
