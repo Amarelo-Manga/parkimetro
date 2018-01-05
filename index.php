@@ -1,8 +1,14 @@
 <?php get_header(); ?>
 
    <!--SLIDE  -->
-   <section class="container-fluid fixar-top slider, slider-mobile">
-<?php layerslider(1) ?>
+   <section class="container-fluid fixar-top slider ">
+<div class="slider-desck">
+	<?php echo do_shortcode('[smartslider3 slider=2]');?>
+</div>
+
+<div class="slider-mobile">
+	<?php echo do_shortcode('[smartslider3 slider=3]');?>
+</div>	
 </section>
  <!--Fim Slide -->
    
