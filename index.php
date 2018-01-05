@@ -8,9 +8,11 @@
 
 <div class="slider-mobile">
 	<!--?php echo do_shortcode('[smartslider3 slider=4]');?-->
-	<h4 class="tituto">Selo Convênio</h4>
-	<p class="">Facilidade para você e seus clientes!</p>
+	<div class="posicionamento-slider">
+	<h4 class="tituto titulo-slider-mobile">Selo Convênio</h4>
+	<p class="text-white">Facilidade para você e seus clientes!</p>
 	<button class="saiba-mais">saiba mais</button>
+	</div>
 </div>	
 </section>
  <!--Fim Slide -->
