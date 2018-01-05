@@ -7,7 +7,10 @@
 </div>
 
 <div class="slider-mobile">
-	<?php echo do_shortcode('[smartslider3 slider=4]');?>
+	<!--?php echo do_shortcode('[smartslider3 slider=4]');?-->
+	<h4 class="tituto">Selo Convênio</h4>
+	<p class="">Facilidade para você e seus clientes!</p>
+	<button class="saiba-mais">saiba mais</button>
 </div>	
 </section>
  <!--Fim Slide -->
