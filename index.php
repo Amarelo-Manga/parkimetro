@@ -7,7 +7,7 @@
 </div>
 
 <div class="slider-mobile">
-	<?php echo do_shortcode('[smartslider3 slider=3]');?>
+	<?php echo do_shortcode('[smartslider3 slider=4]');?>
 </div>	
 </section>
  <!--Fim Slide -->
