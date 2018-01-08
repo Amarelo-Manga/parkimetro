@@ -12,8 +12,8 @@
 		<h4 class="tituto titulo-slider-mobile">Selo Convênio</h4>
 		<p class="text-white">Facilidade para você <br> e seus clientes!</p>
 		<a href="#"><button class="saiba-mais">saiba mais</button></a>	
-		<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkimetro">
 	</div>
+	<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkimetro">
  </div>	
 </section>
  <!--Fim Slide -->
