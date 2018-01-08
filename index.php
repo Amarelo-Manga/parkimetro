@@ -6,14 +6,15 @@
 	<?php echo do_shortcode('[smartslider3 slider=2]');?>
 </div>
 
-<div class="slider-mobile">
-	<!--?php echo do_shortcode('[smartslider3 slider=4]');?-->
+<div class="conatiner slider-mobile">
+	
 	<div class="posicionamento-slider">
-	<h4 class="tituto titulo-slider-mobile">Selo Convênio</h4>
-	<p class="text-white">Facilidade para você e seus clientes!</p>
-	<button class="saiba-mais">saiba mais</button>
+		<h4 class="tituto titulo-slider-mobile">Selo Convênio</h4>
+		<p class="text-white">Facilidade para você <br> e seus clientes!</p>
+		<a href="#"><button class="saiba-mais">saiba mais</button></a>	
+		<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkimetro">
 	</div>
-</div>	
+ </div>	
 </section>
  <!--Fim Slide -->
    
