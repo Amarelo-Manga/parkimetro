@@ -2,6 +2,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 /* CSS Document */
+body.page header{background: #000;}
+
+
 /*Estilo de fontes*/
 .icones{font-family: FontAwesome;}
 h3,.titulo{font-family: DesignSystemB-900I;}
@@ -50,6 +53,15 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .figura-rodape{height:70px; margin-top: 4rem;}
 .margem{margin-left:16% !important;}
 .margem1{margin-left:17%; }
+
+
+
+#main_menu{}
+#main_menu a{color:#fff;padding: 5px 10px;}
+
+
+
+
 @media(max-width:1024px){.figura {margin-left: 0;}	 }
 @media (max-width: 991px){
 	.fixar-top{margin:-1px;}
@@ -68,7 +80,7 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 		.saiba-mais:hover{color: #fff; background-color: #f9d331;}
 		.titulo-slider-mobile{color:#f9d331; font-size: 30px; font-family: DesignSystemB-900I;}
 		.posicionamento-slider{ margin-left: 20%;padding-top: 10%; }
-	}
+}
 @media (max-width: 768px){
 	.estacionamento-imagens{width:100%;}
 	.largura{width: auto;}
