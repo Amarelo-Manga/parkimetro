@@ -58,14 +58,17 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 	header{background-color: #000;}
 	.btn-collapsed{float: right;position: relative; top: -70px;margin-left: 20rem;}
 	div#navbarNavAltMarkup {margin-left: 55px;}
+	.posicionamento-slider{ margin-left: 10%;padding-top: 10%; }
+	.posicionamento-slider-mulher{width: 315px; height: auto;position: absolute;top: 250px;margin-left: 150px;}
 }
 @media (max-width:790px){
 	div.slider-mobile{display: block; width: 100%;height:400px;
 		background-image:url('assets/images/slide-mobile.jpg'); background-repeat:no-repeat; background-position-x:-180px;}
 		div.slider-desck{display: none;}
-		.saiba-mais{border: 2px solid #f9d331; border-radius: 99px;  background-color: transparent; color:#f9d331;}
+		.saiba-mais{border: 2px solid #f9d331; border-radius: 99px;  background-color: transparent; color:#f9d331; font-family: DesignSystemB-700R; padding: 10px; cursor: pointer;}
 		.saiba-mais:hover{color: #fff; background-color: #f9d331;}
-		.titulo-slider-mobile{color:#f9d331; font-size: 30px;}
+		.titulo-slider-mobile{color:#f9d331; font-size: 30px; font-family: DesignSystemB-900I;}
+		.posicionamento-slider{ margin-left: 20%;padding-top: 10%; }
 	}
 @media (max-width: 768px){
 	.estacionamento-imagens{width:100%;}
@@ -76,9 +79,12 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 	.margem{margin-left:11% !important;}
 	.btn-collapsed{margin-left: 7rem;}
 	.btn-outline-warning{height: 40px; margin-top: 7px; padding-left: 10px !important;padding-right: 10px !important;}
-	
+	.posicionamento-slider-mulher{top:260px;margin-left: -10px;}
 }
-@media(max-width: 479px){.figura-rodape{display:none !important;} .alinhamento{margin-left: 14%;}.espacamento-mobile{margin-left: -50px;}.ml-3.margin-mobile {margin-left: 0 !important;margin-top: 3px;}}
+@media(max-width: 530px){.posicionamento-slider-mulher{margin-left: -20px;}.posicionamento-slider{margin-left: 10%;}}
+@media(max-width: 479px){.figura-rodape{display:none !important;} .alinhamento{margin-left: 14%;}.espacamento-mobile{margin-left: -50px;}.ml-3.margin-mobile {margin-left: 0 !important;margin-top: 3px;}
+.posicionamento-slider-mulher{margin-left: 0px; width: 260px; top: 319px;}.posicionamento-slider{margin-left: 8%;}}
+@media(max-width: 375px){.posicionamento-slider-mulher{margin-left: -55px;width: 240px;top: 340px;}.posicionamento-slider{margin-left: 8%;}}
 @media(max-width: 320px){
 	.w-50 {width: 65% !important;}
 	.margem1{margin-left:15%;}
