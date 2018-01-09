@@ -58,9 +58,36 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 
 #main_menu{}
 #main_menu a{color:#fff;padding: 5px 10px;}
+header{border-bottom: 3px solid #f9d330;}
+article header{background:#fff!important;width: 100%;}
+#post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
+article header.entry-header{border-bottom:0px;}
+article header.entry-header .col-6{display: inline-block;font-size:14px;float:right;}
+article header h1{font-family: DesignSystemB-500R;font-size: 2em;padding: 10px 40px 0px;margin-top: 20px;margin-bottom: 0px;display: inline-block;}
+article header h1:before{content:""; display: inline-block; width: 50px; height: 25px;background:#f9d330;margin-right: 20px;-webkit-transform: skew(-30deg);-moz-transform: skew(-30deg);-o-transform: skew(-30deg);}
+article h3{font-family: DesignSystemB-500R;}
+article h4{font-family: DesignSystemB-300R;}
+article .entry-content{margin-top: 20px;}
+article .entry-content p{margin-right:20px;}
+article .col-6{padding: 0px;}
+article img{width: 100%;margin-top: 0px;}
+article a{font-family: DesignSystemB-500R;display:inline-block;background:#f9d330;border-radius:10px; padding: 5px 20px;color: #5d4f16;margin-top: 10px;}
+article a:hover{text-decoration: none;color:#000;}
+#box1{padding: 50px 90px 0px;} 
+#box2{padding: 50px 90px;color:#fff;}
+#box3{padding: 50px 90px 0px;background: #f9d331;} 
+#box3 .servicos-icon{display: inline-block;font-family: DesignSystemB-500R;text-align: center;margin: 0px 40px;margin-top: -10px;}
+#box3 .servicos-icon img{width: auto;margin-bottom: 10px;}
+#box3 a{border:1px solid #000;margin-left: 90px;margin-bottom: 20px;}
+#clientes{background:#f0f0f0;padding: 20px 10px;}
+#clientes .carousel-item{padding:0px 100px;}
+#clientes .image-item{display: inline-block;margin:0px 20px;} 
 
-
-
+article.diferenciais #box1{background: #f9d331;padding: 0px;text-align: center;padding: 60px 0px 0px;text-align: center;}
+article.diferenciais .diferenciais-icon{display: inline-block;font-family: DesignSystemB-500R;text-align: center;margin: 10px 5px;font-size: 14px;}
+article.diferenciais .diferenciais-icon img{width: auto;margin-bottom: 10px;}
+article.diferenciais #box2{color:#000;padding: 40px 00px 0px 90px;}
+article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10px;margin-bottom: 20px;}
 
 @media(max-width:1024px){.figura {margin-left: 0;}	 }
 @media (max-width: 991px){
