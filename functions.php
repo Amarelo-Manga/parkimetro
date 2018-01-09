@@ -17,9 +17,6 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 }
 
 
-/** Meta boxes **/
-require_once __DIR__ . '/inc/metabox/sobre_nos.php';
-
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -587,3 +584,25 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/**
+ * Metabox Upload de Images for Metabox
+ */
+wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/assets/js/metabox-imageupload.js');
+
+/**
+ * Metaboxes Box1
+ */
+require get_template_directory() . '/inc/metaboxes/box1-page.php';
+/**
+ * Metaboxes Box2
+ */
+require get_template_directory() . '/inc/metaboxes/box2-page.php';
+/**
+ * Metaboxes Box3
+ */
+require get_template_directory() . '/inc/metaboxes/box3-page.php';
+/**
+ * Metaboxes Box5
+ */
+require get_template_directory() . '/inc/metaboxes/upload-clientes.php';
