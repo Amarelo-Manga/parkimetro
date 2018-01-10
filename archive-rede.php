@@ -61,6 +61,7 @@ get_header(); ?>
                 'post_type' => 'rede'
             );
             $loop_rede = new WP_Query($args);
+            $count = 0;
             while ($loop_rede->have_posts()) : $loop_rede->the_post();
             	$municipios = wp_get_post_terms( get_the_ID() , 'municipio' );
             	$estabeleci = wp_get_post_terms( get_the_ID() , 'estabelecimento' );
@@ -72,7 +73,7 @@ get_header(); ?>
 				}
 
 				$class_estab = "";
-            	foreach ($estabelecimentos as $est) {
+            	foreach ($estabeleci as $est) {
 					$class_estab .= " ".$est->slug;
 				}
            ?>
@@ -80,7 +81,9 @@ get_header(); ?>
            		<p><?php echo $endereco ?></p>
            		<a href="<?php the_permalink(); ?>" >Veja no mapa</a>
            </article>
+
         <?php
+			$count++;
             endwhile;
             wp_reset_query();
 		?>
