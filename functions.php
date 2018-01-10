@@ -589,7 +589,6 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  * Metabox Upload de Images for Metabox
  */
 wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/assets/js/metabox-imageupload.js');
-
 /**
  * Metaboxes Box1
  */
@@ -606,3 +605,17 @@ require get_template_directory() . '/inc/metaboxes/box3-page.php';
  * Metaboxes Box5
  */
 require get_template_directory() . '/inc/metaboxes/upload-clientes.php';
+
+/**
+ * PostType Nossa Rede
+ */
+require get_template_directory() . '/inc/posttype-rede.php';
+/**
+ * Metabox Endereço - Nossa Rede
+ */
+require get_template_directory() . '/inc/metaboxes/endereco-rede.php';
+/**
+ * Taxonomies Nossa Rede
+ */
+require get_template_directory() . '/inc/taxonomies-nossa-rede.php';
+
