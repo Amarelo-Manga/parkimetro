@@ -18,18 +18,18 @@
                 </div>
                 <div class="row">
                     <nav id="main_menu" class="navbar navbar-expand-lg navbar-light sobrepor espacamento-mobile">
-                        <a class="navbar-brand ml-5 pb-5 col-lg-4" href="index.php"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkimetro"></a>
+                        <a class="navbar-brand ml-5 pb-5 col-lg-4" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkimetro"></a>
                         <div class="col-lg-8">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <?php 
-                                    $args =  array( 
+                                    $args = array( 
                                             'theme_location' => 'top', 
                                             'menu_class'=> 'col-lg-12 navbar-nav',   
                                             'menu_id'=> 'top-menu'
-                                    );
+                                        );
                                     wp_nav_menu( $args ); 
                                 ?>
                             </div>
