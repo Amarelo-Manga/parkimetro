@@ -2,8 +2,8 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 /* CSS Document */
-body.page header.sobrepor{background: #000;}
-body.archive header.sobrepor{background: #000;}
+body header.sobrepor{background: #000;}
+
 
 /*Estilo de fontes*/
 .icones{font-family: FontAwesome;}
@@ -92,6 +92,16 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 .archive header{padding-top:20px;}
 .archive header h3{font-family: DesignSystemB-500R;font-size: 1.5em;padding: 0px 40px 0px;margin-bottom: 0px;display: inline-block;}
 .archive header h3:before{content:""; display: inline-block; width: 50px; height: 25px;background:#f9d330;margin-right: 20px;-webkit-transform: skew(-30deg);-moz-transform: skew(-30deg);-o-transform: skew(-30deg);}
+#filtros{margin:20px 0px;}
+#filtros select{background: #f9d331;border: 0px;height: 40px;font-family: DesignSystemB-300r !important;;}
+
+.item-rede{max-width:30%!important;background: #fafafa;border:1px solid #c7c6c4;border-bottom: 8px solid #f9d331;text-align: center;padding: 50px 70px;margin-bottom:20px;}
+.item-rede{margin-left: 3%;}
+
+/* Single Rede */
+#single-rede #mapa{height: 250px;}
+#single-rede #endereco{background: #fad507;}
+
 
 @media(max-width:1024px){.figura {margin-left: 0;}	 }
 @media (max-width: 991px){
