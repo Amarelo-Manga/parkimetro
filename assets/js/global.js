@@ -246,4 +246,53 @@
 		$body.addClass( 'has-header-video' );
 	});
 
+	//Filtros Archive Rede
+	$('#select_estabelecimento').on('change', function(){
+
+		$('.item-rede').hide(200);
+
+		var estabelecimento = this.value;
+		var municipio = $('#select_municipio').val();
+
+		if( estabelecimento == "all" ){
+			if( municipio == "all"){
+				var classes = ".item_rede";
+			}else{
+				var classes = "."+municipio;
+			}
+		}else{
+			if( municipio == "all"){
+				var classes = "."+estabelecimento;
+			}else{
+				var classes = "."+estabelecimento+"."+municipio;
+			}
+		}
+
+		$(classes).show(100);
+
+	});
+
+	$('#select_municipio').on('change', function(){
+		$('.item-rede').hide(200);
+
+		var municipio = this.value;
+		var estabelecimento = $('#select_estabelecimento').val();
+
+		if( municipio == "all"){
+			if( estabelecimento == "all"){
+				var classes = ".item_rede";
+			}else{
+				var classes = "."+estabelecimento;
+			}
+		}else{
+			if( estabelecimento == "all"){
+				var classes = "."+municipio;
+			}else{
+				var classes = "."+estabelecimento+"."+municipio;
+			}
+		}	
+
+		$(classes).show(100);
+	});
+
 })( jQuery );
