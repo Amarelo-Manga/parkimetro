@@ -256,7 +256,7 @@
 
 		if( estabelecimento == "all" ){
 			if( municipio == "all"){
-				var classes = ".item_rede";
+				var classes = ".item-rede";
 			}else{
 				var classes = "."+municipio;
 			}
@@ -280,7 +280,7 @@
 
 		if( municipio == "all"){
 			if( estabelecimento == "all"){
-				var classes = ".item_rede";
+				var classes = ".item-rede";
 			}else{
 				var classes = "."+estabelecimento;
 			}
