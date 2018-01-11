@@ -246,11 +246,9 @@
 		$body.addClass( 'has-header-video' );
 	});
 
-	//Filtros Archive Rede
+	//Filtros Archive Rede Estabelecimento
 	$('#select_estabelecimento').on('change', function(){
-
 		$('.item-rede').hide(200);
-
 		var estabelecimento = this.value;
 		var municipio = $('#select_municipio').val();
 
@@ -267,17 +265,13 @@
 				var classes = "."+estabelecimento+"."+municipio;
 			}
 		}
-
 		$(classes).show(100);
-
 	});
-
+	//Filtros Archive Rede Municipio
 	$('#select_municipio').on('change', function(){
 		$('.item-rede').hide(200);
-
 		var municipio = this.value;
 		var estabelecimento = $('#select_estabelecimento').val();
-
 		if( municipio == "all"){
 			if( estabelecimento == "all"){
 				var classes = ".item-rede";
@@ -291,8 +285,30 @@
 				var classes = "."+estabelecimento+"."+municipio;
 			}
 		}	
-
 		$(classes).show(100);
 	});
+	//Filtros Archive Rede Buscar
+	$('#filterSearch').on('keyup', function(){
+		var texto = $(this).val();
+		$('.item-rede').hide(200);
+		$( ".item-rede p" ).each(function( index ) {
+		  	var ptexto = $( this ).text() ;
+		  	var n = clearString(ptexto).indexOf(clearString(texto));
+			if (n > -1) {
+				$( this ).parent( ".item-rede" ).show( 100 );
+			};
+		});
+	});
+	//Clear String lowercase and replace acentos
+	function clearString (str) {
+	  return str.toLowerCase()
+	    .replace(/[áãà]/g, 'a')
+	    .replace(/é/g, 'e')
+	    .replace(/í/g, 'i')
+	    .replace(/[óõô]/g, 'o')
+	    .replace(/[úü]/g, 'u')
+	    .replace(/ç/g, 'c');
+	}
+
 
 })( jQuery );

@@ -12,7 +12,6 @@
 
 get_header(); ?>
 
-
 <div class="container">
 	<header class="row">
 		<div class="col-6">
@@ -30,7 +29,7 @@ get_header(); ?>
 		<div class="col-4">
 			<p>Selecione o município</p>
 			<select id="select_municipio">
-				<option value="all">Selecione o Municipio</option>
+				<option value="all">Selecione</option>
 				<?php
 					foreach ($municipios as $mun) {
 						echo "<option value='".$mun->slug."'>". $mun->name."</option>";
@@ -41,7 +40,7 @@ get_header(); ?>
 		<div class="col-4">
 			<p>Selecione o estabelecimentos</p>
 			<select  id="select_estabelecimento">
-				<option value="all">Selecione o Estabelecimento</option>
+				<option value="all">Selecione</option>
 				<?php
 					foreach ($estabelecimentos as $est) {
 						echo "<option value='". $est->slug."'>". $est->name."</option>";
@@ -51,7 +50,7 @@ get_header(); ?>
 		</div>
 		<div class="col-4">
 			<p>Buscar</p>
-			<input type="search" value="" >	
+			<input type="search" value="" id="filterSearch" placeholder="Digite aqui" >	
  		</div>
 	</section>
 	<section id="artigos" class="row">
@@ -77,7 +76,7 @@ get_header(); ?>
 					$class_estab .= " ".$est->slug;
 				}
            ?>
-           <article class="col-4 item-rede<?php echo $class_mun; echo $class_estab; ?>">
+           <article class="col-4 item-rede <?php echo $class_mun; echo $class_estab; ?>">
            		<p><?php echo $endereco ?></p>
            		<a href="<?php the_permalink(); ?>" >Veja no mapa</a>
            </article>
