@@ -6,7 +6,8 @@ body header.sobrepor{background: #000;}
 
 
 /*Estilo de fontes*/
-.icones{font-family: FontAwesome;}
+.btn{font-family:DesignSystemB-500I;font-size:14px!important;}
+.btn i{font-family: FontAwesome;padding-right:7px;}
 h3,.titulo{font-family: DesignSystemB-900I;}
 p,h2{font-family: DesignSystemB-300I !important;}
 .descricao{font-family:Quicksand;}
@@ -54,8 +55,13 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .margem{margin-left:16% !important;}
 .margem1{margin-left:17%; }
 
-#main_menu{}
-#main_menu a{color:#fff;padding: 5px 10px;font-family: DesignSystemB-500R;letter-spacing: 1px;}
+#main_menu{margin: 0px;padding: 0px;width:100%;}
+#main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
+#main_menu #menu{margin-top:20px}
+#main_menu .logo{margin-top: -50px;}
+#main_menu .menu-item{padding: 10px;}
+#main_menu .current-menu-item{background: #f9d331;}
+#main_menu #menu .collapse{display: inline-block!important;text-align:right;float:right;}
 header{border-bottom: 3px solid #f9d330;}
 article header{background:#fff!important;width: 100%;}
 #post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
@@ -90,13 +96,14 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 
 /* Archive Rede */
 .archive header{padding-top:20px;}
-.archive header h3{font-family: DesignSystemB-500R;font-size: 1.5em;padding: 0px 40px 0px;margin-bottom: 0px;display: inline-block;}
+.archive header h3{font-family: DesignSystemB-500R;font-size: 1.5em;padding: 0px 0px;margin-bottom: 0px;display: inline-block;}
 .archive header h3:before{content:""; display: inline-block; width: 50px; height: 25px;background:#f9d330;margin-right: 20px;-webkit-transform: skew(-30deg);-moz-transform: skew(-30deg);-o-transform: skew(-30deg);}
 #filtros{margin:20px 0px;}
+#filtros .col-4{margin-left:0px;padding-left: 0px;}
 #filtros select{background: #f9d331;border: 0px;height: 40px;font-family: DesignSystemB-300r !important;width: 100%;}
 #filtros p{font-family: 'Quicksand'!important;margin-bottom: 1px;font-size: 1em;}
 .item-rede{max-width:30%!important;background: #fafafa;border:1px solid #c7c6c4;border-bottom: 8px solid #f9d331;text-align: center;padding: 50px 70px;margin-bottom:20px;}
-.item-rede{margin-left: 3%;}
+.item-rede{margin-left: 2%;}
 #filterSearch{background: #000;width: 100%;border: 0px;padding: 6px 10px;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;}
 
 #filterSearch::placeholder,
@@ -108,8 +115,10 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 
 
 /* Single Rede */
-#single-rede #mapa{height: 250px;}
-#single-rede #endereco{background: #fad507;}
+#single-rede{margin-bottom: 50px;}
+#single-rede #mapa{height: 350px;}
+#single-rede #endereco{background: #fad507;padding: 100px 140px;}
+#single-rede #endereco a{margin-left: 0;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;background: #000;}
 
 
 
