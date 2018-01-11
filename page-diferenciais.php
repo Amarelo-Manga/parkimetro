@@ -87,7 +87,7 @@ get_header(); ?>
 			  			for ($i = 0; $i < $count; $i++) {
 			  					
 			  				$url_image = wp_get_attachment_url( $images[$i]['images'] ); 
-			  				$active = ( $i==0 ? ' ' : 'active' );
+			  				$active = ( $i==0 ? 'active' : '' );
 
 			  				if( ($i % 4 ) == 0 ){
 			  					echo '<div class="carousel-item row '.$active.'">';

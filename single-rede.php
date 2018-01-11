@@ -15,11 +15,17 @@ get_header(); ?>
 <article id="single-rede" class="container">
 	<?php
 		$endereco = get_post_meta( $post->ID, 'endereco', true );
+		$estabeleci = wp_get_post_terms( get_the_ID() , 'estabelecimento' );
+		foreach ($estabeleci as $est) {
+				$estab .= " ".$est->name;
+			}
 	?>
 	<div class="row">
 		<section id="mapa" class="col-6"></section>
 		<section id="endereco" class="col-6">
+			<h4><?php echo $estab; ?></h4>
 			<p><?php echo $endereco; ?></p>
+			<a href="<?php echo get_post_type_archive_link( 'rede' ); ?>" title="Nossa Rede" alt="Nossa Rede" >Voltar para pesquisa</a>
 		</section>
 	</div>
 </article>
@@ -27,7 +33,7 @@ get_header(); ?>
 <script>
     function initMap() {
         var map = new google.maps.Map(document.getElementById('mapa'), {
-          zoom: 18,
+          zoom: 16,
           center: {lat: -23.5527523, lng: -46.6511055}
         });
         var geocoder = new google.maps.Geocoder();
