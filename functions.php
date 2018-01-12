@@ -588,7 +588,9 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
 /**
  * Metabox Upload de Images for Metabox
  */
-wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/assets/js/metabox-imageupload.js');
+if( is_admin() ){
+	wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/assets/js/metabox-imageupload.js');
+}
 /**
  * Metaboxes Box1
  */
