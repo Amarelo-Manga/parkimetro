@@ -3,25 +3,24 @@
 @import "font-awesome";
 /* CSS Document */
 body header.sobrepor{background: #000;}
-
-
 /*Estilo de fontes*/
 .btn{font-family:DesignSystemB-500I;font-size:14px!important;}
 .btn i{font-family: FontAwesome;padding-right:7px;}
 h3,.titulo{font-family: DesignSystemB-900I;}
-p,h2{font-family: DesignSystemB-300I !important;}
+h2{font-family: DesignSystemB-300I !important;}
+p{font-family: 'Quicksand'!important;}
 .descricao{font-family:Quicksand;}
 .titulo-servicos{font-family:DesignSystemB-500I; font-size: 20px;}
 .titulo-localizao{font-family: DesignSystemB-900R; font-size: 17px;}
 /*color*/
 .amarelo, .btn-outline-warning{color: #f9d331 !important;}
-.fundo-amarelo{background-color: #f9d331!important;}
+.fundo-amarelo{background-color: #f9d331!important;color:#fff}
 /*Tamanho da fonte*/
 .titulo-slide{font-size: 38px;}
 .texto-slide{font-size:26px;}
 .titulo, h2{font-size: 30px !important;}
 .descricao{font-size:14px;}
-p.descricao {margin-top: 10px;}
+p.descricao {margin-top: 10px;font-size: 1em;}
 /*.navbar-light .navbar-toggler{border-color: #fff;}*/
 .fundo-diferenciais{background-image: url(assets/images/razoes.jpg); background-size: cover; height: 100%;  width: 100%;}
 .fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;}
@@ -54,7 +53,7 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .figura-rodape{height:70px; margin-top: 4rem;}
 .margem{margin-left:16% !important;}
 .margem1{margin-left:17%; }
-
+/*main menu*/
 #main_menu{margin: 0px;padding: 0px;width:100%;}
 #main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
 #main_menu #menu{margin-top:20px}
@@ -65,8 +64,8 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 header{border-bottom: 3px solid #f9d330;}
 article header{background:#fff!important;width: 100%;}
 #post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
-article header.entry-header{border-bottom:0px;}
-article header.entry-header .col-6{display: inline-block;font-size:14px;float:right;}
+article header.entry-header{border-bottom:0px;padding: 20px 0px;}
+article header.entry-header .col-6{display: inline-block;font-size:16px;float:right;}
 article header h1{font-family: DesignSystemB-500R;font-size: 2em;padding: 10px 40px 0px;margin-top: 20px;margin-bottom: 0px;display: inline-block;}
 article header h1:before{content:""; display: inline-block; width: 50px; height: 25px;background:#f9d330;margin-right: 20px;-webkit-transform: skew(-30deg);-moz-transform: skew(-30deg);-o-transform: skew(-30deg);}
 article h3{font-family: DesignSystemB-500R;}
@@ -84,16 +83,14 @@ article a:hover{text-decoration: none;color:#000;}
 #box3 .servicos-icon img{width: auto;margin-bottom: 10px;}
 #box3 a{border:1px solid #000;margin-left: 90px;margin-bottom: 20px;}
 #clientes{background:#f0f0f0;padding: 20px 10px;}
-#clientes .carousel-item{padding:0px 100px;}
-#clientes .image-item{display: inline-block;margin:0px 20px;} 
-
+#clientes .carousel-item{padding:0px 140px;}
+#clientes .image-item{display: inline-block;margin:0px 0px;} 
+/*page diferenciais*/
 article.diferenciais #box1{background: #f9d331;padding: 0px;text-align: center;padding: 60px 0px 0px;text-align: center;}
 article.diferenciais .diferenciais-icon{display: inline-block;font-family: DesignSystemB-500R;text-align: center;margin: 10px 5px;font-size: 14px;}
 article.diferenciais .diferenciais-icon img{width: auto;margin-bottom: 10px;}
 article.diferenciais #box2{color:#000;padding: 40px 00px 0px 90px;}
 article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10px;margin-bottom: 20px;}
-
-
 /* Archive Rede */
 .archive header{padding-top:20px;}
 .archive header h3{font-family: DesignSystemB-500R;font-size: 1.5em;padding: 0px 0px;margin-bottom: 0px;display: inline-block;}
@@ -104,24 +101,36 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 #filtros p{font-family: 'Quicksand'!important;margin-bottom: 1px;font-size: 1em;}
 .item-rede{max-width:30%!important;background: #fafafa;border:1px solid #c7c6c4;border-bottom: 8px solid #f9d331;text-align: center;padding: 50px 70px;margin-bottom:20px;}
 .item-rede{margin-left: 2%;}
-#filterSearch{background: #000;width: 100%;border: 0px;padding: 6px 10px;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;}
-
+#filterSearch{background: #000;width: 100%;border: 0px;padding: 8px 10px;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;}
 #filterSearch::placeholder,
 #filterSearch::-webkit-input-placeholder{color:#fff;}
 #filterSearch::-moz-placeholder,
 #filterSearch:-moz-placeholder,
 #filterSearch::-ms-input-placeholder,
 #filterSearch:-ms-input-placeholder{color:#fff;}
-
-
 /* Single Rede */
 #single-rede{margin-bottom: 50px;}
 #single-rede #mapa{height: 350px;}
 #single-rede #endereco{background: #fad507;padding: 100px 140px;}
 #single-rede #endereco a{margin-left: 0;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;background: #000;}
-
-
-
+/* Servico */
+article#servico .box{background: transparent;display: inline-block;padding: 0px;max-width: 45%;margin: 0px 2%;}
+article#servico h3{font-family: DesignSystemB-300I;font-size: 2em;color: #fff;margin-top: -70px;text-align: left;padding-left: 40px;}
+article#servico p{font-family: 'Quicksand'!important;}
+article#servico .texto{background: #eee;padding: 40px;text-align: left;min-height: 460px;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;}
+article#servico a{color:#000;text-transform:uppercase;float:right;}
+/* Contato */
+#contato{font-family:'Quicksand';}
+#contato label{width: 100%;font-family: DesignSystemB-500I;}
+#contato input{width: 100%;background:#ededed;border: 0px;padding: 10px;border-radius: 5px;}
+#contato textarea{width: 100%;background:#ededed;border: 0px;padding: 10px;border-radius: 5px;}	
+#contato p{margin-right: 40px;margin-bottom: 5px;}
+#contato [type=submit]{margin-left: 0;border-radius: 5px;font-family: DesignSystemB-500I !important;background: #f9d330;color: #000;display: inline-block;width: auto;padding: 10px 20px;float: right;}
+#contato #box1{height: 330px;padding: 30px;margin: 0px;border-radius: 10px;text-align: left;}
+#contato #box1 h3{font-family: DesignSystemB-500I;font-size: 1.2em;}
+#contato #box1 h4{font-size: 1.2em;margin-top: 15px;font-family: DesignSystemB-500R;}
+#contato #box1 strong{display: block;margin-top: 5px;}
+#contato #box1 .fa-mobile{font-size: 35px;}
 @media(max-width:1024px){.figura {margin-left: 0;}	 }
 @media (max-width: 991px){
 	.fixar-top{margin:-1px;}
