@@ -1,4 +1,3 @@
-
 <?php
 class add_endereco{
     protected static $metabox_config = array(
