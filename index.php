@@ -11,7 +11,7 @@
 	<div class="posicionamento-slider">
 		<h4 class="tituto titulo-slider-mobile">Selo Convênio</h4>
 		<p class="text-white">Facilidade para você <br> e seus clientes!</p>
-		<a href="#"><button class="saiba-mais">saiba mais</button></a>	
+		<a href="<?php the_permalink(139); ?>"  class="saiba-mais">saiba mais</a>	
 	</div>
 	<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkimetro">
  </div>	
@@ -36,7 +36,7 @@
     <div class="card-body">
      <div class="d-flex justify-content-end">
       <h4 class=" text-white titulo-servicos mt-2">Selo Convênio</h4>
-    	<a href="#" class=" ml-auto btn call_to_action text-dark">Ler Mais</a> 
+    	<a href="<?php the_permalink(139); ?>" class=" ml-auto btn call_to_action text-dark">Ler Mais</a> 
     	</div>
     </div>
   </div>
@@ -45,7 +45,7 @@
     <div class="card-body">
     <div class="  d-flex justify-content-end">
 		<h4 class="text-white titulo-servicos mt-2">Plano Mensal</h4>
-   		<a href="#" class=" ml-auto btn call_to_action text-dark ">Ler Mais</a> 
+   		<a href="<?php the_permalink(139); ?>" class=" ml-auto btn call_to_action text-dark ">Ler Mais</a> 
    		</div>
     </div>
   </div>
@@ -69,7 +69,7 @@
 				</h2>
 			<p class="descricao my-5">A Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de conforto e qualidade para você e seu veículo, no momento em que precisar!</p>
 
-			<a href="#" class="mb-3 mt-3 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
+			<a href="<?php the_permalink(64); ?>" class="mb-3 mt-3 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
 			</div>
 		</div>
 	  </div>
