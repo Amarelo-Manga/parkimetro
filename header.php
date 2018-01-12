@@ -13,8 +13,8 @@
         <header class="container-fluid sobrepor fixar-botao cor-fundo-mobile slider">
             <div class="container">
                 <div class="row amarelo ml-auto mr-3 d-flex justify-content-end w-50 pt-2 flex-nowrap">
-                    <button type="button" class="btn btn-outline-warning arredondar mr-4 col-lg-4 col-md-5 p-1 col-sm-6 sobrepor"><i class="fa fa-user" aria-hidden="true"></i>Acesso Restrito</button>
-                    <button type="button" class="btn fundo-amarelo arredondar espacamento-botao col-lg-4 col-md-5 col-sm-6 sobrepor"><i class="fa fa-phone" aria-hidden="true"></i>Fale Conosco</button>
+                    <a href="http://etraining.com.br/etraining-express" target="_blank" class="btn btn-outline-warning arredondar mr-4 col-lg-4 col-md-5 p-1 col-sm-6 sobrepor"><i class="fa fa-user" aria-hidden="true"></i>Acesso Restrito</a>
+                    <a href="http://localhost/parkimetro/contato/" class="btn fundo-amarelo arredondar espacamento-botao col-lg-4 col-md-5 col-sm-6 sobrepor"><i class="fa fa-phone" aria-hidden="true"></i>Fale Conosco</a>
                 </div>
                 <div class="row">
                     <nav id="main_menu" class="navbar navbar-expand-lg navbar-light sobrepor espacamento-mobile">
