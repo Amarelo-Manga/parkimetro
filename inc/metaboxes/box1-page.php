@@ -55,7 +55,7 @@ function listing_box1_metabox ( $post ) {
 	echo $content;
 
 	//Add Text Area com Editor
-	$settings = array( 'media_buttons' => false, 'tinymce' => true, 'textarea_rows'=> 6, 'media_buttons' => true  );
+	$settings = array( 'media_buttons' => false, 'tinymce' => true, 'textarea_rows'=> 6, 'media_buttons' => true, 'wpautop' => true  );
 		wp_editor( $texto, "_box1_texto", $settings );
 	}
 
