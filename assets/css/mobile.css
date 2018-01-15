@@ -1,0 +1,47 @@
+/* Phones Portrait and Landscape */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px){
+  	.row{margin:0px;}
+  	header .amarelo{width: 100%!important;}
+  	#main_menu .logo{margin-top: 30px;display: inline-block; width: 70%;}
+  	#main_menu .logo img{width: 100%;}
+  	.navbar-light .navbar-toggler{background: rgb(249, 211, 48);float: right;margin-top: -50px}
+  	#main_menu #menu .collapse{text-align: left;float: initial;background: rgba(0, 0, 0, 0.29);}
+
+  	.slider{margin-bottom: 20px;}
+  	.home .container{margin-bottom: 20px;}
+
+  	#box1{padding: 10px 20px 0px;}
+  	#box2{padding: 30px 20px;}
+  	#box3{padding: 30px 20px;}
+  	#box3 .servicos-icon{margin: 30px 40px;}
+  	#box3 a{margin-left: 20px;}
+
+  	article.diferenciais #box2{padding: 40px 20px 0px 20px;}
+
+  	#clientes .carousel-item{padding: 0px 40px;}
+  	#clientes .image-item{margin:10px 0px;}
+  	article header.entry-header{padding: 0px 0px 0px;}
+  	article header h1{padding: 0px 0px 0px;}
+  	article .entry-content p{margin-right:0px;margin:0px 10px;}
+  	.diferenciais #box2{margin-bottom:20px;}
+
+  	article#servico .box{max-width: 100%;}
+  	article#servico #box2{padding: 40px 0px 0px 0px;}
+  	.item-rede{max-width: 100%!important;}
+
+  	#single-rede #endereco{padding: 50px 40px;}
+
+  	article#contato header.entry-header{padding: 10px 0px 0px;}
+  	article#contato .entry-content{margin-top: 0px;padding: 0px;}
+  	#contato p{margin-right: 0px;}
+  	#contato form{margin-bottom:40px}
+
+  	.img-noresponsive{display: none;}
+  	.figura{display: none!important;}
+  	.ml-3,.mt-5{margin:0px!important;}
+  	.margem{margin:0px!important}
+  	.figura-rodape{display: none!important;}
+	
+}
