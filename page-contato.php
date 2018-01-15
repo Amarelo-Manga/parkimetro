@@ -28,7 +28,7 @@ get_header(); ?>
 	</div>
 	
 	<div class="row">
-		<div class="entry-content col-8">
+		<div class="entry-content col-lg-8 col-md-8 col-sm-12">
 			<?php
 				the_content();
 			?>
@@ -40,7 +40,7 @@ get_header(); ?>
 			$titulo = $box1['titulo'];
 			$texto = $box1['texto'];
 		?>
-		<div id="box1" class="col-4">
+		<div id="box1" class="col-lg-4 col-md-4 col-sm-12">
 			<h3><?php echo $titulo; ?></h3>
 			<div class="texto">
 				<?php echo $texto; ?>

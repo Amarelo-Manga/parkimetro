@@ -14,10 +14,10 @@ get_header(); ?>
 
 <div class="container">
 	<header class="row">
-		<div class="col-6">
+		<div class="col-lg-6 col-md-6 col-sm-12">
 			<h3>Principais pontos em operação</h3>
 		</div>
-		<div class="col-6">
+		<div class="col-lg-6 col-md-6 col-sm-12">
 			<p>Clique no endereço de nossas unidades e encontre uma <br >unidade perto de você.</p>
 		</div>
 	</header><!-- .page-header -->
@@ -26,7 +26,7 @@ get_header(); ?>
 			$municipios =  get_terms( array( 'post_types' => 'rede', 'taxonomy' => 'municipio' ) );
 			$estabelecimentos =  get_terms( array( 'post_types' => 'rede', 'taxonomy' => 'estabelecimento' ) );
 		?>
-		<div class="col-4">
+		<div class="col-lg-4 col-md-4 col-sm-12">
 			<p>Selecione o município</p>
 			<select id="select_municipio">
 				<option value="all">Selecione</option>
@@ -37,7 +37,7 @@ get_header(); ?>
 				?>
 			</select>
 		</div>
-		<div class="col-4">
+		<div class="col-lg-4 col-md-4 col-sm-12">
 			<p>Selecione o estabelecimentos</p>
 			<select  id="select_estabelecimento">
 				<option value="all">Selecione</option>
@@ -48,7 +48,7 @@ get_header(); ?>
 				?>
 			</select>
 		</div>
-		<div class="col-4">
+		<div class="col-lg-4 col-md-4 col-sm-12">
 			<p>Buscar</p>
 			<input type="search" value="" id="filterSearch" placeholder="Digite aqui" >	
  		</div>
@@ -76,7 +76,7 @@ get_header(); ?>
 					$class_estab .= " ".$est->slug;
 				}
            ?>
-           <article class="col-4 item-rede <?php echo $class_mun; echo $class_estab; ?>">
+           <article class="col-lg-4 col-md-4 col-sm-12 item-rede <?php echo $class_mun; echo $class_estab; ?>">
            		<p><?php echo $endereco ?></p>
            		<a href="<?php the_permalink(); ?>" >Veja no mapa</a>
            </article>

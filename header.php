@@ -3,10 +3,12 @@
     <head>
         <?php wp_head(); ?>
         <meta charset="utf-8">
-         
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/fonts/fonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/fonts/fonts.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+        <link rel='stylesheet' media='(min-width: 320px) and (max-width: 480px)' href='<?php echo get_template_directory_uri()?>/assets/css/mobile.css' />
     </head>
     <body <?php body_class(); ?>>
         <!--Menu-->

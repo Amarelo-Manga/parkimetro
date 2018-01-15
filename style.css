@@ -3,6 +3,9 @@
 @import "font-awesome";
 /* CSS Document */
 body header.sobrepor{background: #000;}
+div.col-md-6, 
+div.col-lg-6{margin:0px;padding: 0px;display: inline-block;}
+
 /*Estilo de fontes*/
 .btn{font-family:DesignSystemB-500I;font-size:14px!important;}
 .btn i{font-family: FontAwesome;padding-right:7px;}
@@ -60,7 +63,7 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 #main_menu .logo{margin-top: -50px;}
 #main_menu .menu-item{padding: 10px;}
 #main_menu .current-menu-item{background: #f9d331;}
-#main_menu #menu .collapse{display: inline-block!important;text-align:right;float:right;}
+#main_menu #menu .collapse{text-align:right;float:right;}
 header{border-bottom: 3px solid #f9d330;}
 article header{background:#fff!important;width: 100%;}
 #post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
@@ -73,7 +76,7 @@ article h4{font-family: DesignSystemB-300R;}
 article .entry-content{margin-top: 20px;}
 article .entry-content p{margin-right:20px;}
 article .col-6{padding: 0px;}
-article img{width: 100%;margin-top: 0px;}
+article img{width: 100%;height:auto;margin-top: 0px;}
 article a{font-family: DesignSystemB-500R;display:inline-block;background:#f9d330;border-radius:10px; padding: 5px 20px;color: #5d4f16;margin-top: 10px;}
 article a:hover{text-decoration: none;color:#000;}
 #box1{padding: 50px 90px 0px;} 
@@ -85,8 +88,11 @@ article a:hover{text-decoration: none;color:#000;}
 #clientes{background:#f0f0f0;padding: 20px 10px;}
 #clientes .carousel-item{padding:0px 140px;}
 #clientes .image-item{display: inline-block;margin:0px 0px;} 
+/*Page Sobre Nos*/
+.sobrenos #conteudo{padding: 10px!important;}
 /*page diferenciais*/
 article.diferenciais #box1{background: #f9d331;padding: 0px;text-align: center;padding: 60px 0px 0px;text-align: center;}
+article.diferenciais .entry-content{float:right}
 article.diferenciais .diferenciais-icon{display: inline-block;font-family: DesignSystemB-500R;text-align: center;margin: 10px 5px;font-size: 14px;}
 article.diferenciais .diferenciais-icon img{width: auto;margin-bottom: 10px;}
 article.diferenciais #box2{color:#000;padding: 40px 00px 0px 90px;}
@@ -131,46 +137,3 @@ article#servico a{color:#000;text-transform:uppercase;float:right;}
 #contato #box1 h4{font-size: 1.2em;margin-top: 15px;font-family: DesignSystemB-500R;}
 #contato #box1 strong{display: block;margin-top: 5px;}
 #contato #box1 .fa-mobile{font-size: 35px;}
-@media(max-width:1024px){.figura {margin-left: 0;}	 }
-@media (max-width: 991px){
-	.fixar-top{margin:-1px;}
-	.fixar-botao{margin-top: -25px;}
-	.navbar-toggler{background-color: #f9d331!important;}
-	header{background-color: #000;}
-	.btn-collapsed{float: right;position: relative; top: -70px;margin-left: 20rem;}
-	div#navbarNavAltMarkup {margin-left: 55px;}
-	.posicionamento-slider{ margin-left: 10%;padding-top: 10%; }
-	.posicionamento-slider-mulher{width: 315px; height:100%;margin-left: 300px;margin-top: -12rem;display: inline-block;}
-}
-@media (max-width:790px){
-	div.slider-mobile{display: block; width: 100%;height:auto;background-image:url('assets/images/slide-mobile.jpg'); background-repeat:no-repeat;}
-		div.slider-desck{display: none;}
-		.saiba-mais{border: 2px solid #f9d331; border-radius: 99px;  background-color: transparent; color:#f9d331; font-family: DesignSystemB-700R; padding: 10px; cursor: pointer;}
-		.saiba-mais:hover{color: #fff; background-color: #f9d331;}
-		.titulo-slider-mobile{color:#f9d331; font-size: 30px; font-family: DesignSystemB-900I;}
-		.posicionamento-slider{ margin-left: 20%;padding-top: 10%; }
-}
-@media (max-width: 768px){
-	.estacionamento-imagens{width:100%;}
-	.largura{width: auto;}
-	.espacamento-botao{margin-right: 20px; margin-top: 10px;}
-	.figura{display: none !important;}
-	.figura-rodape{/*margin-left:23%;*/ margin-top: 60px;}
-	.margem{margin-left:11% !important;}
-	.btn-collapsed{margin-left: 7rem;}
-	.btn-outline-warning{height: 40px; margin-top: 7px; padding-left: 10px !important;padding-right: 10px !important;}
-}
-@media(max-width: 615px){.posicionamento-slider-mulher{margin-left:200px;width: 250px;}.posicionamento-slider{margin-left: 10%;}}
-@media(max-width: 479px){.figura-rodape{display:none !important;} .alinhamento{margin-left: 14%;}.espacamento-mobile{margin-left: -50px;}.ml-3.margin-mobile {margin-left: 0 !important;margin-top: 3px;}
-.posicionamento-slider-mulher{width: 265px;margin-top: 10px;margin-left: 90px;}.posicionamento-slider{margin-left: 8%;}}
-@media(max-width: 375px){.posicionamento-slider-mulher{margin-top: 0px;margin-left: 20%;}.posicionamento-slider{margin-left: 8%;}}
-@media(max-width: 320px){
-	.w-50 {width: 65% !important;}
-	.margem1{margin-left:15%;}
-	.titulo, h2{font-size: 25px !important;}
-	.margem {margin-left: 8%;}
-	.alinhamento {margin-left: 35px;}
-	.btn-collapsed {float: none; position: relative;top: 0px; margin-left: 3rem;}
-	.row.amarelo.mr-3 {margin-right: -1rem!important;}
-	.posicionamento-slider-mulher{margin-left: 15%; width: 235px;}
-}

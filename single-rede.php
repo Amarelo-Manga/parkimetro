@@ -21,8 +21,8 @@ get_header(); ?>
 			}
 	?>
 	<div class="row">
-		<section id="mapa" class="col-6"></section>
-		<section id="endereco" class="col-6">
+		<section id="mapa" class="col-lg-6 col-md-6 col-sm-12"></section>
+		<section id="endereco" class="col-lg-6 col-md-6 col-sm-12">
 			<h4><?php echo $estab; ?></h4>
 			<p><?php echo $endereco; ?></p>
 			<a href="<?php echo get_post_type_archive_link( 'rede' ); ?>" title="Nossa Rede" alt="Nossa Rede" >Voltar para pesquisa</a>

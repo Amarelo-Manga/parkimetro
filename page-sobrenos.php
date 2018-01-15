@@ -13,18 +13,18 @@
  */
 get_header(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(" container"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("sobrenos container"); ?>>
 	<div class="row">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 		</header><!-- .entry-header -->
-		<div class="entry-content col-6">
+		<div id="conteudo" class="col-lg-6 col-md-6 col-sm-12">
 			<?php
 				the_content();
 			?>
 		</div><!-- .entry-content -->
-		<div class="col-6">
+		<div class="img-noresponsive col-lg-6 col-md-6 col-sm-12">
 			<?php 
 				the_post_thumbnail();
 			?>
@@ -39,10 +39,10 @@ get_header(); ?>
 		if( !empty( $box1 ) ){
 	?>
 	<div class="row">
-		<div class="col-6">
+		<div class="img-noresponsive col-lg-6 col-md-6 col-sm-12">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 		</div>
-		<div id="box1"  class="col-6">
+		<div id="box1"  class="content col-lg-6 col-md-6 col-sm-12">
 			<h3><?php echo $titulo; ?></h3>
 			<?php echo $texto; ?>
 		</div>
@@ -61,7 +61,7 @@ get_header(); ?>
 			$subtitulo = $box2['subtitulo'];
 			$texto = $box2['texto'];
 		?>
-		<div id="box2" class="col-6" style="background:url(<?php echo $image_url; ?>)">
+		<div id="box2" class="col-lg-6 col-md-6 col-sm-12" style="background:url(<?php echo $image_url; ?>)">
 			<h4><?php echo $titulo; ?></h4>
 			<h3><?php echo $subtitulo; ?></h3>
 		
@@ -74,7 +74,7 @@ get_header(); ?>
 			$titulo = $box3['titulo'];
 			$texto = $box3['texto'];
 		?>
-		<div id="box3" class="col-6">
+		<div id="box3" class="col-lg-6 col-md-6 col-sm-12">
 			<h3><?php echo $titulo; ?></h3>
 			<?php echo $texto; ?>
 		</div>
@@ -104,7 +104,7 @@ get_header(); ?>
 			  				if( ($i % 4 ) == 0 ){
 			  					echo '<div class="carousel-item row '.$active.'">';
 			  				}
-			  				echo '<div class="image-item col-3">';
+			  				echo '<div class="image-item col-lg-3 col-md-3 col-sm-12">';
 				  			echo '<img src="'.$url_image.'" alt="First slide">';
 				  			echo '</div>';
 

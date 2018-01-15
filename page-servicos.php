@@ -24,7 +24,7 @@ get_header(); ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<?php twentyseventeen_edit_link( get_the_ID() ); ?>
-			<div class="entry-content col-6">
+			<div class="entry-content col-lg-6 col-md-6 col-sm-12">
 				<?php
 					the_content();
 				?>
@@ -40,7 +40,7 @@ get_header(); ?>
 		if( !empty( $box1 ) ){
 	?>
 	<div class="row">
-		<div id="box1" class="col-6 box">
+		<div id="box1" class="col-lg-6 col-md-6 col-sm-12 box">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 			<h3><?php echo $titulo; ?></h3>
 			<div class="texto">
@@ -58,7 +58,7 @@ get_header(); ?>
 			$titulo = $box2['titulo'];
 			$texto = $box2['texto'];
 		?>
-		<div id="box2" class="col-6 box">
+		<div id="box2" class="col-lg-6 col-md-6 col-sm-12 box">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 			<h3><?php echo $titulo; ?></h3>
 			<div class="texto">
