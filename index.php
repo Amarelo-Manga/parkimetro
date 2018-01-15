@@ -31,7 +31,7 @@
 	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que a Parkimetro oferece para seu <br>negócio.</p>
 	<div class="container">
  	<div class="row ">
-  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+  <div class="col-lg-6 col-md-6 col-sm-12 mb-3 servicos">
     <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/selo-convenio.jpg" alt="Selo de Convênio">
     <div class="card-body">
      <div class="d-flex justify-content-end">
@@ -40,7 +40,7 @@
     	</div>
     </div>
   </div>
-  <div class=" col-lg-6 col-md-6 col-sm-12">
+  <div class=" col-lg-6 col-md-6 col-sm-12 m-left servicos">
     <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/palno-mensal.jpg" alt="Plano Mensal">
     <div class="card-body">
     <div class="  d-flex justify-content-end">
@@ -149,17 +149,19 @@
 	 <div class="container">
 		<div class="row"> 
 	   <? 
-		$terms = get_terms( 
-		array(    'taxonomy' => estacionamento,  
-		'hide_empty' => 'true',
-		'number' => 4 
-		) ); 
-
+	   	$args = array(   
+	   				'taxonomy' => 'estabelecimento',  
+					'hide_empty' => 'true',
+				); 
+		$terms = get_terms($args); 
 		if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){  
 		foreach ( $terms as $term ) {?>
-		<div class="col-lg-3 col-md-6 col-sm-12 " >			
-		<?php if (function_exists('z_taxonomy_image_url')) 
-		echo z_taxonomy_image_url(); ?> 
+		<div class="col-lg-3 col-md-5 col-sm-5 " >			
+		<?php 
+			$termid = $term->term_id;
+			$term_meta = get_option( "estabelecimento_".$termid );
+		?> 
+		<img src="<?php echo $term_meta['image']; ?>" >
 		<div class="p-3 mb-2 fundo-amarelo text-center largura">
 		<h3 class=" estacionamento-texto"><? echo $term->name ; ?></h3></div>
 			</div>
