@@ -4,8 +4,7 @@
 /* CSS Document */
 body header.sobrepor{background: #000;}
 div.col-md-6, 
-div.col-lg-6{margin:0px;padding: 0px;display: inline-block;}
-
+div.col-lg-6{margin:0px; padding: 0px; display: inline-block;}
 /*Estilo de fontes*/
 .btn{font-family:DesignSystemB-500I;font-size:14px!important;}
 .btn i{font-family: FontAwesome;padding-right:7px;}
@@ -56,12 +55,13 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .figura-rodape{height:70px; margin-top: 4rem;}
 .margem{margin-left:16% !important;}
 .margem1{margin-left:17%; }
+.servicos{padding-left: 15px!important;padding-right: 15px !important;}
 /*main menu*/
 #main_menu{margin: 0px;padding: 0px;width:100%;}
 #main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
 #main_menu #menu{margin-top:20px}
 #main_menu .logo{margin-top: -50px;}
-#main_menu .menu-item{padding: 10px;}
+#main_menu .menu-item{padding: 9px;}
 #main_menu .current-menu-item{background: #f9d331;}
 #main_menu #menu .collapse{text-align:right;float:right;}
 header{border-bottom: 3px solid #f9d330;}
@@ -88,6 +88,7 @@ article a:hover{text-decoration: none;color:#000;}
 #clientes{background:#f0f0f0;padding: 20px 10px;}
 #clientes .carousel-item{padding:0px 140px;}
 #clientes .image-item{display: inline-block;margin:0px 0px;} 
+/* .m-left{margin-left: 3rem !important;} */
 /*Page Sobre Nos*/
 .sobrenos #conteudo{padding: 10px!important;}
 /*page diferenciais*/
