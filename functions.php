@@ -620,4 +620,7 @@ require get_template_directory() . '/inc/metaboxes/endereco-rede.php';
  * Taxonomies Nossa Rede
  */
 require get_template_directory() . '/inc/taxonomies-nossa-rede.php';
-
+/**
+ * Metaboxes image upload taxonomy estabelecimento
+ */
+require get_template_directory() . '/inc/metaboxes/image-upload-taxonomy-estabelecimento.php';
