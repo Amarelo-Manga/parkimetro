@@ -9,17 +9,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
         <link rel='stylesheet' media='(min-width: 320px) and (max-width: 480px)' href='<?php echo get_template_directory_uri()?>/assets/css/mobile.css' />
+        <link rel='stylesheet' media='(min-width: 481px) and (max-width: 780px)' href='<?php echo get_template_directory_uri()?>/assets/css/tablet.css' />
     </head>
     <body <?php body_class(); ?>>
         <!--Menu-->
         <header class="container-fluid sobrepor fixar-botao cor-fundo-mobile slider">
             <div class="container">
                 <div class="row amarelo ml-auto mr-3 d-flex justify-content-end w-50 pt-2 flex-nowrap">
-                    <a href="http://etraining.com.br/etraining-express" target="_blank" class="btn btn-outline-warning arredondar mr-4 col-lg-4 col-md-5 p-1 col-sm-6 sobrepor"><i class="fa fa-user" aria-hidden="true"></i>Acesso Restrito</a>
+                    <a href="http://etraining.com.br/etraining-express" target="_blank" class="btn btn-outline-warning arredondar mr-4 col-lg-4 col-md-5 col-sm-6 sobrepor"><i class="fa fa-user" aria-hidden="true"></i>Acesso Restrito</a>
                     <a href="http://localhost/parkimetro/contato/" class="btn fundo-amarelo arredondar espacamento-botao col-lg-4 col-md-5 col-sm-6 sobrepor"><i class="fa fa-phone" aria-hidden="true"></i>Fale Conosco</a>
                 </div>
                 <div class="row">
-                    <nav id="main_menu" class="navbar navbar-expand-lg navbar-light sobrepor espacamento-mobile">
+                    <nav id="main_menu" class="navbar navbar-expand-md navbar-light sobrepor espacamento-mobile">
                         <a class="navbar-brand col-lg-4 logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkimetro"></a>
                         <div id="menu" class="col-lg-8">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
