@@ -156,7 +156,7 @@
 		$terms = get_terms($args); 
 		if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){  
 		foreach ( $terms as $term ) {?>
-		<div class="col-lg-3 col-md-5 col-sm-5 " >			
+		<div class="col-lg-3 col-md-6 col-sm-6 m-center" >			
 		<?php 
 			$termid = $term->term_id;
 			$term_meta = get_option( "estabelecimento_".$termid );
