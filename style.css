@@ -22,7 +22,7 @@ p{font-family: 'Quicksand'!important;}
 .texto-slide{font-size:26px;}
 .titulo, h2{font-size: 30px !important;}
 .descricao{font-size:14px;}
-p.descricao {margin-top: 10px;font-size: 1em;}
+p.descricao {margin-top: 10px;font-size: 15px;}
 /*.navbar-light .navbar-toggler{border-color: #fff;}*/
 .fundo-diferenciais{background-image: url(assets/images/razoes.jpg); background-size: cover; height: 100%;  width: 100%;}
 .fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;}
@@ -55,16 +55,21 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .figura-rodape{height:70px; margin-top: 4rem;}
 .margem{margin-left:16% !important;}
 .margem1{margin-left:17%; }
+.logo-footer{width: auto; height: 54px;margin-top: 3rem;margin-right: 1rem;}
 .servicos{padding-left: 15px!important;padding-right: 15px !important;}
 /*main menu*/
 #main_menu{margin: 0px;padding: 0px;width:100%;}
 #main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
 #main_menu #menu{margin-top:20px}
 #main_menu .logo{margin-top: -50px;}
-#main_menu .menu-item{padding: 9px;}
+#main_menu .menu-item{padding: 8px;}
+#main_menu #menu .collapse{text-align: left; float: none;}
 #main_menu .current-menu-item{background: #f9d331;}
-#main_menu #menu .collapse{text-align:right;float:right;}
+button.navbar-toggler.collapsed {margin-bottom: 1rem;}
 header{border-bottom: 3px solid #f9d330;}
+button.navbar-toggler{background-color: #f9d331;}
+#main_menu .logo{margin-top: 1rem;}
+#main_menu{margin-left: 20px;margin-bottom: 1rem;}
 article header{background:#fff!important;width: 100%;}
 #post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
 article header.entry-header{border-bottom:0px;padding: 20px 0px;}
