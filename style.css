@@ -151,6 +151,7 @@ article#servico a{color:#000;text-transform:uppercase;float:right;}
 @media(max-width: 1199px){
 	article a{margin-top:-8px;}
 	p.texto-mensalista {padding: 10px;}
+	#contato #box1{height: max-content;}
 }
 
 
