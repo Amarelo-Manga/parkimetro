@@ -37,6 +37,7 @@
   	article#contato .entry-content{margin-top: 0px;padding: 0px;}
   	#contato p{margin-right: 0px;}
   	#contato form{margin-bottom:40px}
+    #contato #box1{margin-top: 1rem;}
 
   	.img-noresponsive{display: none;}
   	.figura{display: none!important;}
@@ -47,6 +48,7 @@
     .mr-4 {margin-right: 0.5rem!important;}
     .btn-solicite{padding:8px;}
     article#servico .texto{padding: 45px;}
+
 }
 
 
