@@ -1,11 +1,13 @@
 /* Tablets */
-@media(max-width: 767px){
-button.navbar-toggler{background-color: #f9d331;}
-#main_menu .logo{margin-top: 1rem;}
+@media(max-width: 768px){
 .w-50 {width: 100%!important;}
-#main_menu #menu .collapse{text-align: left; float: none;}
 .figura{display: none !important;}
 .menu-header-container {margin-left: -17px;}
-button.navbar-toggler.collapsed {margin-bottom: 1rem;}
 .m-left{margin-left: 0px !important;}
+.logo-footer{margin-left: 5%;}
+}
+
+@media(max-width: 575px){
+	div.col-md-6.m-center{margin-left: 25%;}
+
 }
