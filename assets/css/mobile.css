@@ -7,7 +7,7 @@
   	#main_menu .logo{margin-top: 30px;display: inline-block; width: 70%;}
   	#main_menu .logo img{width: 100%;}
   	.navbar-light .navbar-toggler{background: rgb(249, 211, 48);float: right;margin-top: -50px}
-  	#main_menu #menu .collapse{text-align: left;float: initial;background: rgba(0, 0, 0, 0.29);}
+  	#main_menu #menu .collapse{text-align: left;float: initial;background: rgba(0, 0, 0, 0.50);}
 
   	.slider{margin-bottom: 20px;}
   	.home .container{margin-bottom: 20px;}
@@ -43,5 +43,9 @@
   	.ml-3,.mt-5{margin:0px!important;}
   	.margem{margin:0px!important}
   	.figura-rodape{display: none!important;}
-	
+	 div.col-md-6.m-center{margin:0 -10px;}
+   .mr-4 {margin-right: 0.5rem!important;}
+
 }
+
+
