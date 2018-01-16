@@ -43,9 +43,10 @@
   	.ml-3,.mt-5{margin:0px!important;}
   	.margem{margin:0px!important}
   	.figura-rodape{display: none!important;}
-	 div.col-md-6.m-center{margin:0 -10px;}
-   .mr-4 {margin-right: 0.5rem!important;}
-
+	  div.col-md-6.m-center{margin:0 -10px;}
+    .mr-4 {margin-right: 0.5rem!important;}
+    .btn-solicite{padding:8px;}
+    article#servico .texto{padding: 45px;}
 }
 
 
