@@ -155,19 +155,24 @@
 				); 
 		$terms = get_terms($args); 
 		if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){  
-		foreach ( $terms as $term ) {?>
-		<div class="col-lg-3 col-md-6 col-sm-6 m-center" >			
-		<?php 
+		foreach ( $terms as $term ) { 
 			$termid = $term->term_id;
 			$term_meta = get_option( "estabelecimento_".$termid );
 		?> 
-		<img src="<?php echo $term_meta['image']; ?>" >
-		<div class="p-3 mb-2 fundo-amarelo text-center largura">
-		<h3 class=" estacionamento-texto"><? echo $term->name ; ?></h3></div>
+
+		<div class="col-lg-3 col-md-6 col-sm-6 m-center" >		
+			<a href="<?php the_permalink(rede).$term_meta ?> ">	
+				
+				
+				<img src="<?php echo $term_meta['image']; ?>" >
+				<div class="p-3 mb-2 fundo-amarelo text-center largura">
+				<h3 class=" estacionamento-texto"><? echo $term->name ; ?></h3></div>
+			</a>
+
 			</div>
 
 		 <?  } } ?>
-
+			
 			
    		</div>
 	  </div>
