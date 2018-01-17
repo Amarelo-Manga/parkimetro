@@ -5,6 +5,8 @@
 .menu-header-container {margin-left: -17px;}
 .m-left{margin-left: 0px !important;}
 .logo-footer{margin-left: 5%;}
+.barrapreto.ml-5{margin-left:1rem !important;}
+.barrapreto {margin-right: 5px;}
 }
 
 @media(max-width: 575px){
