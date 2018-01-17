@@ -61,7 +61,7 @@ get_header(); ?>
 			$subtitulo = $box2['subtitulo'];
 			$texto = $box2['texto'];
 		?>
-		<div id="box2" class="col-lg-6 col-md-6 col-sm-12" style="background:url(<?php echo $image_url; ?>)">
+		<div id="box2" class="col-lg-6 col-md-6 col-sm-12" style="background:url(<?php echo $image_url; ?>); background-repeat: no-repeat;background-size: cover;">
 			<h4><?php echo $titulo; ?></h4>
 			<h3><?php echo $subtitulo; ?></h3>
 		
