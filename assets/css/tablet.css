@@ -7,6 +7,8 @@
 .logo-footer{margin-left: 5%;}
 .barrapreto.ml-5{margin-left:1rem !important;}
 .barrapreto {margin-right: 5px;}
+#clientes .carousel-item {padding: 0px 140px;}
+article#post-45 #box1{padding: 15px 20px 0px;}
 }
 
 @media(max-width: 575px){
