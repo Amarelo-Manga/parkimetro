@@ -11,7 +11,7 @@ div.col-lg-6{margin:0px; padding: 0px; display: inline-block;}
 h3,.titulo{font-family: DesignSystemB-900I;}
 h2{font-family: DesignSystemB-300I !important;}
 p{font-family: 'Quicksand'!important;}
-.descricao{font-family:Quicksand;}
+.descricao,.descricao-icon{font-family:Quicksand;}
 .titulo-servicos{font-family:DesignSystemB-500I; font-size: 20px;}
 .titulo-localizao{font-family: DesignSystemB-900R; font-size: 17px;}
 /*color*/
@@ -21,8 +21,8 @@ p{font-family: 'Quicksand'!important;}
 .titulo-slide{font-size: 38px;}
 .texto-slide{font-size:26px;}
 .titulo, h2{font-size: 30px !important;}
-.descricao{font-size:14px;}
-p.descricao {margin-top: 10px;font-size: 15px;}
+.descricao,.descricao-icon{font-size:14px;}
+p.descricao,p.descricao-icon {margin-top: 10px;font-size: 15px;}
 /*.navbar-light .navbar-toggler{border-color: #fff;}*/
 .fundo-diferenciais{background-image: url(assets/images/razoes.jpg); background-size: cover; height: 100%;  width: 100%;}
 .fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;}
@@ -44,23 +44,24 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .barrapreto { width: 100px !important; height: 30px;-webkit-transform: skew(-25deg);-moz-transform: skew(-25deg);-o-transform: skew(-25deg); background-color: #000;}
 .card{border:none;}
 .espacamento{margin-left:10%;}
-.item{margin-top: -45px;text-align:center;color:#000000;padding-top: 3rem!important;}
+.item{margin-top: -45px;text-align:center;color:#000000;padding-top: 3rem!important;padding:0px 5px!important;}
 .item img {margin-bottom: 10px;}
 .estacionamento{background-image:url('assets/images/estacionamento.jpg'); background-size: cover;}
-.estacionamento-texto{font-family: DesignSystemB-700R; color: #5d4f16; font-size:16px; text-transform: uppercase;}
+.estacionamento-texto{font-family: DesignSystemB-700R; color: #5d4f16; font-size:16px; text-transform: uppercase; text-align: center; margin-top: 10px;}
 .largura{width:283px;}
 .corpo-card{background-color:transparent !important;}
 .medidas{padding: 0; border: none; height: auto;}
 .figura{display:flex!important; justify-content: flex-end!important;}
 .figura-rodape{height:70px; margin-top: 4rem;}
-.margem{margin-left:17% !important;}
-.margem1{margin-left:17%; }
-.m-row{margin-left: -7% !important;margin-top: 40px;}
+.margem{margin-left:16.5% !important;}
+.margem1{margin-left:16%; }
+.m-row{margin-left: -8% !important;margin-top: 40px;}
 .logo-footer{width: auto; height: 54px;margin-top: 3rem;margin-right: 1rem;}
 .servicos{padding-left: 15px!important;padding-right: 15px !important;}
-.txt-razoes {padding: 0px 90px 0px 0px;}
+/* 	 */
 .p-left{padding-left: 8px;}
 .ma-top{margin-top: 1rem;}
+.ma-bot{margin-bottom: 3rem;}
 /*main menu*/
 #main_menu{margin: 0px;padding: 0px;width:100%;}
 #main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
@@ -98,7 +99,9 @@ article#post-45 #box1 {padding: 40px 20px 0px;}
 #clientes{background:#f0f0f0;padding: 20px 10px;}
 #clientes .carousel-item{padding:0px 140px;}
 #clientes .image-item{display: inline-block;margin:0px 0px;} 
-.p-zero{padding:0 !important; margin-bottom: 40px; padding-right: 5px;padding-left: 5px;}
+.m-txt{margin-left: 32px; font-weight: 500;}
+.p-amarelo{padding:10px;}
+.w-container{width: 75%;}
 /* .m-left{margin-left: 3rem !important;} */
 /*Page Sobre Nos*/
 .sobrenos #conteudo{padding: 10px!important;margin-top: 20px;}
@@ -153,9 +156,11 @@ article#servico a{color:#000;text-transform:uppercase;float:right;}
 #contato #box1 strong{display: block;margin-top: 5px;}
 #contato #box1 .fa-mobile{font-size: 35px;}
 @media(max-width:1700px){.m-row{margin-left:7% !important;}}
-@media(max-width: 1199px){article a{margin-top:-8px;}p.texto-mensalista {padding: 10px;}#contato #box1{height: max-content;}article.diferenciais .diferenciais-icon{margin: 11px 12px;font-size: 12px;}}
+@media(max-width: 1199px){.txt-razoes{/* padding: 0px 50px 0px 0px; */}.m-row {margin-left: 0% !important;}article a{margin-top:-8px;}p.texto-mensalista {padding: 10px;}#contato #box1{height: max-content;}article.diferenciais .diferenciais-icon{margin: 11px 12px;font-size: 12px;}}
+@media(max-width: 1024px){.m-row {margin-left: -7% !important;}.w-container{width: auto !important;}}
 @media(max-width: 991px){article#post-45 #box1 {padding: 0px 20px 0px;}img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {margin-top: 30px;}#box3 .servicos-icon{margin-left: 30px;margin-top: 5px;}article a{padding: 5px 13px;}#clientes .carousel-item{padding: 0px 0px;}article.diferenciais #box2{margin-top: -220px;}}
-@media(max-width:767px){article#servico .box{max-width: 100%; margin: 22px 2%;}.btn-mensalista{margin-top: 0px;}.m-row {margin-left: 0% !important;}article.diferenciais #box2{margin-top:0px; margin-bottom: 1rem;}}
+@media(max-width:767px){article#servico .box{max-width: 100%; margin: 22px 2%;}.btn-mensalista{margin-top: 0px;}.m-row {margin: 0px -80px 0px -50px !important;}article.diferenciais #box2{margin-top:0px; margin-bottom: 1rem;}}
+@media(max-width: 660px){.m-row {margin:0;}}
 /*404*/
 .bg404{background-image: url('assets/images/fundo404.jpg'); background-repeat: no-repeat;background-size: cover; height: 80vh;}
 .retangulo-amarelo{width: 400px;height: 300px; margin-left: 40%; margin-top: 20%; background-color: #f9d331;border-radius: 20px;text-align: center;padding-top: 60px;}
