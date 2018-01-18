@@ -15,8 +15,8 @@
   	#box1{padding: 10px 20px 0px;}
   	#box2{padding: 30px 20px;}
   	#box3{padding: 30px 20px;}
-  	#box3 .servicos-icon{margin: 30px 40px;}
-  	#box3 a{margin-left: 20px;}
+  	#box3 .servicos-icon{margin: 30px 100px;}
+  	#box3 a{margin-left: 45px;}
 
   	article.diferenciais #box2{padding: 40px 20px 0px 20px;}
 
@@ -49,6 +49,7 @@
     .btn-solicite{padding:8px;}
     .w-container{width: auto !important;}
     article#servico .texto{padding: 45px;}
+    article#post-45 #box1 {padding: 20px 20px 0px;}
 
 
 }
