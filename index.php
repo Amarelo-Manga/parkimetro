@@ -67,7 +67,7 @@
 				<b class="titulo">Escolher a <br>
 				Parkímetro</b>
 				</h2>
-			<p class="descricao my-5 txt-razoes">O Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de conforto e qualidade para você e seu veículo, no momento em que precisar!</p>
+			<p class="descricao my-5 txt-razoes">O Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de qualidade para você e seu veículo, no momento em que precisar!</p>
 
 			<a href="<?php the_permalink(64); ?>" class="mb-3 mt-3 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
 			</div>
@@ -85,7 +85,7 @@
 			<h2 class="mt-1 text-dark col-lg-9 col-md-8 col-sm-8 mt-5">Confira nossos <b class="titulo">Diferenciais</b>
 			</h2>
 			</div>	
-		<p class="descricao mb-5 text-dark ml-5">Detalhes que fazem toda a diferença, entenda por que cuidamos melhor do seu veículo.</p>
+		<p class="descricao mb-5 text-dark m-txt">Detalhes que fazem toda a diferença, entenda por que cuidamos melhor do seu veículo.</p>
 	</div>
 		<div class="container">
 		<div class="row ml-3 mr-3">
@@ -143,10 +143,11 @@
    	<div class="row pt-5 margem">
    		<div class="barraamarela "></div>
    		<h2 class="text-white ml-3 margin-mobile p-left">Estacionamentos</h2>
-   	
+   		 
    	</div>
-   	<p class="descricao text-white margem">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>   
-	 <div class="container">
+   	<p class="descricao text-white margem">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>  
+   	
+	 <div class="container pb-4">
 		<div class="row m-row"> 
 	   <? 
 	   	$args = array(   
