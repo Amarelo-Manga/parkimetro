@@ -9,6 +9,8 @@
 .barrapreto {margin-right: 5px;}
 #clientes .carousel-item {padding: 0px 140px;}
 article#post-45 #box1{padding: 15px 20px 0px;}
+.w-container{width: auto !important;}
+.m-row {margin-left: -12% !important;}
 }
 
 @media(max-width: 575px){
