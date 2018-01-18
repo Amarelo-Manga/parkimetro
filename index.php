@@ -28,7 +28,7 @@
  	<div class="barraamarela pl-0 ml-3 col-lg-2 col-md-2 col-sm-2" ></div>
  	<h2 class="col-lg-10 col-md-10 col-sm-10" style="width:auto"> Serviços <b class="titulo">Oferecidos</b></h2>
 	</div>
-	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que a Parkímetro oferece para seu negócio.</p>
+	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que o Parkímetro oferece para seu negócio.</p>
 	<div class="container">
  	<div class="row ">
   <div class="col-lg-6 col-md-6 col-sm-12 mb-3 servicos">
@@ -67,7 +67,7 @@
 				<b class="titulo">Escolher a <br>
 				Parkímetro</b>
 				</h2>
-			<p class="descricao my-5 txt-razoes">O Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de qualidade para você e seu veículo, no momento em que precisar!</p>
+			<p class="descricao my-5 txt-razoes">O Parkímetro possui <br>estacionamentos em diversas <br> cidades e traz conforto e <br>segurança onde você estiver. <br> Garantia de qualidade <br> para você e seu veículo, no <br> momento em que precisar!</p>
 
 			<a href="<?php the_permalink(64); ?>" class="mb-3 mt-3 btn fundo-amarelo text-dark call_to_action_redondo">MAIS DETALHES</a>
 			</div>
@@ -87,45 +87,43 @@
 			</div>	
 		<p class="descricao mb-5 text-dark m-txt">Detalhes que fazem toda a diferença, entenda por que cuidamos melhor do seu veículo.</p>
 	</div>
-		<div class="container">
-		<div class="row ml-3 mr-3">
-			<div class="item col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 28 anos no mercado">
-				<p class="descricao">Tradição de mais de 28 anos no mercado</p>
+		<div class="w-container">
+		<div class="row ml-3">
+			<!-- <div class="row ma-bot"> -->
+				<div class="item col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 28 anos no mercado">
+					<p class="descricao-icon">Tradição de mais de <br> 28 anos no mercado</p>
+				</div>
+			
+				<div class="item descricao col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/perfil.png" alt="Rigoroso processo de seleção e recrutamento">
+					<p class="descricao-icon">Rigoroso processo de <br>seleção e recrutamento</p>
+				</div>
+			
+				<div class="item descricao col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/colaboradores.png" alt="Colaboradores treinados e capacitados">
+					<p class="descricao-icon">Colaboradores treinados <br>e capacitados</p>
+				</div>
+				<div class="item descricao col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/atendimento.png" alt="Atendimento ao consumidor">
+					<p class="descricao-icon">Atendimento ao <br>consumidor</p>
+				</div>
+			<!-- </div> -->
+
+			<div class="row ml-3 mt-5 w-container">
+				<div class="item descricao col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/profissionais.png" alt="Profissionais identificados e uniformizados">
+					<p class="descricao-icon">Profissionais identificados <br>e uniformizados</p>
+				</div>
+				<div class="item descricao col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/segurança.png" alt="Segurança em primeiro lugar">
+					<p class="descricao-icon">Segurança em <br>primeiro lugar</p>
+				</div>
+				<div class="item descricao col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/cobertura.png" alt="Cobertura de acidentes através da Tokio Marine Seguros">
+					<p class="descricao-icon">Cobertura de acidentes através <br> da Tokio Marine Seguros</p>
+				</div>
 			</div>
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/perfil.png" alt="Rigoroso processo de seleção e recrutamento">
-				<p class="descricao">Rigoroso processo de seleção e recrutamento</p>
-			</div>
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/colaboradores.png" alt="Colaboradores treinados e capacitados">
-				<p class="descricao">Colaboradores treinados e capacitados</p>
-			</div>
-			
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/atendimento.png" alt="Atendimento ao consumidor">
-				<p class="descricao">Atendimento ao consumidor</p>
-			</div>
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/profissionais.png" alt="Profissionais identificados e uniformizados">
-				<p class="descricao">Profissionais identificados e uniformizados</p>
-			</div>
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/segurança.png" alt="Segurança em primeiro lugar">
-				<p class="descricao">Segurança em primeiro lugar</p>
-			</div>
-			
-			
-			<div class="item descricao col-lg-3 col-md-4 col-sm-6 p-zero">
-				<img src="<?php echo get_template_directory_uri()?>/assets/images/cobertura.png" alt="Cobertura de acidentes através da Tokio Marine Seguros">
-				<div class="descricao">Cobertura de acidentes através da Tokio Marine Seguros</div>
-			</div>
-			<!--/div-->
 			</div>
   		</div>
    		
@@ -145,7 +143,7 @@
    		<h2 class="text-white ml-3 margin-mobile p-left">Estacionamentos</h2>
    		 
    	</div>
-   	<p class="descricao text-white margem">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>  
+   	<p class="descricao text-white margem1">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>  
    	
 	 <div class="container pb-4">
 		<div class="row m-row"> 
@@ -164,7 +162,7 @@
 		<div class="col-lg-3 col-md-6 col-sm-6 m-center" >		
 			<a href="<?php echo get_post_type_archive_link('rede').'#'. $term->slug ;?> ">	
 				<img src="<?php echo $term_meta['image']; ?>" >
-				<div class="p-3 mb-2 fundo-amarelo text-center largura">
+				<div class="p-amarelo mb-2 fundo-amarelo text-center largura">
 				<h3 class=" estacionamento-texto"><? echo $term->name ; ?></h3></div>
 			</a>
 
