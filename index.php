@@ -13,7 +13,7 @@
 		<p class="text-white">Facilidade para você <br> e seus clientes!</p>
 		<a href="<?php the_permalink(139); ?>"  class="saiba-mais">saiba mais</a>	
 	</div>
-	<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkimetro">
+	<img class="posicionamento-slider-mulher" src="<?php echo get_template_directory_uri()?>/assets/images/mulher-convenio.png" alt="Mulher com selo convênio parkímetro">
  </div>	
 </section>
  <!--Fim Slide -->
@@ -28,7 +28,7 @@
  	<div class="barraamarela pl-0 ml-3 col-lg-2 col-md-2 col-sm-2" ></div>
  	<h2 class="col-lg-10 col-md-10 col-sm-10" style="width:auto"> Serviços <b class="titulo">Oferecidos</b></h2>
 	</div>
-	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que a Parkimetro oferece para seu negócio.</p>
+	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que a Parkímetro oferece para seu negócio.</p>
 	<div class="container">
  	<div class="row ">
   <div class="col-lg-6 col-md-6 col-sm-12 mb-3 servicos">
@@ -65,7 +65,7 @@
 			<div class="barraamarela pl-0 ml-2 ma-top "></div>
 				<h2 class="mt-1">Razões para <br>
 				<b class="titulo">Escolher a <br>
-				Parkimetro</b>
+				Parkímetro</b>
 				</h2>
 			<p class="descricao my-5 txt-razoes">O Parkímetro possui estacionamentos em diversas cidades e traz conforto e segurança onde você estiver. Garantia de conforto e qualidade para você e seu veículo, no momento em que precisar!</p>
 
