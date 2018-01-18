@@ -21,7 +21,7 @@
                 </div>
                 <div class="row">
                     <nav id="main_menu" class="navbar navbar-expand-lg navbar-light sobrepor espacamento-mobile">
-                        <a class="navbar-brand col-lg-4 logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkimetro"></a>
+                        <a class="navbar-brand col-lg-4 logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="Logo Parkímetro"></a>
                         <div id="menu" class="col-lg-8">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
