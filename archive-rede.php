@@ -48,7 +48,7 @@ get_header(); ?>
 				?>
 			</select>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-12">
+		<div class="col-lg-4 col-md-4 col-sm-12 mb-busca">
 			<p>Buscar</p>
 			<input type="search" value="" id="filterSearch" placeholder="Digite aqui" >	
  		</div>
