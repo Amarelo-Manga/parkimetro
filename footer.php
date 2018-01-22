@@ -27,7 +27,7 @@
 	</div>
 
    	<div class="container-fluid" style="background-color: #eeeeee;">
-   	<img src="<?php echo get_template_directory_uri()?>/assets/images/amarelo-manga.png" alt="logo Amarelo Manga Publicidade" class="text-center" style="margin-left: 50%;">
+   	<a href="http://amarelomanga.com.br/"><img src="<?php echo get_template_directory_uri()?>/assets/images/amarelo-manga.png" alt="logo Amarelo Manga Publicidade" class="text-center" style="margin-left: 50%;"></a>
    	</div>
    </footer>
    
