@@ -26,7 +26,7 @@ get_header(); ?>
 			$municipios =  get_terms( array( 'post_types' => 'rede', 'taxonomy' => 'municipio' ) );
 			$estabelecimentos =  get_terms( array( 'post_types' => 'rede', 'taxonomy' => 'estabelecimento' ) );
 		?>
-		<div class="col-lg-4 col-md-4 col-sm-12">
+		<div class="col-lg-4 col-md-4 col-sm-12 mb-municipio">
 			<p>Selecione o município</p>
 			<select id="select_municipio">
 				<option value="all">Selecione</option>
@@ -37,7 +37,7 @@ get_header(); ?>
 				?>
 			</select>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-12">
+		<div class="col-lg-4 col-md-4 col-sm-12 mb-estabelecimento">
 			<p>Selecione o estabelecimentos</p>
 			<select  id="select_estabelecimento">
 				<option value="all">Selecione</option>
