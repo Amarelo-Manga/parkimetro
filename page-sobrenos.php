@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("sobrenos container"); ?>>
-	<div class="row">
+	<div class="row ">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<?php twentyseventeen_edit_link( get_the_ID() ); ?>
@@ -38,13 +38,14 @@ get_header(); ?>
 		$texto = $box1['texto'];
 		if( !empty( $box1 ) ){
 	?>
-	<div class="row">
+	<div class="row ml-row">
 		<div class="img-noresponsive col-lg-6 col-md-6 col-sm-12">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 		</div>
 		<div id="box1"  class="content col-lg-6 col-md-6 col-sm-12">
 			<h3><?php echo $titulo; ?></h3>
 			<?php echo $texto; ?>
+			<br>
 		</div>
 	</div>
 	<?php 
@@ -53,7 +54,7 @@ get_header(); ?>
 		$box3 = get_post_meta( $post->ID, '_box3', true );
 		if( !empty( $box2 ) || !empty( $box3 ) ){
 	?>
-	<div class="row">
+	<div class="row ml-row">
 		<?php 
 			$image_id = $box2['image'];
 			$image_url = wp_get_attachment_url( $image_id );
@@ -66,6 +67,7 @@ get_header(); ?>
 			<h3><?php echo $subtitulo; ?></h3>
 		
 			<?php echo $texto; ?>
+
 		</div>
 
 		<?php 
@@ -77,6 +79,7 @@ get_header(); ?>
 		<div id="box3" class="col-lg-6 col-md-6 col-sm-12">
 			<h3><?php echo $titulo; ?></h3>
 			<?php echo $texto; ?>
+			<br>
 		</div>
 	</div>
 	<?php 
