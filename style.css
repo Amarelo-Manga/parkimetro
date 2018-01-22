@@ -23,6 +23,7 @@ p{font-family: 'Quicksand'!important;}
 .titulo, h2{font-size: 30px !important;}
 .descricao,.descricao-icon{font-size:14px;}
 p.descricao,p.descricao-icon {margin-top: 10px;font-size: 15px;}
+a:hover {text-decoration:none !important;}
 /*.navbar-light .navbar-toggler{border-color: #fff;}*/
 .fundo-diferenciais{background-image: url(assets/images/razoes.jpg); background-size: cover; height: 100%;  width: 100%;}
 .fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;padding-left: 2%;padding-right: 30%;}
@@ -67,7 +68,7 @@ section.estacionamento .m-center{padding: 0px 10px;overflow: hidden;}
 .ma-bot{margin-bottom: 3rem;}
 /*main menu*/
 #main_menu{margin: 0px;padding: 0px;width:100%;}
-#main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase;}
+#main_menu a{color:#fff;padding: 0px 10px;margin:0px;font-family: DesignSystemB-500R;letter-spacing: 1px;font-size: 15px;text-transform: uppercase; text-decoration: none;}
 #main_menu #menu{margin-top:20px}
 #main_menu .logo{margin-top: -50px;}
 #main_menu .menu-item{padding: 8px;}
@@ -107,7 +108,7 @@ article a:hover{text-decoration: none;color:#000;}
 #clientes .image-item{display: inline-block;margin:0px 0px;} 
 .m-txt{margin-left: 32px; font-weight: 500;}
 .p-amarelo{padding:10px;}
-.w-container{width: 95%;}
+.w-container{width: 96%;}
 .p-bottom{padding-bottom:5rem;}
 /* .m-left{margin-left: 3rem !important;} */
 /*Page Sobre Nos*/
