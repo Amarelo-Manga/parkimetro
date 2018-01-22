@@ -3,17 +3,25 @@
 .w-50 {width: 100%!important;}
 .figura{display: none !important;}
 .menu-header-container {margin-left: -17px;}
-.m-left{margin-left: 0px !important;}
+/* .m-left{margin-left: 0px !important;} */
 .logo-footer{margin-left: 5%;}
 .barrapreto.ml-5{margin-left:1rem !important;}
 .barrapreto {margin-right: 5px;}
 #clientes .carousel-item {padding: 0px 140px;}
 article#post-45 #box1{padding: 15px 20px 0px;}
-.w-container{width: auto !important;}
+.w-container{width: 115% !important;}
 .m-row {margin-left: -12% !important;}
+.txt-razoes{font-size: 14px !important;}
 }
 
 @media(max-width: 575px){
 	div.col-md-6.m-center{margin-left: 25%;}
-
+	.col-lg-6.col-md-7.col-sm-12.razoes {margin-left: 100px;}
+	.w-container {width: 100% !important;}
+	.m-txt {margin-left: 0px;}
+	.ml-3{margin-top: 0px !important; margin-left: 0px !important;}
+	.margem {margin-left: 89px !important;}
+	.margem1 {margin-left: 5rem !important;}
+	.m-container {margin-left: 18%!important;}
+	.item{margin-left: 100px !important;}
 }
