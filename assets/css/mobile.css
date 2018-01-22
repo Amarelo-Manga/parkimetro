@@ -11,6 +11,7 @@
 
   	.slider{margin-bottom: 20px;}
   	.home .container{margin-bottom: 20px;}
+    .m-container {padding-top: 15px;}
 
   	#box1{padding: 10px 20px 0px;}
   	#box2{padding: 30px 20px;}
@@ -44,14 +45,16 @@
   	.ml-3,.mt-5{margin:0px!important;}
   	.margem{margin:0px!important}
   	.figura-rodape{display: none!important;}
-	  div.col-md-6.m-center{margin:0 24px;}
+	  div.col-md-6.m-center{margin:0 px;}
     .mr-4 {margin-right: 0.5rem!important;}
     .btn-solicite{padding:8px;}
     .w-container{width: auto !important;}
     article#servico .texto{padding: 45px;}
     article#post-45 #box1 {padding: 20px 20px 0px;}
-
+    .mb-busca{margin-bottom: 10px;}
+    .margem1 {margin-left: 1rem !important;}
 
 }
+
 
 
