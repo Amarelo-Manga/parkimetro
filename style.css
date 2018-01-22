@@ -18,6 +18,7 @@ p{font-family: 'Quicksand'!important;}
 .amarelo, .btn-outline-warning{color: #f9d331 !important;}
 .fundo-amarelo{background-color: #f9d331!important;color:#fff}
 /*Tamanho da fonte*/
+a.btn:hover {color: #fff;}
 .titulo-slide{font-size: 38px;}
 .texto-slide{font-size:26px;}
 .titulo, h2{font-size: 30px !important;}
