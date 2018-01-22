@@ -19,7 +19,7 @@
 
 get_header(); ?>
 
-<article id="servico" <?php post_class(" container diferenciais"); ?>>
+<article id="servico" <?php post_class(" container servico"); ?>><!-- diferenciais -->
 	<div class="row">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -61,7 +61,7 @@ get_header(); ?>
 		<div id="box2" class="col-lg-6 col-md-6 col-sm-12 box">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 			<h3><?php echo $titulo; ?></h3>
-			<div class="texto">
+			<div class="texto text-dark">
 			<?php echo $texto; ?>
 			</div>
 		</div>
