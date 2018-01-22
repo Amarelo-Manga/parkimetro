@@ -39,7 +39,7 @@ get_header(); ?>
 		$texto = $box1['texto'];
 		if( !empty( $box1 ) ){
 	?>
-	<div class="row">
+	<div class="row ml-row">
 		<div class="img-noresponsive col-lg-6 col-md-6 col-sm-12">
 			<img src="<?php echo $image_url; ?>" title="<?php echo $titulo; ?>" alt="<?php echo $titulo; ?>">
 		</div>
@@ -52,7 +52,7 @@ get_header(); ?>
 		$box2 = get_post_meta( $post->ID, '_box2', true );
 		if( !empty( $box2 ) ){
 	?>
-	<div class="row">
+	<div class="row ml-row">
 		<?php 
 			$image_id = $box2['image'];
 			$image_url = wp_get_attachment_url( $image_id );
