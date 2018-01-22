@@ -25,7 +25,7 @@ p{font-family: 'Quicksand'!important;}
 p.descricao,p.descricao-icon {margin-top: 10px;font-size: 15px;}
 /*.navbar-light .navbar-toggler{border-color: #fff;}*/
 .fundo-diferenciais{background-image: url(assets/images/razoes.jpg); background-size: cover; height: 100%;  width: 100%;}
-.fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;}
+.fundo-diferenciais-amarelo{background-image:url(assets/images/diferenca.jpg); background-size:cover; height: 100%; width: 100%;padding-left: 2%;padding-right: 30%;}
 .borda-baixo {border-bottom: 1px solid #7e7e7e; width:100%; height: 10px;}
 .btn-outline-warning{border-color:#f9d331 !important;}
 .btn-outline-warning:hover {color: #fff !important;background-color: #ffc107;border-color: #ffc107;}
@@ -48,16 +48,19 @@ border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !import
 .item img {margin-bottom: 10px;}
 .estacionamento{background-image:url('assets/images/estacionamento.jpg'); background-size: cover;}
 .estacionamento-texto{font-family: DesignSystemB-700R; color: #5d4f16; font-size:16px; text-transform: uppercase; text-align: center; margin-top: 10px;}
+section.estacionamento .m-center{padding: 0px 10px;overflow: hidden;}
 .largura{width:283px;}
 .corpo-card{background-color:transparent !important;}
 .medidas{padding: 0; border: none; height: auto;}
 .figura{display:flex!important; justify-content: flex-end!important;}
 .figura-rodape{height:70px; margin-top: 4rem;}
-.margem{margin-left:16.5% !important;}
-.margem1{margin-left:16%; }
-.m-row{margin-left: -8% !important;margin-top: 40px;}
-.logo-footer{width: auto; height: 54px;margin-top: 3rem;margin-right: 1rem;}
-.servicos{padding-left: 15px!important;padding-right: 15px !important;}
+.margem{margin-left:391px !important;}
+.margem1{margin-left:24rem; }
+.m-row{margin-left: -5px !important;margin-top: 40px;}
+.logo-footer{width: auto; height: 54px;margin-top: 3rem;margin-right: 1rem;margin-left: 10px;}
+.servicos{padding-left: 15px!important;padding-right: 15px !important;margin-left: -20px !important;}
+.fixar-botao{padding-top: 20px;}
+.ml-row{margin-left: -5px !important;}
 /* 	 */
 .p-left{padding-left: 8px;}
 .ma-top{margin-top: 1rem;}
@@ -74,9 +77,12 @@ button.navbar-toggler.collapsed {margin-bottom: 1rem;}
 header{border-bottom: 3px solid #f9d330;}
 button.navbar-toggler{background-color: #f9d331;}
 #main_menu .logo{margin-top: 1rem;}
-#main_menu{margin-left: 20px;margin-bottom: 1rem;}
+#main_menu{/* margin-left: 20px; */margin-bottom: 1rem;}
 article header{background:#fff!important;width: 100%;}
-#post-45 header.entry-header{border-bottom: 3px solid #f9d330;}
+#post-45 header.entry-header{border-bottom: 3px solid #f9d330;margin-left: 10px;}
+#post-45 header h1{padding: 10px 7px 0px;}
+#post-45 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {margin-left: 5px;width:565px; }
+article#post-45 #box1 {padding: 40px 35px 0px;}
 article header.entry-header{border-bottom:0px;padding: 20px 0px;}
 article header.entry-header .col-6{display: inline-block;font-size:16px;float:right;}
 article header h1{font-family: DesignSystemB-500R;font-size: 2em;padding: 10px 40px 0px;margin-top: 20px;margin-bottom: 0px;display: inline-block;}
@@ -84,33 +90,34 @@ article header h1:before{content:""; display: inline-block; width: 50px; height:
 article h3{font-family: DesignSystemB-500R;}
 article h4{font-family: DesignSystemB-300R;}
 article .entry-content{margin-top: 20px;}
-article .entry-content p{margin-right:20px;}
+article .entry-content p{/* margin-right:20px; */margin-left: 30px;}
 article .col-6{padding: 0px;}
 article img{width: 100%;height:auto;margin-top: 0px;}
 article a{font-family: DesignSystemB-500R;display:inline-block;background:#f9d330;border-radius:10px; padding: 5px 20px;color: #5d4f16;margin-top: 10px;}
 article a:hover{text-decoration: none;color:#000;}
-article#post-45 #box1 {padding: 40px 20px 0px;}
+
 #box1{padding: 50px 90px 0px;} 
 #box2{padding: 50px 90px;color:#fff;}
 #box3{padding: 50px 90px 0px;background: #f9d331;} 
 #box3 .servicos-icon{display: inline-block;font-family: 'Quicksand'!important;margin-right:40px;margin-top: -10px;}
 #box3 .servicos-icon img{width: 80px;margin-bottom: 10px;}
-#box3 a{border:1px solid #000;margin-bottom: 20px; margin-top: 20px;}
+#box3 a{border:1px solid #000;margin-bottom: 40px; margin-top: 20px;}
 #clientes{background:#f0f0f0;padding: 20px 10px;}
 #clientes .carousel-item{padding:0px 140px;}
 #clientes .image-item{display: inline-block;margin:0px 0px;} 
 .m-txt{margin-left: 32px; font-weight: 500;}
 .p-amarelo{padding:10px;}
-.w-container{width: 75%;}
+.w-container{width: 95%;}
+.p-bottom{padding-bottom:5rem;}
 /* .m-left{margin-left: 3rem !important;} */
 /*Page Sobre Nos*/
 .sobrenos #conteudo{padding: 10px!important;margin-top: 20px;}
 .text-sobre{margin-top: 30px;}
-.text-sobre1{margin-bottom: 30px; margin-top: 40px;}
+.text-sobre1{margin-bottom: 40px; margin-top: 40px;}
 /*page diferenciais*/
-article.diferenciais #box1{background: #f9d331;padding: 0px;text-align: center;padding: 60px 0px 0px;text-align: center;}
+article.diferenciais #box1{background: #f9d331;padding: 0px;text-align: center;padding: 40px 0px 0px;text-align: center;}
 article.diferenciais .entry-content{float:right}
-article.diferenciais .diferenciais-icon{display: inline-block;font-family: 'Quicksand'!important;text-align: center;margin: 14px 14px;font-size: 14px;}
+article.diferenciais .diferenciais-icon{display: inline-block;font-family: 'Quicksand'!important;text-align: center;margin: 18px 14px;font-size: 14px;}
 article.diferenciais .diferenciais-icon img{width: auto;margin-bottom: 10px;}
 article.diferenciais #box2{color:#000;padding: 25px 90px 0px 0px;}
 article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10px;margin-bottom: 20px;}
@@ -118,13 +125,19 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 .archive header{padding-top:20px;}
 .archive header h3{font-family: DesignSystemB-500R;font-size: 1.5em;padding: 0px 0px;margin-bottom: 0px;display: inline-block;}
 .archive header h3:before{content:""; display: inline-block; width: 50px; height: 25px;background:#f9d330;margin-right: 20px;-webkit-transform: skew(-30deg);-moz-transform: skew(-30deg);-o-transform: skew(-30deg);}
-#filtros{margin:20px 0px;}
+#filtros{margin:20px -14px;}
 #filtros .col-4{margin-left:0px;padding-left: 0px;}
-#filtros select{background: #f9d331;border: 0px;height: 40px;font-family: DesignSystemB-300r !important;width: 100%;}
+#filtros select{background: #f9d331;border: 0px;height: 40px;font-family: DesignSystemB-300r !important;width: 99%; margin-left: -6px;}
+select#select_estabelecimento {margin-left: -18px;}
+section#artigos {margin-left: -29px;}
 #filtros p{font-family: 'Quicksand'!important;margin-bottom: 1px;font-size: 1em;}
 .item-rede{max-width:30%!important;background: #fafafa;border:1px solid #c7c6c4;border-bottom: 8px solid #f9d331;text-align: center;padding: 50px 70px;margin-bottom:20px;}
 .item-rede{margin-left: 2%;}
-#filterSearch{background: #000;width: 100%;border: 0px;padding: 8px 10px;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;}
+#filterSearch{background: #000;width: 99%;border: 0px;padding: 8px 10px;border-radius: 5px;color: #fff;font-family: DesignSystemB-300I !important;margin-left: -28px;}
+.mb-busca p {margin-left: -28px;}
+.mb-estabelecimento p {margin-left: -18px;}
+.mb-municipio p {margin-left: -6px;}
+.post-type-archive-rede header.row {margin-left: -5px;padding-left: 7px;}
 #filterSearch::placeholder,
 #filterSearch::-webkit-input-placeholder{color:#fff;}
 #filterSearch::-moz-placeholder,
@@ -140,9 +153,14 @@ article.diferenciais #box2 h4{border-bottom:3px solid #f9d331;padding-bottom: 10
 article#servico .box{background: transparent;display: inline-block;padding: 0px;max-width: 45%;margin: 0px 2%;}
 article#servico h3{font-family: DesignSystemB-300I;font-size: 2em;color: #fff;margin-top: -70px;text-align: left;padding-left: 40px;}
 article#servico p{font-family: 'Quicksand'!important;}
-article#servico .texto{background: #eee;padding: 40px;text-align: left;min-height: 460px;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;}
+article#servico .texto{background: #eee;padding: 40px;text-align: left;min-height: 490px;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;}
 article#servico a{color:#000;text-transform:uppercase;float:right;}
-.btn-mensalista{margin-top: 36px;}
+#servico article .entry-content p{margin-left: 10px;}
+.page-id-139 article header h1{padding: 10px 17px 0px !important;}
+.page-id-139 article .entry-content p{margin-left: 10px;}
+.page-id-139 article#servico .box{margin: 0px 1%;}
+.post-type-archive-rede archive header h3{padding: 0px 16px;}
+.btn-mensalista{margin-top: 60px;}
 /* Contato */
 #contato{font-family:'Quicksand';}
 #contato label{width: 100%;font-family: DesignSystemB-500I;}
@@ -155,11 +173,13 @@ article#servico a{color:#000;text-transform:uppercase;float:right;}
 #contato #box1 h4{font-size: 1.2em;margin-top: 15px;font-family: DesignSystemB-500R;}
 #contato #box1 strong{display: block;margin-top: 5px;}
 #contato #box1 .fa-mobile{font-size: 35px;}
+footer{margin-top: 20px;}
 @media(max-width:1700px){.m-row{margin-left:7% !important;}}
-@media(max-width: 1199px){.txt-razoes{/* padding: 0px 50px 0px 0px; */}.m-row {margin-left: 0% !important;}article a{margin-top:-8px;}p.texto-mensalista {padding: 10px;}#contato #box1{height: max-content;}article.diferenciais .diferenciais-icon{margin: 11px 12px;font-size: 12px;}}
-@media(max-width: 1024px){.m-row {margin-left: -7% !important;}.w-container{width: auto !important;}}
-@media(max-width: 991px){article#post-45 #box1 {padding: 0px 20px 0px;}img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {margin-top: 30px;}#box3 .servicos-icon{margin-left: 30px;margin-top: 5px;}article a{padding: 5px 13px;}#clientes .carousel-item{padding: 0px 0px;}article.diferenciais #box2{margin-top: -220px;}}
-@media(max-width:767px){article#servico .box{max-width: 100%; margin: 22px 2%;}.btn-mensalista{margin-top: 0px;}.m-row {margin: 0px -80px 0px -50px !important;}article.diferenciais #box2{margin-top:0px; margin-bottom: 1rem;}}
+@media(max-width: 1440px){.margem{margin-left: 150px !important;}.margem1{margin-left: 9rem;}.w-container{width: 130%;}}
+@media(max-width: 1199px){.txt-razoes{/* padding: 0px 50px 0px 0px; */}.m-row {margin-left: 15% !important;}article a{margin-top:-8px;}p.texto-mensalista {padding: 10px;}#contato #box1{height: max-content;}article.diferenciais .diferenciais-icon{margin: 11px 12px;font-size: 12px;}.w-container {width: 95%;}.btn-mensalista{margin-top: 45px;}}
+@media(max-width: 1024px){.m-row {margin-left: -7% !important;}.w-container{width: 95% !important;}.figura{display: none !important;}.ml-3{margin-left:0.25rem !important;}.margem1 {margin-left: 2rem;}.margem{margin-left:45px;}.col-lg-6.col-md-7.col-sm-12.razoes{margin-left: -50px; }.margem{margin-left: 40px !important;} .m-estacionamento{margin-left: -8px !important;}}
+@media(max-width: 991px){article#post-45 #box1 {padding: 0px 20px 0px;}img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {margin-top: 30px;}#box3 .servicos-icon{margin-left: 30px;margin-top: 5px;}article a{padding: 5px 13px;}#clientes .carousel-item{padding: 0px 0px;}article.diferenciais #box2{margin-top: -220px;}.btn-mensalista{margin-top: -4px;}}
+@media(max-width:767px){article#servico .box{max-width: 100%; margin: 22px 2%;}.btn-mensalista{margin-top: 0px;}.m-row { margin:0!important;/* margin: 0px -80px 0px -50px !important; */}article.diferenciais #box2{margin-top:0px; margin-bottom: 1rem;}.m-estacionamento {margin-left: -88px !important;}.col-lg-6.col-md-7.col-sm-12.razoes{margin-left: 11px;}.m-container{margin-left: 18%;}.w-container}{margin-left: 30px;}.margem1 {margin-left: 7rem !important;}.margem {margin-left: 114px !important;}.m-estacionamento{margin-left: -16px !important;}.logo-footer{margin-left: 2%;} }
 @media(max-width: 660px){.m-row {margin:0;}}
 /*404*/
 .bg404{background-image: url('assets/images/fundo404.jpg'); background-repeat: no-repeat;background-size: cover; height: 80vh;}
