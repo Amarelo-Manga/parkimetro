@@ -624,3 +624,15 @@ require get_template_directory() . '/inc/taxonomies-nossa-rede.php';
  * Metaboxes image upload taxonomy estabelecimento
  */
 require get_template_directory() . '/inc/metaboxes/image-upload-taxonomy-estabelecimento.php';
+/**
+* Style Minify
+**/
+function style_or_min_style( $stylesheet_uri, $stylesheet_dir_uri ) {
+    $located = locate_template( 'style.min.css' );
+	if ($located != '' ) {
+	    return trailingslashit( $stylesheet_dir_uri ) . 'style.min.css';
+	} else {
+	   return trailingslashit( $stylesheet_dir_uri ) . 'style.css';
+	}
+}
+add_filter( 'stylesheet_uri', 'style_or_min_style', 10, 2);
