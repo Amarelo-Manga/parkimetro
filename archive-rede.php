@@ -18,7 +18,7 @@ get_header(); ?>
 			<h3>Principais pontos em operação</h3>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-12">
-			<p>Clique no endereço de nossas unidades e encontre uma <br >unidade perto de você.</p>
+			<p>Clique no endereço de nossos estacionamentos e encontre uma <br> unidade perto de você.</p>
 		</div>
 	</header><!-- .page-header -->
 	<section id="filtros" class="row">
@@ -38,7 +38,7 @@ get_header(); ?>
 			</select>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-12 mb-estabelecimento">
-			<p>Selecione o estabelecimentos</p>
+			<p>Selecione o estabelecimento</p>
 			<select  id="select_estabelecimento">
 				<option value="all">Selecione</option>
 				<?php

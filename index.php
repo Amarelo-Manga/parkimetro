@@ -17,7 +17,6 @@
  </div>	
 </section>
  <!--Fim Slide -->
-   
 <!--Serviços-->
  <section class="container mt-5 mb-5">
   <div class="figura" style="margin-top:-9%;margin-bottom: 35px;">
@@ -28,7 +27,7 @@
  	<div class="barraamarela pl-0 ml-3 col-lg-2 col-md-2 col-sm-2" ></div>
  	<h2 class="col-lg-10 col-md-10 col-sm-10" style="width:auto"> Serviços <b class="titulo">Oferecidos</b></h2>
 	</div>
-	<p class="descricao mb-4">Facilidade e conforto para você seu cliente, conheça os serviços que o Parkímetro oferece para seu negócio.</p>
+	<p class="descricao mb-4">Facilidade e conforto para você e seu cliente. Conheça os serviços que o Parkímetro oferece para seu negócio.</p>
 	<div class="container">
  	<div class="row ">
   <div class="col-lg-6 col-md-6 col-sm-12 mb-3 servicos">
@@ -91,13 +90,13 @@
 		<div class="row ml-3">
 			<!-- <div class="row ma-bot"> -->
 				<div class="item col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
-					<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 28 anos no mercado">
-					<p class="descricao-icon">Tradição de mais de <br> 28 anos no mercado</p>
+					<img src="<?php echo get_template_directory_uri()?>/assets/images/casapng.png" alt="Tradição de mais de 30 anos no mercado">
+					<p class="descricao-icon">Tradição de mais <br> de 30 anos</p>
 				</div>
 			
 				<div class="item descricao col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
 					<img src="<?php echo get_template_directory_uri()?>/assets/images/perfil.png" alt="Rigoroso processo de seleção e recrutamento">
-					<p class="descricao-icon">Rigoroso processo de <br>seleção e recrutamento</p>
+					<p class="descricao-icon">Rigoroso processo <br> de seleção</p>
 				</div>
 			
 				<div class="item descricao col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
@@ -106,14 +105,14 @@
 				</div>
 				<div class="item descricao col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
 					<img src="<?php echo get_template_directory_uri()?>/assets/images/atendimento.png" alt="Atendimento ao consumidor">
-					<p class="descricao-icon">Atendimento ao <br>consumidor</p>
+					<p class="descricao-icon">Atendimento <br> ao consumidor</p>
 				</div>
 			<!-- </div> -->
 
 			<div class="row ml-3 mt-5 mb-5 w-container">
 				<div class="item descricao col-xl-4 col-lg-6 col-md-6 col-sm-6 ">
 					<img src="<?php echo get_template_directory_uri()?>/assets/images/profissionais.png" alt="Profissionais identificados e uniformizados">
-					<p class="descricao-icon">Profissionais identificados <br>e uniformizados</p>
+					<p class="descricao-icon">Profissionais <br> identificados <br>e uniformizados</p>
 				</div>
 				<div class="item descricao col-xl-4 col-lg-6 col-md-6 col-sm-6 ">
 					<img src="<?php echo get_template_directory_uri()?>/assets/images/segurança.png" alt="Segurança em primeiro lugar">
@@ -121,7 +120,7 @@
 				</div>
 				<div class="item descricao col-xl-4 col-lg-6 col-md-12 col-sm-12 ">
 					<img src="<?php echo get_template_directory_uri()?>/assets/images/cobertura.png" alt="Cobertura de acidentes através da Tokio Marine Seguros">
-					<p class="descricao-icon">Cobertura de acidentes através <br> da Tokio Marine Seguros</p>
+					<p class="descricao-icon">Cobertura <br> de acidentes <br>por Cia de Seguros</p>
 				</div>
 			</div>
 			</div>
@@ -143,7 +142,7 @@
    		<h2 class="text-white ml-3 margin-mobile p-left">Estacionamentos</h2>
    		 
    	</div>
-   	<p class="descricao text-white margem1">Possuimos diversos estacionamentos espalhados  por pontos importantes  <br> de São Paulo e Santo André, encontre um perto de você.</p>  
+   	<p class="descricao text-white margem1">Possuímos diversos estacionamentos espalhados por pontos importantes <br> de São Paulo e Santo André. Encontre um perto de você.</p>  
    	
 	 <div class="container p-bottom">
 		<div class="row m-estacionamento"> 
@@ -159,7 +158,7 @@
 			$term_meta = get_option( "estabelecimento_".$termid );
 		?> 
 
-		<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 m-center" >		
+		<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 m-center" >		
 			<a href="<?php echo get_post_type_archive_link('rede').'#'. $term->slug ;?> ">	
 				<img src="<?php echo $term_meta['image']; ?>" >
 				<div class="p-amarelo mb-2 fundo-amarelo text-center largura">

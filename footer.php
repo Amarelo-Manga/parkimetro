@@ -4,23 +4,27 @@
    		<div class="row">
    			
 			<img src="<?php echo get_template_directory_uri()?>/assets/images/parkimetro.png" alt="parkimetro" class="logo-footer" >
-		<img src="<?php echo get_template_directory_uri()?>/assets/images/figuras.png" alt="" class="figura-rodape mr-5">
+			<img src="<?php echo get_template_directory_uri()?>/assets/images/figuras.png" alt="" class="figura-rodape mr-3">
 			
-					<div class="mt-5 alinhamento">
+					<div class="mt-4 ml-1 alinhamento">
 						<div class="card-body corpo-card">
 					  		 <h4 class="titulo-localizao"><b class="icones"></b> São Paulo</h4>
-					 		 <p class="descricao ">R. Frei Caneca, 371. 5ª Andar. <br>
+					 		 <p class="descricao ">R. Frei Caneca, 371. 5ª Andar <br>
 										Cerqueira César. SP. 01307.003 <br>
 										11 4323. 0455 / 11 4324. 0455</p>
 					  	</div>
 					</div>
-					<div class=" mt-5 alinhamento " >
+					<div class=" mt-4 mr-2 alinhamento" >
 						<div class="card-body corpo-card">
 					 		 <h4 class="titulo-localizao"> <b class="icones"></b>   Santo André</h4>
 					  		 <p class="descricao ">R. Álvares de Azevedo, 35. 5ª Andar <br>
 										   Centro. SP. 09020.140 <br>
 										   11 4436. 8637 / 11 4992. 3133</p>
 					  	</div>
+					</div>
+			<div class="mt-4 ml-2 webmail alinhamento" >
+				<img src="<?php echo get_template_directory_uri()?>/assets/images/email.png" alt="webmail">
+						<div class="card-body corpo-card"><a href="http://webmail.parkimetro.com.br/" target="_blank">Acesso<br>ao Webmail</a></div>
 					</div>
 	   		
 		</div>

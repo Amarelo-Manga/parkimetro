@@ -104,14 +104,14 @@ get_header(); ?>
 			  				$url_image = wp_get_attachment_url( $images[$i]['images'] ); 
 			  				$active = ( $i==0 ? ' active' : '' );
 
-			  				if( ($i % 4 ) == 0 ){
+			  				if( ($i % 5 ) == 0 ){
 			  					echo '<div class="carousel-item row '.$active.'">';
 			  				}
-			  				echo '<div class="image-item col-lg-3 col-md-3 col-sm-12">';
+			  				echo '<div class="image-item col-lg-2 col-md-2 col-sm-12">';
 				  			echo '<img src="'.$url_image.'" alt="First slide">';
 				  			echo '</div>';
 
-				  			if( ($i % 4 ) == 3 ){
+				  			if( ($i % 5 ) == 4 ){
 				  				echo '</div>';
 				  			}
 			  			}
