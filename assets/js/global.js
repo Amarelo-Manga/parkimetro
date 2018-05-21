@@ -310,5 +310,30 @@
 	    .replace(/ç/g, 'c');
 	}
 
+	//Pagina Solicitacao de Mensalista, Escolha do Estacionamento Bootstrap Select  
+	$('#bootstrapSelectEst').on('change', function(e){
+	  console.log(this.value);
+	});
+
+
+	// Repeat Fields Descrição dos Veiculos
+	$(document).on('click', '.btn-add', function(e)
+	{
+		e.preventDefault();
+		var controlForm = $('#myRepeatingFields:first'),
+			currentEntry = $(this).parents('.entry:first'),
+			newEntry = $(currentEntry.clone()).appendTo(controlForm);
+		newEntry.find('input').val('');
+		controlForm.find('.entry:not(:last) .btn-add')
+			.removeClass('btn-add').addClass('btn-remove')
+			.removeClass('btn-success').addClass('btn-danger')
+			.html('<span class="glyphicon glyphicon-minus"></span>');
+	}).on('click', '.btn-remove', function(e)
+	{
+		e.preventDefault();
+		$(this).parents('.entry:first').remove();
+		return false;
+	});
+
 
 })( jQuery );
