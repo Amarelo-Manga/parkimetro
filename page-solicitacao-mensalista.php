@@ -21,27 +21,43 @@ get_header(); ?>
 			<a href="#">Solicitação de vaga concluída</a>
 		</div>
 	</section>
+	<section id="" class="row">
+		<div class="container">
+			<select class="selectpicker" data-show-subtext="true" data-live-search="true">
+		        <option data-subtext="Rep California">Tom Foolery</option>
+		        <option data-subtext="Sen California">Bill Gordon</option>
+		        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+		        <option data-subtext="Rep Alabama">Mario Flores</option>
+		        <option data-subtext="Rep Alaska">Don Young</option>
+		        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+	      	</select>
+	      	<br /><br /><br /><br /><br />
+			<?php 
+	            $args = array(
+	                'posts_per_page' => -1,
+	                'post_type' => 'rede'
+	            );
+	            $loop_rede = new WP_Query($args);
+	            $count = 0;
+	            while ($loop_rede->have_posts()) : $loop_rede->the_post();
+	            	$municipios = wp_get_post_terms( get_the_ID() , 'municipio' );
+	            	$estabeleci = wp_get_post_terms( get_the_ID() , 'estabelecimento' );
+	            	$endereco = get_post_meta( $post->ID, 'endereco', true );
+	            	$cod_unidade = get_post_meta( $post->ID, 'cod_unidade', true );
+	           ?>
+	           <article class="col-lg-4 col-md-4 col-sm-12 item-rede <?php echo $class_mun; echo $class_estab; ?>">
+	           		<p><?php // echo $endereco ?></p>
+	           		<a href="<?php //the_permalink(); ?>" >Veja no mapa</a>
+	           </article>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class("sobrenos container"); ?>>
-		<div class="row ">
-			<header class="entry-header">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
-			</header><!-- .entry-header -->
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<select>
-					<option>Teste</option>
-				</select>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<div id="conteudo">
-					<?php
-						the_content();
-					?>
-				</div><!-- .entry-content -->
-			</div>
+	        <?php
+				$count++;
+	            endwhile;
+	            wp_reset_query();
+			?>
 		</div>
-	</article><!-- #post-## -->
+	</section>
+
 	<section id="unidade"> 
 		<div class="container">
 			<h3>COD - UNIDADE XPTO</h3>

@@ -456,6 +456,13 @@ function twentyseventeen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// // Define CSS Select for page Solicitação de vaga
+	if ( is_page( 213 ) ) {
+		wp_enqueue_style( 'bootstrap-3-2', 'http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array( 'twentyseventeen-style' ), '1.0' );
+		wp_enqueue_style( 'bootstrap-select-min', get_theme_file_uri( '/assets/css/bootstrap-select.min.css' ), array( 'twentyseventeen-style' ), '1.0' );
+		wp_enqueue_script('bootstrap-select', get_template_directory_uri().'/assets/js/bootstrap-select.min.js');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 
