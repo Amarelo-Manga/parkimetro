@@ -447,7 +447,7 @@ function twentyseventeen_scripts() {
 		$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
 	}
 
-	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.min.js' ), array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 
 	// wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
@@ -457,10 +457,12 @@ function twentyseventeen_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// // Define CSS Select for page Solicitação de vaga
+	// Define CSS Select for page Solicitação de vaga
 	if ( is_page( 213 ) ) {
 		wp_enqueue_style( 'bootstrap-3-2', 'http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array( 'twentyseventeen-style' ), '1.0' );
 		wp_enqueue_style( 'bootstrap-select-min', get_theme_file_uri( '/assets/css/bootstrap-select.min.css' ), array( 'twentyseventeen-style' ), '1.0' );
+		wp_enqueue_style( 'solicitacao-mensalista', get_theme_file_uri( '/assets/css/solicitacao-mensalista.css' ), array( 'twentyseventeen-style' ), '1.0' );
+		wp_enqueue_script('bootstrap-3-3-2-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js');
 		wp_enqueue_script('bootstrap-select', get_template_directory_uri().'/assets/js/bootstrap-select.min.js');
 	}
 }
@@ -635,6 +637,7 @@ require get_template_directory() . '/inc/metaboxes/image-upload-taxonomy-estabel
 * Style Minify
 **/
 function style_or_min_style( $stylesheet_uri, $stylesheet_dir_uri ) {
+	return trailingslashit( $stylesheet_dir_uri ) . 'style.css';
     $located = locate_template( 'style.min.css' );
 	if ($located != '' ) {
 	    return trailingslashit( $stylesheet_dir_uri ) . 'style.min.css';
