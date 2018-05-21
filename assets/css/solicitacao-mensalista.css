@@ -1,0 +1,9 @@
+#solicitacao{}
+#solicitacao .bootstrap-select{width: 90%;background: #f9d331;margin: 10px;padding: 5px;}
+#solicitacao .bootstrap-select .btn-default{background: #f9d331;}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{color:#000}
+#solicitacao .text-muted{color: #272727!important;}
+.bootstrap-select.btn-group .dropdown-toggle .caret{display: none;}
+#etapa2 #lista ul li{display: inline-block;padding: 5px 10px;}
+#etapa2 #vagas ul li{display: inline-block;padding: 5px 10px;}
+#veiculos input{width: 100%;}
