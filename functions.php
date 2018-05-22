@@ -616,6 +616,10 @@ require get_template_directory() . '/inc/metaboxes/box3-page.php';
  * Metaboxes Box5
  */
 require get_template_directory() . '/inc/metaboxes/upload-clientes.php';
+/**
+ * PostType Mensalista
+ */
+require get_template_directory() . '/inc/posttype-mensalistas.php';
 
 /**
  * PostType Nossa Rede
