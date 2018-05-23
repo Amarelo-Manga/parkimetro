@@ -1,55 +1,17 @@
-#solicitacao{}
-#solicitacao #breadcrumb{
-	margin-top: 20px;
-	padding: 10px 0px;
-}
-
-#solicitacao #breadcrumb a{
-	position: relative;
-    display: inline-block;
-    width: 250px;
-    font-size: 1.5em;
-    color: #726b59;
-    background: #e6d7b7;
-    text-align: center;
-    padding: 8px 8px 8px 25px;
-    margin-left: -6px;
-}
-#solicitacao #breadcrumb a i{
-    color: #e6d7b7;
-    position: absolute;
-    right: -21px;
-    top: -14px;
-    font-size: 67px;
-    z-index: 999;
-}
-#solicitacao #breadcrumb a i.fa-angle-right{
-	font-size: 81px;
-    color: #fff;
-    top: -24px;
-    right: -24px;
-}
+#solicitacao #breadcrumb{margin-top: 20px;padding: 10px 0px;}
+#solicitacao #breadcrumb a{position: relative;display: inline-block;width: 250px;font-size: 1.5em;color: #726b59;background: #e6d7b7;text-align: center;padding: 8px 8px 8px 25px;margin-left: -6px;}
+#solicitacao #breadcrumb a i{color: #e6d7b7;position: absolute;right: -21px;top: -14px;font-size: 67px;z-index: 999;}
+#solicitacao #breadcrumb a i.fa-angle-right{font-size: 81px;color: #fff;top: -24px;right: -24px;}
 #solicitacao #breadcrumb a:hover, 
 #solicitacao #breadcrumb a.active {text-decoration: none;background: #fdb415;color: #000;}
 #solicitacao #breadcrumb a:hover i.fa-caret-right, #solicitacao #breadcrumb a.active i.fa-caret-right{color: #fdb415;}
-
 #solicitacao #breadcrumb a.conclused{text-decoration: none;background: #f9d331;color: #000;}
 #solicitacao #breadcrumb a.conclused i.fa-caret-right{color: #f9d331;}
-
 
 #etapa1 #filtros h3{font-family: Quicksand;margin-left: 10px;font-weight: 400;}
 #etapa1 .filter-option{color:#000;}
 #etapa1 .filter-option .text-muted{font-size: 90%;color:#000!important;}
-#etapa1 .dropdown-menu>li>a {
-    display: block;
-    padding: 3px 0px 3px 10px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: #333;
-    white-space: nowrap;
-    font-size: 1.3em;
-}
+#etapa1 .dropdown-menu>li>a {display: block;padding: 3px 0px 3px 10px;clear: both;font-weight: 400;color: #333;white-space: nowrap;font-size: 1.3em;}
 #etapa1 .bs-caret{display: none;}
 #etapa1 .bootstrap-select .btn-default{ background: #f9d331; font-family: Quicksand; font-weight: 500;border: 0px;padding: 10px 20px;}
 #etapa1 .bootstrap-select{width: 90%;margin: 10px;padding: 5px;}
@@ -83,13 +45,8 @@
 #etapa4 h3{font-family: DesignSystemB-500R; text-transform: uppercase; font-weight: 700;color:#fdb415;font-size: 2.5em;margin-left: 10px;}
 #etapa4 p{font-family: Quicksand; font-weight: 300;color:#727373;font-size: 1.8em;margin-left: 10px;}
 
-
-#etapa1{
-	display: block;
-}
-.etapa{
-	display: none;
-}
+#etapa1{display: block;}
+.etapa{display: none;}
 
 
 
