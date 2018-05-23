@@ -134,7 +134,7 @@ get_header(); ?>
 
 	<section id="etapa3" class="etapa"> 
 		<div class="container">
-			<form class="form-horizontal">
+			<form class="form-horizontal" id="mensalista-form">
 				<fieldset>
 					<!-- Form Name -->
 					<legend>Informações de Solicitação</legend>
@@ -144,31 +144,31 @@ get_header(); ?>
 						<div class="col-md-12">
 							<div class="checkbox">
 								<label for="infos-0">
-								<input type="checkbox" name="infos" id="infos-0" value="diurno">
+								<input type="checkbox" name="infos[]" id="infos-0" value="diurno">
 								DIURNO
 								</label>
 							</div>
 							<div class="checkbox">
 								<label for="infos-1">
-								<input type="checkbox" name="infos" id="infos-1" value="noturno">
+								<input type="checkbox" name="infos[]" id="infos-1" value="noturno">
 								NOTURNO
 								</label>
 							</div>
 							<div class="checkbox">
 								<label for="infos-2">
-								<input type="checkbox" name="infos" id="infos-2" value="24-horas">
+								<input type="checkbox" name="infos[]" id="infos-2" value="24-horas">
 								24 HORAS
 								</label>
 							</div>
 							<div class="checkbox">
 								<label for="infos-3">
-								<input type="checkbox" name="infos" id="infos-3" value="estudante">
+								<input type="checkbox" name="infos[]" id="infos-3" value="estudante">
 								ESTUDANTE
 								</label>
 							</div>
 							<div class="checkbox">
 								<label for="infos-4">
-								<input type="checkbox" name="infos" id="infos-4" value="outros">
+								<input type="checkbox" name="infos[]" id="infos-4" value="outros">
 								OUTROS
 								</label>
 							</div>
@@ -200,7 +200,7 @@ get_header(); ?>
 					<div class="form-group">
 						<div class="col-md-12">
 							<label class="control-label" for="email">Email</label>  
-							<input id="email" name="email" type="text" placeholder="Email" class="form-control input-md" required="">
+							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
 						</div>
 					</div>
 					<!-- Text input-->
@@ -212,7 +212,6 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="form-group">
-						
 						<div class="col-md-4">
 							<label class="control-label" for="cep">CEP</label>  
 							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required="">
@@ -270,11 +269,9 @@ get_header(); ?>
 						</div>
 					</div>
 				</fieldset>
-			</form>
-			<legend>Informações de Solicitação - Veiculo</legend>
-			<form class="form-horizontal" id="veiculos">
+				<legend>Informações de Solicitação - Veiculo</legend>
 				<div id="myRepeatingFields">
-					<div class="entry input-group col-xs-3">
+					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
 							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required="">
 						</div>
