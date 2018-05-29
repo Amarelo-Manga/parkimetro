@@ -55,11 +55,33 @@ function submit_solicitacao_mensalista() {
 					'cidade_empresa'		=> $cidade_empresa
 				);
 
+	//Create User
+	$user_name = strtolower(preg_replace('/\s+/', '-', $nome_usuario));
+	$user_id = username_exists( $user_name );
+	if ( !$user_id and email_exists($email) == false ) {
+		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
+		$userdata = array(
+		    'user_login'  	=> $user_name,
+		    'user_pass'   	=> $random_password,
+		    'user_email'	=> $email,
+		    'display_name'	=> $nome_usuario,
+		    'description'	=> 'Mensalista Parkimetro',
+		    'role'			=> 'mensalista-user'
+		);
+
+		$user_id = wp_insert_user( $userdata );
+		wp_new_user_notification( $user_name, $random_password);
+
+	} else {
+		$random_password = __('Usuário já existe.');
+	}
+
+	//Create Post By User ID
     $post_id = wp_insert_post( array(
         'post_title'        => $nome_usuario,
         'post_status'       => 'publish',
         'post_type'			=> 'mensalista',
-        'post_author'       => '1'
+        'post_author'       => $user_id
     ) );
     //Mensalista
 	foreach ( $mensalista as $campo => $v ) {
