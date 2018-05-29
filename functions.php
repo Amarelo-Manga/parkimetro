@@ -670,3 +670,40 @@ remove_action('wp_head', 'wp_generator');
 require get_template_directory() . '/inc/submit-solicitacao-mensalista.php';
 add_action('wp_ajax_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
 add_action('wp_ajax_nopriv_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
+
+
+/*
+ * Create User Mensalista: edit_published_posts, 
+ *
+ */
+$args_role = array( 
+			'read' 				   => true, 
+			'create_posts' 		   => true,
+			'edit_published_posts' => true, 
+			'edit_pages' 		=> false,
+			'edit_others_posts' => false,
+			'delete_posts' 		=> false,
+			'edit_themes' 	  	=> false, 
+			'install_plugins' 	=> false,
+			'update_plugin'   	=> false,
+			'update_core' 	  	=> false
+		);
+add_role( 'mensalista-user', __('Mensalistas'), $args_role );
+
+/*
+ * Remove Admin_menu for Mensalista
+ *
+ */
+// add_action('admin_menu', 'remove_built_in_roles');
+ 
+// function remove_built_in_roles() {
+//     global $wp_roles;
+ 
+//     $roles_to_remove = array('subscriber', 'contributor', 'author', 'editor', 'mensalista-user');
+ 
+//     foreach ($roles_to_remove as $role) {
+//         if (isset($wp_roles->roles[$role])) {
+//             $wp_roles->remove_role($role);
+//         }
+//     }
+// }
