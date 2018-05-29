@@ -21,7 +21,7 @@ function post_type_mensalistas() {
 		'label'               => __( 'Mensalista', 'parkimetro' ),
 		'description'         => __( 'Mensalista', 'parkimetro' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'thumbnail', ),
+		'supports'            => array( 'title', 'thumbnail', 'author'),
 		'hierarchical'        => true,
 		'public'              => true,
 		'show_ui'             => true,
