@@ -90,12 +90,13 @@ get_header(); ?>
 		<div class="container">
 			<div id="vagas">
 				<?php
+					//Use Count for dataId inputs qtd vagas
+					$count = 1; 
 					// check if the repeater field has rows of data
 					while ($loop_rede->have_posts()) : $loop_rede->the_post();
 						$qtd = get_post_meta( $post->ID, 'quantidade-vagas', true );
 						$end = get_post_meta( $post->ID, 'endereco', true );
 		            	$cod = get_post_meta( $post->ID, 'cod_unidade', true );
-
 				?>
 					<div class="estacionamentos estacionamento-<?php echo $post->ID; ?>" >
 						<h3><?php echo $cod .' - ' . $end; ?></h3>
@@ -114,12 +115,14 @@ get_header(); ?>
 						    	$descricao 		= get_sub_field('descricao');
 						    	$horario 		= get_sub_field('horario');
 						    	$valor 			= get_sub_field('valor');
-						    	echo "<ul class='".$post->ID."'>"; 
-						    	echo "<li><input type='text' placeholder='QTD' /></li>";
-						    	echo "<li>" . $descricao . "</li>";
-						    	echo "<li>" . $horario . "</li>";
-						    	echo "<li>" . $valor . "</li>";
+						    	$postId 		= $post->ID;
+						    	echo "<ul class='".$postId."' dataId='".$count."'>"; 
+						    	echo "<li class='".$postId."'><input type='number' class='qtd-vaga' placeholder='QTD' /></li>";
+						    	echo "<li class='text-".$postId."'>" . $descricao . "</li>";
+						    	echo "<li class='text-".$postId."'>" . $horario . "</li>";
+						    	echo "<li class='text-".$postId."'>" . $valor . "</li>";
 						    	echo "</ul>";
+						    	$count++;
 						     endwhile;
 						endif; //endif vagas
 					?>
@@ -285,13 +288,18 @@ get_header(); ?>
 						</div>
 						<div class="col-md-3">
 							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required="">
-						</div>
+						</div> q
 						<span class="input-group-btn">
 							<button type="button" class="btn btn-success btn-lg btn-add">
 								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 							</button>
 						</span>
 					</div>
+				</div>
+				<div id="vagas-mensalista">
+					<input type="hidden" value="" id="unidade_escolhida_id" name="unidade_escolhida_id">
+					<input type="hidden" value="" id="unidade_escolhida_endereco" name="unidade_escolhida_endereco">
+					<!-- Vagas -->
 				</div>	
 			</form>	
 			<a href="#" class="btn-passo3 btn-passo">Próximo passso</a>		

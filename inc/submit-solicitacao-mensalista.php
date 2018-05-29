@@ -26,6 +26,13 @@ function submit_solicitacao_mensalista() {
 	$modelo = isset($_POST['modelo']) ? $_POST['modelo'] : null;
 	$ano = isset($_POST['ano']) ? $_POST['ano'] : null;
 
+	$unidade_escolhida_id = isset($_POST['unidade_escolhida_id']) ? $_POST['unidade_escolhida_id'] : null; 
+	$unidade_escolhida_endereco = isset($_POST['unidade_escolhida_endereco']) ? $_POST['unidade_escolhida_endereco'] : null;
+	$quantidade = isset($_POST['quantidade']) ? $_POST['quantidade'] : null;
+	$descricao  = isset($_POST['descricao']) ? $_POST['descricao'] : null;
+	$horario    = isset($_POST['horario']) ? $_POST['horario'] : null;
+	$valor      = isset($_POST['valor']) ? $_POST['valor'] : null; 
+
 	$mensalista = array(
 					'informacoes' 	=> $informacoes,
 					'nome_usuario'	=> $nome_usuario,
@@ -54,15 +61,28 @@ function submit_solicitacao_mensalista() {
         'post_type'			=> 'mensalista',
         'post_author'       => '1'
     ) );
-
-	foreach ( $mensalista as $campo => $valor ) {
-		update_field( $campo, $valor, $post_id );
+    //Mensalista
+	foreach ( $mensalista as $campo => $v ) {
+		update_field( $campo, $v, $post_id );
 	}
-
-	foreach ( $empresa as $campo => $valor ) {
-		update_field( $campo, $valor, $post_id );
+	//Empresa
+	foreach ( $empresa as $campo => $v) {
+		update_field( $campo, $v, $post_id );
 	}
-
+	//Vagas
+	update_field( 'unidade_escolhida_id', $unidade_escolhida_id, $post_id );
+	update_field( 'unidade_escolhida_endereco', $unidade_escolhida_endereco, $post_id );
+	$value = array();
+	for ($i = 0; $i < count( $quantidade ); $i++) {
+		$value[] = array(
+				      	'quantidade'  => $quantidade[$i],
+						'descricao'	 => $descricao[$i],
+						'horario' => $horario[$i],
+						'valor'	 => $valor[$i]
+				    );
+	};
+	update_field( 'vagas_mensalista', $value, $post_id );
+	//Carros 
 	$value = array();
 	for ($i = 0; $i < count( $placa ); $i++) {
 		$value[] = array(
