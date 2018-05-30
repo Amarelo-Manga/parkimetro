@@ -460,10 +460,11 @@ function twentyseventeen_scripts() {
 
 
 	// Define CSS Select for page Solicitação de vaga
-	if ( is_page( 213 ) ) {
+	if ( is_page( 213 ) || is_page( 304 ) ) {
 		wp_enqueue_style( 'bootstrap-3-2', 'http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 		wp_enqueue_style( 'bootstrap-select-min', get_theme_file_uri( '/assets/css/bootstrap-select.min.css' ) );
 		wp_enqueue_style( 'solicitacao-mensalista', get_theme_file_uri( '/assets/css/solicitacao-mensalista.css' ) );
+		wp_enqueue_style( 'editar-mensalista', get_theme_file_uri( '/assets/css/editar-mensalista.css' ) );
 
 		wp_enqueue_script(	'solicitacao-mensalista', get_template_directory_uri().'/assets/js/solicitacao-mensalista.js');
 		wp_localize_script( 'solicitacao-mensalista', 'SmpAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
@@ -741,4 +742,11 @@ function redirect_user_mensalista_editar(){
 	}
 }
 add_action('admin_init', 'redirect_user_mensalista_editar'); 
+
+/*
+ * Logout Redirect Home
+ *
+ */
+
+add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));
 
