@@ -288,7 +288,7 @@ get_header(); ?>
 						</div>
 						<div class="col-md-3">
 							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required="">
-						</div> q
+						</div>
 						<span class="input-group-btn">
 							<button type="button" class="btn btn-success btn-lg btn-add">
 								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
