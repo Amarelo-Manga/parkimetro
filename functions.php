@@ -716,7 +716,7 @@ function add_parkimetro_role() {
  * Add Rolers for User Parkimetro
  *
  */
-function post_remove ()      //creating functions post_remove for removing menu item
+function admin_menu_user_parkimetro ()      //creating functions post_remove for removing menu item
 { 
    $user = wp_get_current_user();
 	if ( in_array( 'parkimetro', (array) $user->roles ) ) {
@@ -725,6 +725,9 @@ function post_remove ()      //creating functions post_remove for removing menu 
 	    remove_menu_page('tools.php');
 	    remove_menu_page('admin.php?page=wpcf7');
 	    remove_menu_page( 'wpcf7' );
+	    remove_menu_page( 'site-migration-export' );
 	}
 }
-add_action('admin_menu', 'post_remove'); 
+add_action('admin_menu', 'admin_menu_user_parkimetro'); 
+
+
