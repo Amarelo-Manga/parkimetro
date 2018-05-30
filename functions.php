@@ -671,7 +671,6 @@ require get_template_directory() . '/inc/submit-solicitacao-mensalista.php';
 add_action('wp_ajax_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
 add_action('wp_ajax_nopriv_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
 
-
 /*
  * Create User Mensalista: edit_published_posts, 
  *
@@ -691,19 +690,41 @@ $args_role = array(
 add_role( 'mensalista-user', __('Mensalistas'), $args_role );
 
 /*
- * Remove Admin_menu for Mensalista
+ * Create User Parkimetro: 
  *
  */
-// add_action('admin_menu', 'remove_built_in_roles');
- 
-// function remove_built_in_roles() {
-//     global $wp_roles;
- 
-//     $roles_to_remove = array('subscriber', 'contributor', 'author', 'editor', 'mensalista-user');
- 
-//     foreach ($roles_to_remove as $role) {
-//         if (isset($wp_roles->roles[$role])) {
-//             $wp_roles->remove_role($role);
-//         }
-//     }
-// }
+add_action('init','add_parkimetro_role');
+function add_parkimetro_role() {
+	global $wp_roles;
+	$args_role = array(
+	                'read' 				   => true, 
+					'create_posts' 		   => true,
+					'edit_posts' => true,
+					'edit_published_posts' => true,
+					'edit_others_posts'    => true, 
+					'edit_pages' 		   => true,
+					'delete_posts' 		   => false,
+					'edit_themes' 	  	   => false, 
+					'install_plugins' 	   => false,
+					'update_plugin'    	   => false,
+					'update_core' 	  	   => false,
+	            );
+	add_role('parkimetro', 'Parkimetro', $args_role );
+}
+
+/*
+ * Add Rolers for User Parkimetro
+ *
+ */
+function post_remove ()      //creating functions post_remove for removing menu item
+{ 
+   $user = wp_get_current_user();
+	if ( in_array( 'parkimetro', (array) $user->roles ) ) {
+	    remove_menu_page('edit.php');
+	    remove_menu_page('edit-comments.php');
+	    remove_menu_page('tools.php');
+	    remove_menu_page('admin.php?page=wpcf7');
+	    remove_menu_page( 'wpcf7' );
+	}
+}
+add_action('admin_menu', 'post_remove'); 
