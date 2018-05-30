@@ -20,13 +20,14 @@ get_header(); ?>
 		wp_redirect( get_permalink(213) ); exit; 
 	}
 ?>
-<div id="solicitacao">
+<div id="editar_mensalista">
 	<section id="breadcrumb">
 		<div class="container">
 			<a href="#" class="active">Meus Dados <i class="fa fa-caret-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="<?php echo wp_logout_url(); ?>" class="active sair">Sair</a>
 		</div>
 	</section>
-	<section id="etapa3" class="etapa"> 
+	<section id="etapa3"> 
 		<?php
 		    $args = array(
 			  	'author'         => $current_user->ID,
@@ -63,10 +64,6 @@ get_header(); ?>
 		    $complemento_empresa = get_post_meta( $postId, 'complemento_empresa', true );
 		    $cep_empresa = get_post_meta( $postId, 'cep_empresa', true );
 		    $cidade_empresa =get_post_meta( $postId, 'cidade_empresa', true );
-
-			echo "<pre>";
-			print_r( $placa );
-			echo "</pre>";
 
 			$unidade_escolhida_id = get_post_meta( $postId, 'unidade_escolhida_id', true );
 			$unidade_escolhida_endereco = get_post_meta( $postId, 'unidade_escolhida_endereco', true );
