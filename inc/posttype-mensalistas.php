@@ -34,6 +34,7 @@ function post_type_mensalistas() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
+        'map_meta_cap'        => true,
 	);
 	register_post_type( 'mensalista', $args );
 }
