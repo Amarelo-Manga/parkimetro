@@ -69,17 +69,20 @@ get_header(); ?>
 				<br />
 				<div class="infos">
 					<h3>Login</h3>
+					<form name="loginform" id="login_form" class="login_form" action="<?php echo esc_url( wp_login_url() ); ?>" method="post">
 					<div class="form-group">
 						<br />
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Usuário</label> 
-							<input id="usuario" name="usuario" type="text" placeholder="Fone" class="form-control input-md" required="">
+							<input id="usuario" name="log" type="text" placeholder="Usuário" class="form-control input-md" required="">
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Senha</label> 
-							<input id="senha" name="senha" type="password" placeholder="senha" class="form-control input-md" required="">
+							<input id="senha" name="pwd" type="password" placeholder="Senha" class="form-control input-md" required="">
 						</div>
+						<button name="wp-submit" id="wp-submit" class="btn"><?php _e("Entrar", "shorti"); ?></button>
 						<br /><br /><br /><br /><br />
+					</form>
 					</div>
 				</div>
 			</div>
