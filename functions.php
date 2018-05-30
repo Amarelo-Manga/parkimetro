@@ -716,7 +716,7 @@ function add_parkimetro_role() {
  * Add Rolers for User Parkimetro
  *
  */
-function admin_menu_user_parkimetro ()      //creating functions post_remove for removing menu item
+function admin_menu_user_parkimetro ()
 { 
    $user = wp_get_current_user();
 	if ( in_array( 'parkimetro', (array) $user->roles ) ) {
@@ -730,4 +730,15 @@ function admin_menu_user_parkimetro ()      //creating functions post_remove for
 }
 add_action('admin_menu', 'admin_menu_user_parkimetro'); 
 
+/*
+ * Redireciona User Mensalista para Editar Mensalista
+ *
+ */
+function redirect_user_mensalista_editar(){  
+   $user = wp_get_current_user();
+	if ( in_array( 'mensalista-user', (array) $user->roles ) ) {
+		wp_redirect( get_permalink(304) ); exit; 
+	}
+}
+add_action('admin_init', 'redirect_user_mensalista_editar'); 
 
