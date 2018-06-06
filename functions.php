@@ -663,7 +663,6 @@ add_filter( 'stylesheet_uri', 'style_or_min_style', 10, 2);
  */
 remove_action('wp_head', 'wp_generator');
 
-
 /*
  * Ajax Submit Solicitacao Mensalista
  * 
@@ -671,6 +670,14 @@ remove_action('wp_head', 'wp_generator');
 require get_template_directory() . '/inc/submit-solicitacao-mensalista.php';
 add_action('wp_ajax_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
 add_action('wp_ajax_nopriv_submit_solicitacao_mensalista', 'submit_solicitacao_mensalista');
+
+/*
+ * Ajax Generate XML e Submit Email
+ * 
+ */
+require get_template_directory() . '/inc/generate-xml-send-email.php';
+add_action('wp_ajax_generate_xml_send_email', 'generate_xml_send_email');
+add_action('wp_ajax_nopriv_generate_xml_send_email', 'generate_xml_send_email');
 
 /*
  * Create User Mensalista: edit_published_posts, 
@@ -747,6 +754,32 @@ add_action('admin_init', 'redirect_user_mensalista_editar');
  * Logout Redirect Home
  *
  */
-
 add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));
 
+/*
+ * Columns Post Type Mensalista
+ */
+function set_mensalista_columns($columns) {
+    return array(
+        'cb' => '<input type="checkbox" />',
+        'title' => __('Dados'),
+        'author' => __('Mensalista'),
+        'url_xml' =>__( 'URL XML'),
+        'date' => __('Data de Cadastro'),
+    );
+}
+add_filter('manage_mensalista_posts_columns' , 'set_mensalista_columns');
+
+/*
+ * Add the data to the custom columns for the Mesalista post type:
+ */
+add_action( 'manage_mensalista_posts_custom_column' , 'custom_mensalista_column', 10, 2 );
+function custom_mensalista_column( $column, $post_id ) {
+    switch ( $column ) {
+        case 'url_xml' :
+        	$urlXml = get_post_meta( $post_id , 'url_xml' , true );
+            echo "<a href='".$urlXml."' target='_blank'>Download XML</a>";
+            break;
+
+    }
+}
