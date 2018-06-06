@@ -119,12 +119,30 @@
 		        type: "POST",
 		        data: dados,
 		        success: function(data){
-		           alert("success " + data);
+		           console.log("success mensalista: " + data);
+		           generate_xml_send_email_xml( data );
 		        },
 		        error: function(e){
-		             alert("error " + e);
+		             alert("error mensalista " + e);
 		        }
 		    });
 		});
+
+		//Generate XML Send Email Ajax
+		function generate_xml_send_email_xml( idPost ){
+			console.log( "Generate XMl : "+idPost+"<br />" );
+			$.ajax({
+		        type: "POST",
+		        url: SmpAjax.ajaxurl + "?action=generate_xml_send_email",
+		        data: {"idPost":idPost},
+		        success: function(data){
+		           console.log("success xml: " + data);
+		        },
+		        error: function(e){
+		        	var myObj = $.parseJSON(e);
+		            console.log("error xml: " + myObj);
+		        }
+		    });
+		};
 	});
 })( jQuery );
