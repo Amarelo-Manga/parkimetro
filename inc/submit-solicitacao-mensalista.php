@@ -7,6 +7,7 @@ function submit_solicitacao_mensalista() {
     $fone = isset($_POST['telefone']) ? $_POST['telefone'] : null;
     $celular = isset($_POST['celuar']) ? $_POST['celuar'] : null;
     $email = isset($_POST['email']) ? $_POST['email'] : null;
+    $senha = isset($_POST['senha']) ? $_POST['senha'] : null;
     $endereco = isset($_POST['endereco']) ? $_POST['endereco'] : null;
     $cep = isset($_POST['cep']) ? $_POST['cep'] : null;
     $bairro = isset($_POST['bairro']) ? $_POST['bairro'] : null;
@@ -60,10 +61,10 @@ function submit_solicitacao_mensalista() {
 	$user_name = strtolower(preg_replace('/\s+/', '-', $nome_usuario));
 	$user_id = username_exists( $user_name );
 	if ( !$user_id and email_exists($email) == false ) {
-		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
+		//$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
 		$userdata = array(
 		    'user_login'  	=> $user_name,
-		    'user_pass'   	=> $random_password,
+		    'user_pass'   	=> $senha,
 		    'user_email'	=> $email,
 		    'display_name'	=> $nome_usuario,
 		    'description'	=> 'Mensalista Parkimetro',

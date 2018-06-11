@@ -169,8 +169,15 @@ get_header(); ?>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
-							<label class="control-label" for="email">Email</label>  
+							<label>Dados de acesso:</label>
+						</div>
+						<div class="col-md-8">
+							<label class="control-label" for="email">Email de acesso:</label>  
 							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
+						</div>
+						<div class="col-md-4">
+							<label class="control-label" for="email">Senha de acesso:</label>  
+							<input id="senha" name="senha" type="password" class="form-control input-md" pattern="[0-9a-fA-F]{4,8}" title="Insira de 4-8 digitos entre números e letras" required="">
 						</div>
 					</div>
 					<!-- Text input-->
@@ -196,7 +203,7 @@ get_header(); ?>
 						</div>
 						<div class="col-md-2">
 							<label class="control-label" for="estado">Estado</label> 
-							<select name="estado">
+							<select name="estado" class="form-control input-md">
 								<option selected="" value="">Selecione o Estado (UF)</option>
 								<option value="AC">Acre</option>
 								<option value="AL">Alagoas</option>
@@ -311,6 +318,10 @@ get_header(); ?>
 		<div class="container">
 			<h3>Solicitação enviada com sucesso!</h3>
 			<p>Nossa equipe irá avaliar seu pedido e entrará em contato.</p>
+			<p>
+				<a href="http://www.parkimetro.com.br" alt="Home Parkimetro" title="Home Parkimetro">Voltar para Home</a>
+				<a href="http://www.parkimetro.com.br/solicitacao-mensalista" alt="Solicitação Mensalista Parkimetro" title="Solicitação Mensalista Parkimetro">Nova Solicitação</a>
+			</p>
 		</div>
 	</section>
 </div>

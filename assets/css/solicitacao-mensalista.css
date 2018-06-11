@@ -21,6 +21,8 @@
 #etapa1 .infos p{color: #000; font-size: 1.3em;padding: 10px 10px 15px;}
 .btn-passo{background: #f9d331;color: #000;text-decoration: none;text-transform:uppercase;padding: 7px 20px;font-family: Quicksand; font-weight: 500;font-size: 1.5em;float: right;margin-right: 50px;}
 .btn-passo:hover{color:#000;background: #feb600;text-decoration: none;}
+#etapa1 #login_form #wp-submit{margin-top: 24px;background: #f9d500;padding: 7px;}
+#etapa1 #login_form .col-md-5{padding: 5px;}
 
 #etapa2 h3{font-family: Quicksand; font-weight: 500;font-size: 2em;margin-left: 10px;}
 #etapa2 p{font-family: Quicksand; font-weight: 300;font-size: 1.5em;margin-left: 10px;}
@@ -43,11 +45,12 @@
 #etapa3 #veiculos .col-md-3{padding: 0px 5px;}
 #etapa3 #veiculos .btn{ margin-top: -25px; }
 #etapa3 .ajaxgif{width: 40px;float: right;display: none;}
+#etapa3 select{height: 32px;font-size: 13px;}
 
 #etapa4 {text-align: center;padding: 40px 0px;}
 #etapa4 h3{font-family: DesignSystemB-500R; text-transform: uppercase; font-weight: 700;color:#fdb415;font-size: 2.5em;margin-left: 10px;}
 #etapa4 p{font-family: Quicksand; font-weight: 300;color:#727373;font-size: 1.8em;margin-left: 10px;}
-
+#etapa4 a{font-family: DesignSystemB-500R;display: inline-block;background: #f9d330;border-radius: 10px;padding: 5px 20px;color: #21252a;margin: 10px 10px;}
 #etapa1{display: block;}
 .etapa{display: none;}
 
