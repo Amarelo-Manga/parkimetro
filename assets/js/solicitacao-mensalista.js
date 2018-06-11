@@ -82,15 +82,6 @@
 			}
 		});
 
-		$('.btn-passo3').on('click', function(){
-			// $('#etapa3').hide(100);
-			// $('#etapa4').show(100);
-			// $('a.active').addClass('conclused');
-			// $('a.conclused').removeClass('active');
-			// $('.concluir').addClass('active');
-			$('#mensalista-form').submit();
-		});
-
 		// Repeat Fields Descrição dos Veiculos
 		$(document).on('click', '.btn-add', function(e)
 		{
@@ -108,6 +99,12 @@
 			e.preventDefault();
 			$(this).parents('.entry:first').remove();
 			return false;
+		});
+
+		$('.btn-passo3').on('click', function(){
+			$('.btn-passo3').hide();
+			$('.ajaxgif').show();
+			$('#mensalista-form').submit();
 		});
 
 		//Ajax 
@@ -136,7 +133,12 @@
 		        url: SmpAjax.ajaxurl + "?action=generate_xml_send_email",
 		        data: {"idPost":idPost},
 		        success: function(data){
-		           console.log("success xml: " + data);
+		            console.log("success xml: " + data);
+			        $('#etapa3').hide(100);
+					$('#etapa4').show(100);
+					$('a.active').addClass('conclused');
+					$('a.conclused').removeClass('active');
+					$('.concluir').addClass('active');
 		        },
 		        error: function(e){
 		        	var myObj = $.parseJSON(e);
