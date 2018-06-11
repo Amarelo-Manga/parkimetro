@@ -73,12 +73,12 @@ get_header(); ?>
 					<div class="form-group">
 						<br />
 						<div class="col-md-5">
-							<label class="control-label" for="telefone">Usuário</label> 
-							<input id="usuario" name="log" type="text" placeholder="Usuário" class="form-control input-md" required="">
+							<label class="control-label" for="telefone">Email</label> 
+							<input id="usuario" name="log" type="text" placeholder="Usuário" class="form-control input-md" required>
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Senha</label> 
-							<input id="senha" name="pwd" type="password" placeholder="Senha" class="form-control input-md" required="">
+							<input id="senha" name="pwd" type="password" placeholder="Senha" class="form-control input-md" required>
 						</div>
 						<button name="wp-submit" id="wp-submit" class="btn"><?php _e("Entrar", "shorti"); ?></button>
 						<br /><br /><br /><br /><br />
@@ -148,22 +148,22 @@ get_header(); ?>
 					<div class="form-group">
 						<div class="col-md-8">
 							<label class="control-label" for="nome">Nome Usuário</label> 
-							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required="">
+							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cpf">CPF</label>  
-							<input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required="">
+							<input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">						
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Fone</label> 
-							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" required="">
+							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" required>
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="celuar">Celular</label> 
-							<input id="celuar" name="celuar" type="text" placeholder="Celular" class="form-control input-md" required="">
+							<input id="celuar" name="celuar" type="text" placeholder="Celular" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
@@ -173,25 +173,25 @@ get_header(); ?>
 						</div>
 						<div class="col-md-8">
 							<label class="control-label" for="email">Email de acesso:</label>  
-							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
+							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="email">Senha de acesso:</label>  
-							<input id="senha" name="senha" type="password" class="form-control input-md" pattern="[0-9a-fA-F]{4,8}" title="Insira de 4-8 digitos entre números e letras" required="">
+							<input id="senha" name="senha" type="password" class="form-control input-md" pattern="[0-9a-fA-F]{4,8}" title="Insira de 4-8 digitos entre números e letras" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
 							<label class="control-label" for="endereco">Endereço</label>  
-							<input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
+							<input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required>
 							<span class="help-block">RUA/ AVENIDA/ TRAVESSSA - NÚMERO/BLOCO/APARTAMENTO</span>  
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-md-2">
 							<label class="control-label" for="cep">CEP</label>  
-							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required="">
+							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="bairro">Bairro</label> 
@@ -199,7 +199,7 @@ get_header(); ?>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cidade">Cidade</label> 
-							<input id="cidade" name="cidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
+							<input id="cidade" name="cidade" type="text" placeholder="Cidade" class="form-control input-md" required>
 						</div>
 						<div class="col-md-2">
 							<label class="control-label" for="estado">Estado</label> 
@@ -283,18 +283,18 @@ get_header(); ?>
 				<div id="myRepeatingFields">
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
-							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required="">
+							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required>
 						</div>
 						<div class="col-md-3">
-							<input id="marca" name="marca[]" type="text" placeholder="Marca" class="form-control" required="">
+							<input id="marca" name="marca[]" type="text" placeholder="Marca" class="form-control" required>
 							<span class="help-block">Ex: Fiat, Chevrolet, Ford...</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" class="form-control" required="">
+							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" class="form-control" required>
 							<span class="help-block">Modelo (Ônix, Fiesta, Uno ...)</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required="">
+							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required>
 						</div>
 						<span class="input-group-btn">
 							<button type="button" class="btn btn-success btn-lg btn-add">
