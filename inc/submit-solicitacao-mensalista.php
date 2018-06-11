@@ -10,7 +10,8 @@ function submit_solicitacao_mensalista() {
     $endereco = isset($_POST['endereco']) ? $_POST['endereco'] : null;
     $cep = isset($_POST['cep']) ? $_POST['cep'] : null;
     $bairro = isset($_POST['bairro']) ? $_POST['bairro'] : null;
-    $cidade_uf = isset($_POST['cidade']) ? $_POST['cidade'] : null;
+    $cidade = isset($_POST['cidade']) ? $_POST['cidade'] : null;
+    $estado = isset($_POST['estado']) ? $_POST['estado'] : null;
 
     $empresa = isset($_POST['empresa']) ? $_POST['empresa'] : null;
     $fone_empresa = isset($_POST['fone-empresa']) ? $_POST['fone-empresa'] : null;
@@ -41,7 +42,8 @@ function submit_solicitacao_mensalista() {
 					'endereco'		=> $endereco,
 					'cep'			=> $cep,
 					'bairro'		=> $bairro,
-					'cidade_uf'		=> $cidade_uf
+					'cidade'		=> $cidade,
+					'estado'		=> $estado
 				);
 	$empresa = array(
 					'empresa'				=> $empresa,

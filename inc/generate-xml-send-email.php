@@ -12,7 +12,8 @@ function generate_xml_send_email() {
 					'endereco'		=> get_post_meta( $idPost, 'endereco', true ),
 					'cep'			=> get_post_meta( $idPost, 'cep', true ),
 					'bairro'		=> get_post_meta( $idPost, 'bairro', true ),
-					'cidade_uf'		=> get_post_meta( $idPost, 'cidade_uf', true )
+					'cidade'		=> get_post_meta( $idPost, 'cidade', true ),
+					'estado'		=> get_post_meta( $idPost, 'estado', true )
 				);
 
 	$empresa = array(
