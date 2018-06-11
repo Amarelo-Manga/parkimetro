@@ -2,7 +2,6 @@
 
 function submit_solicitacao_mensalista() {
 
-    $informacoes = isset($_POST['infos']) ? $_POST['infos'] : null;
     $nome_usuario = isset($_POST['nome']) ? $_POST['nome'] : null;
     $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : null;
     $fone = isset($_POST['telefone']) ? $_POST['telefone'] : null;
@@ -34,7 +33,6 @@ function submit_solicitacao_mensalista() {
 	$valor      = isset($_POST['valor']) ? $_POST['valor'] : null; 
 
 	$mensalista = array(
-					'informacoes' 	=> $informacoes,
 					'nome_usuario'	=> $nome_usuario,
 					'cpf'			=> $cpf,
 					'fone'			=> $fone,

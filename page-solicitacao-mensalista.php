@@ -142,44 +142,6 @@ get_header(); ?>
 		<div class="container">
 			<form class="form-horizontal" id="mensalista-form">
 				<fieldset>
-					<!-- Form Name -->
-					<legend>Informações de Solicitação</legend>
-					<!-- Multiple Checkboxes -->
-					<div class="form-group">
-						<label class="col-md-12 control-label" for="infos">Informações</label>
-						<div class="col-md-12">
-							<div class="checkbox">
-								<label for="infos-0">
-								<input type="checkbox" name="infos[]" id="infos-0" value="diurno">
-								DIURNO
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-1">
-								<input type="checkbox" name="infos[]" id="infos-1" value="noturno">
-								NOTURNO
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-2">
-								<input type="checkbox" name="infos[]" id="infos-2" value="24-horas">
-								24 HORAS
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-3">
-								<input type="checkbox" name="infos[]" id="infos-3" value="estudante">
-								ESTUDANTE
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-4">
-								<input type="checkbox" name="infos[]" id="infos-4" value="outros">
-								OUTROS
-								</label>
-							</div>
-						</div>
-					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-8">
@@ -305,7 +267,8 @@ get_header(); ?>
 					<!-- Vagas -->
 				</div>	
 			</form>	
-			<a href="#" class="btn-passo3 btn-passo">Próximo passso</a>		
+			<a href="#" class="btn-passo3 btn-passo">Próximo passso</a>
+			<img src="http://www.parkimetro.com.br/wp-content/themes/parkimetro/assets/images/ajax6.gif" class="ajaxgif">		
 		</div>
 	</section>
 

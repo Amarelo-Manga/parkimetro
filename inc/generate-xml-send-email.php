@@ -4,7 +4,6 @@ function generate_xml_send_email() {
 	$idPost = isset($_POST['idPost']) ? $_POST['idPost'] : null;
 
 	$mensalista = array(
-					'informacoes'   => implode(", ", get_post_meta( $idPost, 'informacoes', true )),
 					'nome_usuario'	=> get_post_meta( $idPost, 'nome_usuario', true ),
 					'cpf'			=> get_post_meta( $idPost, 'cpf', true ),
 					'fone'			=> get_post_meta( $idPost, 'fone', true ),
@@ -94,8 +93,8 @@ function generate_xml_send_email() {
 	$upload = wp_upload_dir();
 	$pathSave = $upload['basedir'] . '/mensalista-xml/mensalista-'.$idPost.'.xml';
 	$pathDownload = $upload['baseurl'] . '/mensalista-xml/mensalista-'.$idPost.'.xml';
-	$xmlDoc->saveXML();
-	$xmlDoc->save( $pathSave );
+	$saveXml = $xmlDoc->saveXML();
+	$saveDoc = $xmlDoc->save( $pathSave );
 
 	//Salvar XMl do User
 	update_field( 'url_xml', $pathDownload, $idPost );
@@ -105,9 +104,10 @@ function generate_xml_send_email() {
 	$subject = 'Solicitação Mensalista';
 	$body = 'Solicitação de Mensalista Parkimetro';
 	$headers[] = 'Content-Type: text/html; charset=UTF-8';
-	$headers[] = 'From: Me Myself <me@example.net>';
 	$attachments = array( $pathSave );
-	wp_mail( $to, $subject, $message, $headers, $attachments );
+	if( wp_mail( $to, $subject, $body , $headers, $attachments ) ) 
+		{ echo 'The test message was sent. Check your email inbox.'; } else { echo 'The message was not sent!';};
 
 	echo $pathDownload;
+	die;
 }
