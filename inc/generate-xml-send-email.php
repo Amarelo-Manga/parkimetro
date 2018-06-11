@@ -26,7 +26,7 @@ function generate_xml_send_email() {
 					'cidade_empresa'		=> get_post_meta( $idPost, 'cidade_empresa', true )
 				);
 
-	$unidade_escolhida = get_post_meta( $idPost, 'unidade_escolhida_endereco', true );
+	$unidade_escolhida = get_post_meta( $idPost, 'unidade_escolhida_id', true );
 	$cont = 1;
    	while ( have_rows('vagas_mensalista', $idPost ) ) : the_row();
    		$vagas[$cont]['quantidade'] = get_sub_field('quantidade');

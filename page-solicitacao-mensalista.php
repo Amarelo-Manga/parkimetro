@@ -52,7 +52,7 @@ get_header(); ?>
 							$est .= " ".$e->name;
 						}
 		 
-		        		echo '<option value="'.$post->ID.'" data-subtext=" - '.$est.'">'.$cod.' - '.$end.'</option>';
+		        		echo '<option value="'.$cod.'" data-subtext=" - '.$est.'">'.$cod.' - '.$end.'</option>';
 
 						$count++;
 		            endwhile;
