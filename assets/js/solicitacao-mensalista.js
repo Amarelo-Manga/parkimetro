@@ -29,6 +29,7 @@
 				var inputVaga = "";
 				var inputDesc = "";
 				var inputValo = "";
+				var inputCodVaga = "";
 				var dataIdInputs = $('div[dataIdInputs="'+dataId+'"]');
 
 				//Valida se já existe dataInput com quantidade cadastrado
@@ -48,9 +49,14 @@
 
 					  	if( index == 2 ){
 					  		inputValo = '<input type="hidden" value="'+text+'" class="qtd-valo" name="valor[]">';
+					  	}
+
+					  	if( index == 3 ){
+					  		inputCodVaga = '<input type="hidden" value="'+text+'" class="qtd-cod" name="codigo[]">';
 					  	} 
 					});
 					var htmlInput = "<div dataIdInputs='"+dataId+"' >";
+						htmlInput = htmlInput + inputCodVaga;
 						htmlInput = htmlInput + inputVaga;
 						htmlInput = htmlInput + inputDesc;
 						htmlInput = htmlInput + inputHora;

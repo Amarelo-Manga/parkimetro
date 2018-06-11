@@ -33,6 +33,7 @@ function generate_xml_send_email() {
 		$vagas[$cont]['descricao']  = get_sub_field('descricao');
     	$vagas[$cont]['horario'] 	= get_sub_field('horario');
     	$vagas[$cont]['valor'] 	 	= get_sub_field('valor');
+    	$vagas[$cont]['codigo'] 	= get_sub_field('codigo');
     	$cont++;
     endwhile;
    
@@ -68,9 +69,10 @@ function generate_xml_send_email() {
 
 	//Vagas
 	$vag = $root->appendChild( $xmlDoc->createElement("Vagas") );
-	$vag->appendChild( $xmlDoc->createElement( 'unidade_escolhida_endereco', $unidade_escolhida  ) );
+	$vag->appendChild( $xmlDoc->createElement( 'unidade_escolhida', $unidade_escolhida  ) );
 	foreach ( $vagas as $data ) {
 		$va  = $vag->appendChild( $xmlDoc->createElement("vaga") );
+		$va->appendChild( $xmlDoc->createElement( 'codigo_vaga', $data['codigo'] ) );
 		$va->appendChild( $xmlDoc->createElement( 'quantidade', $data['quantidade'] ) );
 		$va->appendChild( $xmlDoc->createElement( 'descricao', $data['descricao'] ) );
 		$va->appendChild( $xmlDoc->createElement( 'horario', $data['horario'] ) );

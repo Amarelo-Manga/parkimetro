@@ -31,6 +31,7 @@
 #etapa2 #vagas li:first-child{padding: 0px;width: 160px;}
 #etapa2 #vagas h4{font-family: Quicksand; font-weight: 500;color:#000;font-size: 2em;margin-left: 10px ;}
 #etapa2 #vagas li input{padding: 8px;width: 100%;}
+#etapa2 #vagas .cod_vaga{display: none;}
 #etapa2 .estacionamentos{display: none;}
 
 #etapa3 legend{font-family: Quicksand; font-weight: 500;color:#000;font-size: 2em;margin: 20px 0px 10px;}
@@ -49,6 +50,8 @@
 
 #etapa1{display: block;}
 .etapa{display: none;}
+
+
 
 
 

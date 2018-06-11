@@ -101,7 +101,7 @@ get_header(); ?>
 						$end = get_post_meta( $post->ID, 'endereco', true );
 		            	$cod = get_post_meta( $post->ID, 'cod_unidade', true );
 				?>
-					<div class="estacionamentos estacionamento-<?php echo $post->ID; ?>" >
+					<div class="estacionamentos estacionamento-<?php echo $cod; ?>" >
 						<h3><?php echo $cod .' - ' . $end; ?></h3>
 						<p>Selecione abaixo a vaga desejada nesta unidade e escolha a quantidade de vagas necessárias</p>
 					<?php 
@@ -119,11 +119,13 @@ get_header(); ?>
 						    	$horario 		= get_sub_field('horario');
 						    	$valor 			= get_sub_field('valor');
 						    	$postId 		= $post->ID;
-						    	echo "<ul class='".$postId."' dataId='".$count."'>"; 
-						    	echo "<li class='".$postId."'><input type='number' class='qtd-vaga' placeholder='QTD' /></li>";
-						    	echo "<li class='text-".$postId."'>" . $descricao . "</li>";
-						    	echo "<li class='text-".$postId."'>" . $horario . "</li>";
-						    	echo "<li class='text-".$postId."'>" . $valor . "</li>";
+						    	$cod_vaga 		= get_sub_field('codigo_preco_vaga');
+						    	echo "<ul class='".$cod."' dataId='".$count."'>"; 
+						    	echo "<li class='".$cod."'><input type='number' class='qtd-vaga' placeholder='QTD' /></li>";
+						    	echo "<li class='text-".$cod."'>" . $descricao . "</li>";
+						    	echo "<li class='text-".$cod."'>" . $horario . "</li>";
+						    	echo "<li class='text-".$cod."'>" . $valor . "</li>";
+						    	echo "<li class='text-".$cod." cod_vaga'>" . $cod_vaga . "</li>";
 						    	echo "</ul>";
 						    	$count++;
 						     endwhile;
@@ -180,7 +182,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<label class="control-label" for="cep">CEP</label>  
 							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required="">
 						</div>
@@ -192,7 +194,7 @@ get_header(); ?>
 							<label class="control-label" for="cidade">Cidade</label> 
 							<input id="cidade" name="cidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<label class="control-label" for="estado">Estado</label> 
 							<select name="estado">
 								<option selected="" value="">Selecione o Estado (UF)</option>

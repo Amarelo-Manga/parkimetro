@@ -32,6 +32,7 @@ function submit_solicitacao_mensalista() {
 	$descricao  = isset($_POST['descricao']) ? $_POST['descricao'] : null;
 	$horario    = isset($_POST['horario']) ? $_POST['horario'] : null;
 	$valor      = isset($_POST['valor']) ? $_POST['valor'] : null; 
+	$codigoV    = isset($_POST['codigo']) ? $_POST['codigo'] : null; 
 
 	$mensalista = array(
 					'nome_usuario'	=> $nome_usuario,
@@ -97,10 +98,11 @@ function submit_solicitacao_mensalista() {
 	$value = array();
 	for ($i = 0; $i < count( $quantidade ); $i++) {
 		$value[] = array(
-				      	'quantidade'  => $quantidade[$i],
+				      	'quantidade' => $quantidade[$i],
 						'descricao'	 => $descricao[$i],
-						'horario' => $horario[$i],
-						'valor'	 => $valor[$i]
+						'horario' 	 => $horario[$i],
+						'valor'	 	 => $valor[$i],
+						'codigo'	 => $codigoV[$i]
 				    );
 	};
 	update_field( 'vagas_mensalista', $value, $post_id );
