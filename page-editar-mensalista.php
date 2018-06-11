@@ -246,6 +246,7 @@ get_header(); ?>
 					?>
 				</div>
 				<br /><br />
+				<label>Para alterar as informações de vaga envie um email para contato@parkimetro.com.br, com assunto: Alteração de vaga.</label>
 				<legend>Informações de Solicitação - VAGA/s</legend>
 				<div id="vagas-mensalista">
 					<input type="hidden" value="<?php echo $unidade_escolhida_id; ?>" id="unidade_escolhida_id" name="unidade_escolhida_id" disabled>
