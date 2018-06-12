@@ -20,7 +20,7 @@
 #etapa1 #filtros .infos h3{font-family: DesignSystemB-500R;color:#fff;background: #000;padding:10px;margin:0px;}
 #etapa1 .infos p{color: #000; font-size: 1.3em;padding: 10px 10px 15px;}
 .btn-passo{background: #f9d331;color: #000;text-decoration: none;text-transform:uppercase;padding: 7px 20px;font-family: Quicksand; font-weight: 500;font-size: 1.5em;float: right;margin-right: 50px;}
-.btn-passo:hover{color:#000;background: #feb600;text-decoration: none;}
+.btn-passo:hover, .btn-passo:focus{color:#000;background: #feb600;text-decoration: none;}
 #etapa1 #login_form #wp-submit{margin-top: 24px;background: #f9d500;padding: 7px;}
 #etapa1 #login_form .col-md-5{padding: 5px;}
 
@@ -46,6 +46,7 @@
 #etapa3 #veiculos .btn{ margin-top: -25px; }
 #etapa3 .ajaxgif{width: 40px;float: right;display: none;}
 #etapa3 select{height: 32px;font-size: 13px;}
+#etapa3 .required{border: 2px solid rgb(254, 182, 0);}
 
 #etapa4 {text-align: center;padding: 40px 0px;}
 #etapa4 h3{font-family: DesignSystemB-500R; text-transform: uppercase; font-weight: 700;color:#fdb415;font-size: 2.5em;margin-left: 10px;}

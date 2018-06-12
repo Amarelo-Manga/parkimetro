@@ -107,10 +107,28 @@
 			return false;
 		});
 
-		$('.btn-passo3').on('click', function(){
+		$('.btn-passo3').on('click', function(e){
+			e.preventDefault();
 			$('.btn-passo3').hide();
 			$('.ajaxgif').show();
-			$('#mensalista-form').submit();
+
+			var submitForm = true; 
+
+			$('form#mensalista-form').find('input').each(function(){
+			    if( $(this).prop('required') && $( this ).val() == '' ){
+			    	$('input').removeClass('required');
+			    	$( this ).addClass('required');
+			    	alert( 'Por favor, Preencha o campo ' + $(this).attr('placeholder') );
+				    $('.btn-passo3').show();
+					$('.ajaxgif').hide();
+					submitForm = false;
+			    	return false;
+			    };
+			});
+
+			if( submitForm ){
+				$('#mensalista-form').submit();
+			}
 		});
 
 		//Ajax 
