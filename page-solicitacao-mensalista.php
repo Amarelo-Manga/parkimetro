@@ -147,8 +147,8 @@ get_header(); ?>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-8">
-							<label class="control-label" for="nome">Nome Usuário</label> 
-							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required>
+							<label class="control-label" for="nome">Nome do Mensalista</label> 
+							<input id="nome" name="nome" type="text" placeholder="Nome do Mensalista" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cpf">CPF</label>  
@@ -159,7 +159,7 @@ get_header(); ?>
 					<div class="form-group">						
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Fone</label> 
-							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" required>
+							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" >
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="celuar">Celular</label> 
@@ -279,7 +279,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</fieldset>
-				<legend>Informações de Solicitação - Veiculo</legend>
+				<legend>Informações de Solicitação - Veículo</legend>
 				<div id="myRepeatingFields">
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
