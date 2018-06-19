@@ -39,14 +39,6 @@ get_header(); ?>
 			$current_user_post = get_posts( $args );
 			$postId = $current_user_post[0]->ID;
 
-			$informacoes = get_post_meta( $postId, 'informacoes', true );
-			foreach ($informacoes as $info) {
-				if( $info == "diurno" ){ $dchecked = "checked"; }else{ $dchecked = ""; }
-				if( $info == "noturno" ){ $nchecked = "checked"; }else{ $nchecked = ""; }
-				if( $info == "24-horas" ){ $hchecked = "checked"; }else{ $hchecked = ""; }
-				if( $info == "estudante" ){ $echecked = "checked"; }else{ $echecked = ""; }
-				if( $info == "outros" ){ $ochecked = "checked"; }else{ $ochecked = ""; }
-			}
 		    $nome_usuario = get_post_meta( $postId, 'nome_usuario', true );
 		    $cpf = get_post_meta( $postId, 'cpf', true );
 		    $fone = get_post_meta( $postId, 'fone', true );
@@ -76,85 +68,47 @@ get_header(); ?>
 		<div class="container">
 			<form class="form-horizontal" id="mensalista-form">
 				<fieldset>
-					<!-- Form Name -->
-					<legend>Informações de Solicitação</legend>
-					<!-- Multiple Checkboxes -->
-					<div class="form-group">
-						<label class="col-md-12 control-label" for="infos">Informações</label>
-						<div class="col-md-12">
-							<div class="checkbox">
-								<label for="infos-0">
-								<input type="checkbox" name="infos[]" id="infos-0" value="diurno" <?php echo $dchecked; ?> >
-								DIURNO
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-1">
-								<input type="checkbox" name="infos[]" id="infos-1" value="noturno" <?php echo $nchecked; ?> >
-								NOTURNO
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-2">
-								<input type="checkbox" name="infos[]" id="infos-2" value="24-horas" <?php echo $hchecked; ?> >
-								24 HORAS
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-3">
-								<input type="checkbox" name="infos[]" id="infos-3" value="estudante" <?php echo $echecked; ?> >
-								ESTUDANTE
-								</label>
-							</div>
-							<div class="checkbox">
-								<label for="infos-4">
-								<input type="checkbox" name="infos[]" id="infos-4" value="outros" <?php echo $ochecked; ?> > 
-								OUTROS
-								</label>
-							</div>
-						</div>
-					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-8">
 							<label class="control-label" for="nome">Nome Usuário</label> 
-							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required="" value="<?php echo $nome_usuario; ?>">
+							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required value="<?php echo $nome_usuario; ?>">
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cpf">CPF</label>  
-							<input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md"  value="<?php echo $cpf; ?>" required="">
+							<input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md"  value="<?php echo $cpf; ?>" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">						
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Fone</label> 
-							<input id="telefone" name="telefone" type="text" placeholder="Fone"  value="<?php echo $fone; ?>" class="form-control input-md" required="">
+							<input id="telefone" name="telefone" type="text" placeholder="Fone"  value="<?php echo $fone; ?>" class="form-control input-md" required>
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="celuar">Celular</label> 
-							<input id="celuar" name="celuar" type="text" placeholder="Celular"  value="<?php echo $celular; ?>" class="form-control input-md" required="">
+							<input id="celuar" name="celuar" type="text" placeholder="Celular"  value="<?php echo $celular; ?>" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
 							<label class="control-label" for="email">Email</label>  
-							<input id="email" name="email" type="email" placeholder="Email" value="<?php echo $email; ?>" class="form-control input-md" required="">
+							<input id="email" name="email" type="email" placeholder="Email" value="<?php echo $email; ?>" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
 							<label class="control-label" for="endereco">Endereço</label>  
-							<input id="endereco" name="endereco" type="text" placeholder="Endereço"  value="<?php echo $endereco; ?>" class="form-control input-md" required="">
+							<input id="endereco" name="endereco" type="text" placeholder="Endereço"  value="<?php echo $endereco; ?>" class="form-control input-md" required>
 							<span class="help-block">RUA/ AVENIDA/ TRAVESSSA - NÚMERO/BLOCO/APARTAMENTO</span>  
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-md-4">
 							<label class="control-label" for="cep">CEP</label>  
-							<input id="cep" name="cep" type="text" placeholder="CEP"  value="<?php echo $cep; ?>" class="form-control input-md" required="">
+							<input id="cep" name="cep" type="text" placeholder="CEP"  value="<?php echo $cep; ?>" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="bairro">Bairro</label> 
@@ -162,7 +116,7 @@ get_header(); ?>
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cidade">Cidade - UF</label> 
-							<input id="cidade" name="cidade" type="text" placeholder="Cidade - UF"  value="<?php echo $cidade_uf; ?>" class="form-control input-md" required="">
+							<input id="cidade" name="cidade" type="text" placeholder="Cidade - UF"  value="<?php echo $cidade_uf; ?>" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
@@ -221,18 +175,18 @@ get_header(); ?>
 					?>
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
-							<input id="placa" name="placa[]" type="text" placeholder="Placa" value="<?php echo $placa; ?>" class="form-control" required="">
+							<input id="placa" name="placa[]" type="text" placeholder="Placa" value="<?php echo $placa; ?>" class="form-control" required>
 						</div>
 						<div class="col-md-3">
-							<input id="marca" name="marca[]" type="text" placeholder="Marca" value="<?php echo $marca; ?>" class="form-control" required="">
+							<input id="marca" name="marca[]" type="text" placeholder="Marca" value="<?php echo $marca; ?>" class="form-control" required>
 							<span class="help-block">Ex: Fiat, Chevrolet, Ford...</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" value="<?php echo $modelo; ?>" class="form-control" required="">
+							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" value="<?php echo $modelo; ?>" class="form-control" required>
 							<span class="help-block">Modelo (Ônix, Fiesta, Uno ...)</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="ano" name="ano[]" type="text" placeholder="Ano" value="<?php echo $ano; ?>" class="form-control" required="">
+							<input id="ano" name="ano[]" type="text" placeholder="Ano" value="<?php echo $ano; ?>" class="form-control" required>
 						</div>
 						<span class="input-group-btn">
 							<button type="button" class="btn btn-success btn-lg btn-add">
@@ -246,6 +200,7 @@ get_header(); ?>
 					?>
 				</div>
 				<br /><br />
+				<label>Para alterar as informações de vaga envie um email para contato@parkimetro.com.br, com assunto: Alteração de vaga.</label>
 				<legend>Informações de Solicitação - VAGA/s</legend>
 				<div id="vagas-mensalista">
 					<input type="hidden" value="<?php echo $unidade_escolhida_id; ?>" id="unidade_escolhida_id" name="unidade_escolhida_id" disabled>
