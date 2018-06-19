@@ -195,6 +195,10 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="form-group">
+						<div class="col-md-2">
+							<label class="control-label" for="cep">CEP</label>  
+							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required>
+						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="bairro">Bairro</label> 
 							<input id="bairro" name="bairro" type="text" placeholder="Bairro" class="form-control input-md">
