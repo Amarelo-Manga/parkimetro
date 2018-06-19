@@ -47,6 +47,11 @@ function generate_xml_send_email() {
 	   	$cont++;
     endwhile;
 
+
+    //Get Emails Vagas
+    $idUnidade = get_post_meta( $idPost, 'id_unidade', true );
+    $emails = get_post_meta( $idUnidade, 'email_de_envio', true );
+
 	// Document
 	$xmlDoc = new DOMDocument('1.0', 'UTF-8');
 
@@ -103,7 +108,7 @@ function generate_xml_send_email() {
 	update_field( 'url_xml', $pathDownload, $idPost );
 
 	//enviar email
-	$to = 'elvisbmartins@gmail.com';
+	$to = $emails;
 	$subject = 'Solicitação Mensalista';
 	$body = 'Solicitação de Mensalista Parkimetro';
 	$headers[] = 'Content-Type: text/html; charset=UTF-8';
