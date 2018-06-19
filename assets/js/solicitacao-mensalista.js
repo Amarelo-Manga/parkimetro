@@ -9,6 +9,7 @@
 
 		  	$('#unidade_escolhida_id').val( this.value );
 		  	$('#unidade_escolhida_endereco').val( $(this).children("option").filter(":selected").text() );
+		  	$('#id_unidade').val( $(this).children("option").filter(":selected").attr("data-rede") );
 		});
 
 		$('.btn-passo1').on('click', function(){
@@ -88,6 +89,66 @@
 			}
 		});
 
+		//Valida CPF
+		$("#cpf").on('change', function (value, element) {
+            value = $.trim( $(this).val() );
+
+            value = value.replace('.', '');
+            cpf = value.replace('-', '');
+            while (cpf.length < 11) cpf = "0" + cpf;
+            var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+            var a = [];
+            var b = new Number;
+            var c = 11;
+            for (i = 0; i < 11; i++) {
+                a[i] = cpf.charAt(i);
+                if (i < 9) b += (a[i] * --c);
+            }
+            if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11 - x }
+            b = 0;
+            c = 11;
+            for (y = 0; y < 10; y++) b += (a[y] * c--);
+            if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11 - x; }
+            if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)){
+            	$( "#cpf" ).addClass('required');
+            	alert('CPF inválido, digite novamente por favor!');
+            }
+        }); 
+
+		//Busca Cep
+		$('#cep').on('change', function(){
+			//Nova variável "cep" somente com dígitos.
+            var cep = $(this).val().replace(/\D/g, '');
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+           //Valida o formato do CEP.
+            if( validacep.test(cep) ) {
+                //Preenche os campos com "..." enquanto consulta webservice.
+                $("#endereco").val("...");
+                $("#bairro").val("...");
+                $("#cidade").val("...");
+                $("#uf").val("...");
+                //Consulta o webservice viacep.com.br/
+                $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+                    if (!("erro" in dados)) {
+                        //Atualiza os campos com os valores da consulta.
+                        $("#endereco").val(dados.logradouro);
+                        $("#bairro").val(dados.bairro);
+                        $("#cidade").val(dados.localidade);
+                        //$("#uf").val(dados.uf);
+                        console.log(dados.uf);
+                        $('#estado option[value='+dados.uf+']').attr('selected','selected');
+                    } //end if.
+                    else {
+                        alert("CEP não encontrado.");
+                    }
+                });
+            }else{
+            	$( "#cep" ).addClass('required');
+            	alert('Digite um CEP válido');
+            };
+		});
+
 		// Repeat Fields Descrição dos Veiculos
 		$(document).on('click', '.btn-add', function(e)
 		{
@@ -107,10 +168,28 @@
 			return false;
 		});
 
-		$('.btn-passo3').on('click', function(){
+		$('.btn-passo3').on('click', function(e){
+			e.preventDefault();
 			$('.btn-passo3').hide();
 			$('.ajaxgif').show();
-			$('#mensalista-form').submit();
+
+			var submitForm = true; 
+
+			$('form#mensalista-form').find('input').each(function(){
+			    if( $(this).prop('required') && $( this ).val() == '' ){
+			    	$('input').removeClass('required');
+			    	$( this ).addClass('required');
+			    	alert( 'Por favor, Preencha o campo ' + $(this).attr('placeholder') );
+				    $('.btn-passo3').show();
+					$('.ajaxgif').hide();
+					submitForm = false;
+			    	return false;
+			    };
+			});
+
+			if( submitForm ){
+				$('#mensalista-form').submit();
+			}
 		});
 
 		//Ajax 
