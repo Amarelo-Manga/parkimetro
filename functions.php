@@ -734,6 +734,7 @@ function admin_menu_user_parkimetro ()
 	    remove_menu_page('admin.php?page=wpcf7');
 	    remove_menu_page( 'wpcf7' );
 	    remove_menu_page( 'site-migration-export' );
+	    remove_menu_page( 'ai1wm_export' );
 	}
 }
 add_action('admin_menu', 'admin_menu_user_parkimetro'); 
