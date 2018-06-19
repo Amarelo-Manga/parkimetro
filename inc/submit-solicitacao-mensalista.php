@@ -7,6 +7,7 @@ function submit_solicitacao_mensalista() {
     $fone = isset($_POST['telefone']) ? $_POST['telefone'] : null;
     $celular = isset($_POST['celuar']) ? $_POST['celuar'] : null;
     $email = isset($_POST['email']) ? $_POST['email'] : null;
+    $senha = isset($_POST['senha']) ? $_POST['senha'] : null;
     $endereco = isset($_POST['endereco']) ? $_POST['endereco'] : null;
     $cep = isset($_POST['cep']) ? $_POST['cep'] : null;
     $bairro = isset($_POST['bairro']) ? $_POST['bairro'] : null;
@@ -28,6 +29,7 @@ function submit_solicitacao_mensalista() {
 
 	$unidade_escolhida_id = isset($_POST['unidade_escolhida_id']) ? $_POST['unidade_escolhida_id'] : null; 
 	$unidade_escolhida_endereco = isset($_POST['unidade_escolhida_endereco']) ? $_POST['unidade_escolhida_endereco'] : null;
+	$id_unidade = isset($_POST['id_unidade']) ? $_POST['id_unidade'] : null;
 	$quantidade = isset($_POST['quantidade']) ? $_POST['quantidade'] : null;
 	$descricao  = isset($_POST['descricao']) ? $_POST['descricao'] : null;
 	$horario    = isset($_POST['horario']) ? $_POST['horario'] : null;
@@ -60,10 +62,10 @@ function submit_solicitacao_mensalista() {
 	$user_name = strtolower(preg_replace('/\s+/', '-', $nome_usuario));
 	$user_id = username_exists( $user_name );
 	if ( !$user_id and email_exists($email) == false ) {
-		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
+		//$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
 		$userdata = array(
 		    'user_login'  	=> $user_name,
-		    'user_pass'   	=> $random_password,
+		    'user_pass'   	=> $senha,
 		    'user_email'	=> $email,
 		    'display_name'	=> $nome_usuario,
 		    'description'	=> 'Mensalista Parkimetro',
@@ -95,7 +97,8 @@ function submit_solicitacao_mensalista() {
 	//Vagas
 	update_field( 'unidade_escolhida_id', $unidade_escolhida_id, $post_id );
 	update_field( 'unidade_escolhida_endereco', $unidade_escolhida_endereco, $post_id );
-	$value = array();
+	update_field( 'id_unidade', $id_unidade, $post_id );
+$value = array();
 	for ($i = 0; $i < count( $quantidade ); $i++) {
 		$value[] = array(
 				      	'quantidade' => $quantidade[$i],
