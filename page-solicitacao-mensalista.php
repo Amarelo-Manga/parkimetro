@@ -37,10 +37,11 @@ get_header(); ?>
 		            $loop_rede = new WP_Query($args);
 		            $count = 0;
 		            while ($loop_rede->have_posts()) : $loop_rede->the_post();
+		            	$idRede = $post->ID;
 		            	$muns = wp_get_post_terms( get_the_ID() , 'municipio' );
 		            	$ests = wp_get_post_terms( get_the_ID() , 'estabelecimento' );
-		            	$end = get_post_meta( $post->ID, 'endereco', true );
-		            	$cod = get_post_meta( $post->ID, 'cod_unidade', true );
+		            	$end = get_post_meta( $idRede, 'endereco', true );
+		            	$cod = get_post_meta( $idRede, 'cod_unidade', true );
 
 		            	$mun = "";
 		            	foreach ($muns as $m) {
@@ -52,7 +53,7 @@ get_header(); ?>
 							$est .= " ".$e->name;
 						}
 		 
-		        		echo '<option value="'.$cod.'" data-subtext=" - '.$est.'">'.$cod.' - '.$end.'</option>';
+		        		echo '<option value="'.$cod.'" data-rede="'.$idRede.'" data-subtext=" - '.$est.'">'.$cod.' - '.$end.'</option>';
 
 						$count++;
 		            endwhile;
@@ -73,12 +74,12 @@ get_header(); ?>
 					<div class="form-group">
 						<br />
 						<div class="col-md-5">
-							<label class="control-label" for="telefone">Usuário</label> 
-							<input id="usuario" name="log" type="text" placeholder="Usuário" class="form-control input-md" required="">
+							<label class="control-label" for="telefone">Email</label> 
+							<input id="usuario" name="log" type="text" placeholder="Usuário" class="form-control input-md" required>
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Senha</label> 
-							<input id="senha" name="pwd" type="password" placeholder="Senha" class="form-control input-md" required="">
+							<input id="senha" name="pwd" type="password" placeholder="Senha" class="form-control input-md" required>
 						</div>
 						<button name="wp-submit" id="wp-submit" class="btn"><?php _e("Entrar", "shorti"); ?></button>
 						<br /><br /><br /><br /><br />
@@ -144,59 +145,67 @@ get_header(); ?>
 		<div class="container">
 			<form class="form-horizontal" id="mensalista-form">
 				<fieldset>
+					<legend>Informações de Solicitação - Mensalista</legend>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-8">
-							<label class="control-label" for="nome">Nome Usuário</label> 
-							<input id="nome" name="nome" type="text" placeholder="Nome Usuário" class="form-control input-md" required="">
+							<label class="control-label" for="nome">Nome do Mensalista</label> 
+							<input id="nome" name="nome" type="text" placeholder="Nome do Mensalista" class="form-control input-md" required>
 						</div>
 						<div class="col-md-4">
-							<label class="control-label" for="cpf">CPF</label>  
-							<input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required="">
+							<label class="control-label" for="cpf">CPF<span> - Somente números</span></label>  
+							<input id="cpf" name="cpf" type="text" maxlength="11" placeholder="CPF" value="" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">						
 						<div class="col-md-5">
 							<label class="control-label" for="telefone">Fone</label> 
-							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" required="">
+							<input id="telefone" name="telefone" type="text" placeholder="Fone" class="form-control input-md" >
 						</div>
 						<div class="col-md-5">
 							<label class="control-label" for="celuar">Celular</label> 
-							<input id="celuar" name="celuar" type="text" placeholder="Celular" class="form-control input-md" required="">
+							<input id="celuar" name="celuar" type="text" placeholder="Celular" class="form-control input-md" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
-							<label class="control-label" for="email">Email</label>  
-							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
+							<label>Dados de acesso:</label>
+						</div>
+						<div class="col-md-8">
+							<label class="control-label" for="email">Email de acesso:</label>  
+							<input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required>
+						</div>
+						<div class="col-md-4">
+							<label class="control-label" for="email">Senha de acesso:</label>  
+							<input id="senhauser" name="senha" type="password" class="form-control input-md" pattern="[0-9a-fA-F]{4,8}" title="Insira de 4-8 digitos entre números e letras" required>
 						</div>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
-						<div class="col-md-12">
+						<div class="col-md-2">
+							<label class="control-label" for="cep">CEP</label>  
+							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required>
+						</div>
+						<div class="col-md-10">
 							<label class="control-label" for="endereco">Endereço</label>  
-							<input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
+							<input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required>
 							<span class="help-block">RUA/ AVENIDA/ TRAVESSSA - NÚMERO/BLOCO/APARTAMENTO</span>  
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-md-2">
-							<label class="control-label" for="cep">CEP</label>  
-							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required="">
-						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="bairro">Bairro</label> 
 							<input id="bairro" name="bairro" type="text" placeholder="Bairro" class="form-control input-md">
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cidade">Cidade</label> 
-							<input id="cidade" name="cidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
+							<input id="cidade" name="cidade" type="text" placeholder="Cidade" class="form-control input-md" required>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-3">
 							<label class="control-label" for="estado">Estado</label> 
-							<select name="estado">
+							<select name="estado" id="estado" class="form-control input-md">
 								<option selected="" value="">Selecione o Estado (UF)</option>
 								<option value="AC">Acre</option>
 								<option value="AL">Alagoas</option>
@@ -230,7 +239,7 @@ get_header(); ?>
 					</div>
 					<!-- Text input-->
 		
-					<legend>Informações de Solicitação - Empresa</legend>
+					<legend>Informações de Solicitação - Empresa </legend>
 					<!-- Text input-->
 					<div class="form-group">
 						<div class="col-md-12">
@@ -251,20 +260,21 @@ get_header(); ?>
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
-						<div class="col-md-12">
+						<div class="col-md-2">
+							<label class="control-label" for="cep-empresa">CEP Empresa</label>  
+							<input id="cep-empresa" name="cep-empresa" type="text" placeholder="CEP Empresa" class="form-control input-md">
+						</div>
+						<div class="col-md-10">
 							<label class="control-label" for="endereco-empresa">Endereço Empresa</label>
 							<input id="endereco-empresa" name="endereco-empresa" type="text" placeholder="Endereço Empresa" class="form-control input-md">
 						</div>
-						<div class="col-md-12">
-							<label class="control-label" for="complemento-empresa">Complemento Empresa</label> 
-							<input id="complemento-empresa" name="complemento-empresa" type="text" placeholder="Complemento Empresa" class="form-control input-md">
-						</div>
+					
 					</div>
 					<!-- Text input-->
 					<div class="form-group">
-						<div class="col-md-4">
-							<label class="control-label" for="cep-empresa">CEP Empresa</label>  
-							<input id="cep-empresa" name="cep-empresa" type="text" placeholder="CEP Empresa" class="form-control input-md">
+						<div class="col-md-8">
+							<label class="control-label" for="complemento-empresa">Complemento Empresa</label> 
+							<input id="complemento-empresa" name="complemento-empresa" type="text" placeholder="Complemento Empresa" class="form-control input-md">
 						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="cidade-empresa">Cidade Empresa</label>
@@ -272,22 +282,22 @@ get_header(); ?>
 						</div>
 					</div>
 				</fieldset>
-				<legend>Informações de Solicitação - Veiculo</legend>
+				<legend>Informações de Solicitação - Veículo</legend>
 				<div id="myRepeatingFields">
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
-							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required="">
+							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required>
 						</div>
 						<div class="col-md-3">
-							<input id="marca" name="marca[]" type="text" placeholder="Marca" class="form-control" required="">
+							<input id="marca" name="marca[]" type="text" placeholder="Marca" class="form-control" required>
 							<span class="help-block">Ex: Fiat, Chevrolet, Ford...</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" class="form-control" required="">
+							<input id="modelo" name="modelo[]" type="text" placeholder="Modelo" class="form-control" required>
 							<span class="help-block">Modelo (Ônix, Fiesta, Uno ...)</span>  
 						</div>
 						<div class="col-md-3">
-							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required="">
+							<input id="ano" name="ano[]" type="text" placeholder="Ano" class="form-control" required>
 						</div>
 						<span class="input-group-btn">
 							<button type="button" class="btn btn-success btn-lg btn-add">
@@ -299,6 +309,7 @@ get_header(); ?>
 				<div id="vagas-mensalista">
 					<input type="hidden" value="" id="unidade_escolhida_id" name="unidade_escolhida_id">
 					<input type="hidden" value="" id="unidade_escolhida_endereco" name="unidade_escolhida_endereco">
+					<input type="hidden" value="" id="id_unidade" name="id_unidade">
 					<!-- Vagas -->
 				</div>	
 			</form>	
@@ -311,6 +322,10 @@ get_header(); ?>
 		<div class="container">
 			<h3>Solicitação enviada com sucesso!</h3>
 			<p>Nossa equipe irá avaliar seu pedido e entrará em contato.</p>
+			<p>
+				<a href="http://www.parkimetro.com.br" alt="Home Parkimetro" title="Home Parkimetro">Voltar para Home</a>
+				<a href="http://www.parkimetro.com.br/solicitacao-mensalista" alt="Solicitação Mensalista Parkimetro" title="Solicitação Mensalista Parkimetro">Nova Solicitação</a>
+			</p>
 		</div>
 	</section>
 </div>
