@@ -111,11 +111,15 @@ function generate_xml_send_email() {
 	$to = $emails;
 	$subject = 'Solicitação Mensalista';
 	$body = 'Solicitação de Mensalista Parkimetro';
-	$headers[] = 'Content-Type: text/html; charset=UTF-8';
+	$headers[] = 'Content-Type: text/html;';
+	// $headers[] = 'charset=UTF-8;';
+	// $headers[] = 'From: Parkimetro <contato@parkimetro.com.br>;';
+	// $headers[] = 'MIME-Version: 1.0;';
 	$attachments = array( $pathSave );
-	if( wp_mail( $to, $subject, $body , $headers, $attachments ) ) 
-		{ echo 'The test message was sent. Check your email inbox.'; } else { echo 'The message was not sent!';};
+	$mailSend = wp_mail( $to, $subject, $body , $headers, $attachments );
 
-	echo $pathDownload;
+	if( $mailSend  ) 
+		{ echo 'The test message was sent. Check your email inbox.'; } else { echo 'The message was not sent! ' . $mailSend; };
+
 	die;
 }
