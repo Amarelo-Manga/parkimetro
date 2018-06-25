@@ -11,14 +11,15 @@
 #etapa1 #filtros h3{font-family: Quicksand;margin-left: 10px;font-weight: 400;}
 #etapa1 .filter-option{color:#000;}
 #etapa1 .filter-option .text-muted{font-size: 90%;color:#000!important;}
-#etapa1 .dropdown-menu>li>a {display: block;padding: 3px 0px 3px 10px;clear: both;font-weight: 400;color: #333;white-space: nowrap;font-size: 1.3em;}
+#etapa1 .dropdown-menu>li>a {display: block;padding: 3px 0px 3px 10px;clear: both;font-weight: 400;color: #333;white-space: nowrap;font-size: 1.5em;}
 #etapa1 .bs-caret{display: none;}
 #etapa1 .bootstrap-select .btn-default{ background: #f9d331; font-family: Quicksand; font-weight: 500;border: 0px;padding: 10px 20px;}
 #etapa1 .bootstrap-select{width: 90%;margin: 10px;padding: 5px;}
 #etapa1 .dropup .dropdown-toggle::after, #etapa1 .dropdown-toggle::after{color:#000}
 #etapa1 .infos{background:#f4f4f4;border-bottom:5px solid #fdb415;max-width: 400px;}
 #etapa1 #filtros .infos h3{font-family: DesignSystemB-500R;color:#fff;background: #000;padding:10px;margin:0px;}
-#etapa1 .infos p{color: #000; font-size: 1.3em;padding: 10px 10px 15px;}
+#etapa1 #filtros .btn-default{font-size: 1.5em!important;}
+#etapa1 .infos p{color: #000; font-size: 1.5em;padding: 10px 10px 15px;}
 .btn-passo{background: #f9d331;color: #000;text-decoration: none;text-transform:uppercase;padding: 7px 20px;font-family: Quicksand; font-weight: 500;font-size: 1.5em;float: right;margin-right: 50px;}
 .btn-passo:hover, .btn-passo:focus{color:#000;background: #feb600;text-decoration: none;}
 #etapa1 #login_form #wp-submit{margin-top: 24px;background: #f9d500;padding: 7px;}
@@ -56,8 +57,63 @@
 #etapa1{display: block;}
 .etapa{display: none;}
 
+/* Responsivo */
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+	#main_menu .logo{ width: 100%!important;padding-right: 28%;}
+   	#solicitacao #breadcrumb{text-align: center;}
+   	#solicitacao #breadcrumb a{margin-bottom: 5px;display: none;}
+   	#solicitacao #breadcrumb a.active{display: block;}
+   	#etapa1{text-align: center;margin-top: 10px;}
+   	#etapa1 .bootstrap-select{width: 100%;margin: 5px;padding: 0px;}
+   	#etapa1 .btn-passo{float: inherit;margin-right: 0px;margin-top: 0px;margin-bottom: 15px; display: inline-block;}
+   	#etapa1 .dropdown-menu{max-width: 300px;}
 
+   	#etapa2 .container{margin-left: 10px;margin-right: 10px;padding: 0px;}
+   	#etapa2 h3{margin-left:5px;}
+   	#etapa2 p{margin-left: 5px;}
+   	#etapa2 #vagas h4{display: none;}
+   	#etapa2 #vagas ul{padding-left: 0px;}
+   	#etapa2 #vagas li{width: 87px;font-size: 1.2em;}
+   	#etapa2 #vagas .lista li{font-size: 1.3em;padding: 8px 10px;}
+   	#etapa2 #vagas li:first-child{width: 90px;}
+   	#etapa2 #vagas .lista li:first-child{width: 90px;}
+   	#etapa2 #vagas li input{border: 1px solid #ececec;padding: 6.9px;}
+    #etapa2 .btn-passo{float: inherit;margin-right: 0px;margin-top: 0px;margin-bottom: 15px; display: inline-block;}
+    #etapa3 #veiculos{display: block;}
+    #etapa3 #veiculos input{float: inherit;}
+    #etapa3 #veiculos div.col-md-3{max-width:100%;width: 100%;display: block;margin: 5px 0px 10px;}
+    #etapa3 #veiculos .input-group-btn{margin-top: 30px;margin-left: 6px;}
+    #etapa3 #veiculos .btn{padding: 10px 25px;}
+    #etapa3 .btn-passo{margin-right: 0px;margin-top: 10px;}
+  	#etapa3 .glyphicon{font-size: 1.5em;font-weight: bold;}
+	#etapa3 .form-control {height: 40px;}
 
+    #main_menu #menu{margin-top:0px;}
+    .form-horizontal .form-group{margin-bottom: 0px;}
+    .form-horizontal .form-group div{margin-bottom: 10px;}
+}
+ 
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 768px) and (min-width: 481px) {
+   #solicitacao .container{max-width: 98%;margin: 0px;padding-right: 0px;}
+   #solicitacao #breadcrumb a{font-size: 1.4em;padding: 6px 10px 6px 25px;width: auto;}
+   #solicitacao #breadcrumb .container{max-width: 98%;margin: 0px;}
+   #solicitacao #breadcrumb a i{right: -18px;top: -11px;font-size: 58px;}
+   #solicitacao #breadcrumb a i.fa-angle-right {font-size: 72px;top: -22px;right: -20px;}
+   #etapa2 #vagas li input{border: 1px solid #ececec;padding: 6.9px;}
+   #etapa2 #vagas li{width: 180px;}
+   #etapa2 #vagas li:first-child{width: 120px;}
+   #etapa2 .form-control {height: 40px;}
+   #solicitacao #etapa3 .container{max-width: 95%;}
+   #main_menu #menu .collapse{width: 100%;}
+   #etapa3 .form-control {height: 40px;}
+}
+ 
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+     /* estilos aqui */
+}
 
 
 
