@@ -65,7 +65,8 @@ get_header(); ?>
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<div class="infos">
 					<h3>Vagas para mensalistas</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Garanta sua vaga com o nosso plano mensal. É fácil, rápido e seguro! Preencha o formulário, selecionando o estacionamento e número de vagas desejados. Nossa equipe entrará em contato para responder sua solicitação.
+					Não esqueça de verificar o preço, vagas disponíveis e o horário de funcionamento de cada endereço.</p>
 				</div>
 				<br />
 				<div class="infos">
@@ -195,10 +196,6 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-md-2">
-							<label class="control-label" for="cep">CEP</label>  
-							<input id="cep" name="cep" type="text" placeholder="CEP" class="form-control input-md" required>
-						</div>
 						<div class="col-md-4">
 							<label class="control-label" for="bairro">Bairro</label> 
 							<input id="bairro" name="bairro" type="text" placeholder="Bairro" class="form-control input-md">
@@ -290,7 +287,8 @@ get_header(); ?>
 				<div id="myRepeatingFields">
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
-							<input id="placa" name="placa[]" type="text" placeholder="Placa" class="form-control" required>
+							<input id="placa" name="placa[]" type="text" pattern="[a-fA-F0-9]{3,4}" placeholder="Placa" class="form-control" required>
+							<span class="help-block">Ex: ABC-1234</span>  
 						</div>
 						<div class="col-md-3">
 							<input id="marca" name="marca[]" type="text" placeholder="Marca" class="form-control" required>
