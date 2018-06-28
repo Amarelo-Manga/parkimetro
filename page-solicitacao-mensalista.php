@@ -287,7 +287,7 @@ get_header(); ?>
 				<div id="myRepeatingFields">
 					<div id="veiculos" class="entry input-group col-xs-3">
 						<div class="col-md-3">
-							<input id="placa" name="placa[]" type="text" pattern="[a-fA-F0-9]{3,4}" placeholder="Placa" class="form-control" required>
+							<input id="placa" name="placa[]" type="text" pattern="[a-fA-F0-9]{3,4}" placeholder="Placa" class="form-control placa" required>
 							<span class="help-block">Ex: ABC-1234</span>  
 						</div>
 						<div class="col-md-3">

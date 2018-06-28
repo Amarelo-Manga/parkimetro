@@ -471,6 +471,8 @@ function twentyseventeen_scripts() {
 
 		wp_enqueue_script('bootstrap-3-3-2-js', get_template_directory_uri(). '/assets/js/bootstrap.min.js');
 		wp_enqueue_script('bootstrap-select', get_template_directory_uri().'/assets/js/bootstrap-select.min.js');
+
+		wp_enqueue_script('jquery-mask', get_template_directory_uri(). '/assets/js/jquery.mask.js');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
