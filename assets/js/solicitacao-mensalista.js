@@ -12,12 +12,18 @@
 		  	$('#id_unidade').val( $(this).children("option").filter(":selected").attr("data-rede") );
 		});
 
+		//Passo 1 Selecionar o Estacionamento
 		$('.btn-passo1').on('click', function(){
-			$('#etapa1').hide(100);
-			$('#etapa2').show(100);
-			$('a.active').addClass('conclused');
-			$('a.conclused').removeClass('active');
-			$('.escolha-horario').addClass('active');
+			var selected = $('#bootstrapSelectEst').val();
+			if( selected ){
+				$('#etapa1').hide(100);
+				$('#etapa2').show(100);
+				$('a.active').addClass('conclused');
+				$('a.conclused').removeClass('active');
+				$('.escolha-horario').addClass('active');
+			}else{
+				alert('Selecione o Estacionamento');
+			}
 		});
 
 		//Adiciona Inputs com quantidade de vagas
@@ -148,6 +154,9 @@
             	alert('Digite um CEP válido');
             };
 		});
+
+		//Mascara Placa
+		$("#placa").mask("AAA-9999", {reverse: true});
 
 		// Repeat Fields Descrição dos Veiculos
 		$(document).on('click', '.btn-add', function(e)
